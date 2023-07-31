@@ -88,7 +88,7 @@ fetch('/assets/json/games.json')
           items.forEach(item => {
             const game = document.createElement('div');
             game.classList.add('game');
-            game.innerHTML = `<div><img src="/g/assets/${item.root}/${item.img}" loading="lazy" alt="${item.title}" draggable="false"><h2>${item.title}</h2></div>`;
+            game.innerHTML = `<div><img src="/g/assets/${item.root}/${item.img}" onerror="this.src='/assets/img/no-img.jpg' loading="lazy" alt="${item.title}" draggable="false"><h2>${item.title}</h2></div>`;
             gamesContainer.appendChild(game);
   
             // Add event listener to each game element to handle the click event and redirect to the link

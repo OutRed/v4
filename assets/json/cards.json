@@ -1,18 +1,22 @@
-[
-    {
+{
+    "cards": [
+      {
+        "href": "/g/index.html",
+        "iconClass": "fa-duotone fa fa-gamepad",
         "title": "Games",
-        "link": "/g/index.html",
-        "icon": "fa-duotone fa fa-gamepad"
-    },
-    {
+        "description": "Explore our wide variety of unblocked games."
+      },
+      {
+        "href": "/apps.html",
+        "iconClass": "fa fa-mobile",
         "title": "Apps",
-        "link": "/apps.html",
-        "icon": "fas-duotone fa",
-        "icon-name": "&#xf0ac;"
-    },
-    {
+        "description": "Use a wide variety of utilities to enjoy other sites/tools to the max."
+      },
+      {
+        "href": "settings.html",
+        "iconClass": "fa-duotone fa fa-gears",
         "title": "Settings",
-        "link": "/settings.html",
-        "icon": "fa-duotone fa fa-gears"
-    }
-]
+        "description": "Want to customize this website to your style and needs? We got you covered."
+      }
+    ]
+  }  

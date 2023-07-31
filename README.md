@@ -48,5 +48,7 @@ Thank you to all the contributors!
 [![Contrib](https://contrib.rocks/image?repo=OutRed/outredgames#)](https://github.com/OutRed/outredgames/graphs/contributors)
 
 ## Credits
-- [Hyperplexed](https://codepen.io/Hyperplexed/pen/MWQeYLW) for the card hover effects.
-- [Gamevault](https://github.com/carbonutilities/gamevault/) for the games.
+- [Hyperplexed](https://codepen.io/Hyperplexed/pen/MWQeYLW) - Created the original hover effect on the cards.
+- [Gamevault](https://github.com/carbonutilities/gamevault/) - Ripped all the games.
+- [ChatGPT-Demo](https://github.com/anse-app/chatgpt-demo) - The original repo for the ChatGPT app on the website that was modified by us.
+- [Titanium Network's Ultraviolet Proxy](https://github.com/titaniumnetwork-dev/Ultraviolet-App) - The proxy that is used on the website.
