@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Games",
+        "link": "/g/index.html",
+        "icon": "fa-duotone fa fa-gamepad"
+    },
+    {
+        "title": "Apps",
+        "link": "/apps.html",
+        "icon": "fas-duotone fa",
+        "icon-name": "&#xf0ac;"
+    },
+    {
+        "title": "Settings",
+        "link": "/settings.html",
+        "icon": "fa-duotone fa fa-gears"
+    }
+]

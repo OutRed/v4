@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Proxy | OutRed</title>
+    <meta name="description" content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!" />
+    <meta name="keywords" content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e">
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+<script>
+            // Function to check if a year has passed since the last time the user saw the alert
+            function hasYearPassed(lastSeenTimestamp) {
+            const oneYearInMillis = 365 * 24 * 60 * 60 * 1000; // Number of milliseconds in a year
+            const now = new Date().getTime();
+            return now - lastSeenTimestamp >= oneYearInMillis;
+        }
+
+        // Function to show the alert and update localStorage with the current timestamp
+        function showAlert() {
+            alert("Hello! The chances of the proxy not working are higher than usual becuase we only have one bare server. It will be like this until we add more bare servers. If an app does not work, it is not our fault.");
+            localStorage.setItem('lastSeenTimestamp', new Date().getTime());
+        }
+
+        // Check if the user has seen the alert before
+        const lastSeenTimestamp = localStorage.getItem('lastSeenTimestamp');
+        if (lastSeenTimestamp === null || hasYearPassed(parseInt(lastSeenTimestamp))) {
+            showAlert();
+        }
+</script>
+
+    <div class="navigation-bar">
+        <p onclick="location.href = '/index.html';">Home</p>
+        <p onclick="location.href = '/g/index.html';">Games</p>
+        <p onclick="location.href = '/apps.html';">Apps</p>
+        <p onclick="location.href = '/go.html';">Proxy</p>
+        <p onclick="location.href = '/settings.html';" class="active">Settings</p>
+    </div><br><br><br>
+
+    </div>
+    <div class="desc">
+        <h1 class="title">OutRed Proxy</h1><br><br>
+    </div>
+    <form>
+        <input class="search-input" placeholder="Search the web freely...">
+    </form>
+    <footer style="bottom: 0; position: fixed;">
+        <a href="https://discord.gg/outred" target="_blank"></a>
+        <p>&copy; OutRed</p>
+        <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
+    </footer>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

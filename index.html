@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutRed | Home</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!--  PWA LINKS -->
+    <link rel="manifest" href="./js/json/manifest.json" />
+    <meta name="theme-color" content="#6C0BA9"/>
+
+      <!-- TEMP -->
+
+    <style>
+    :root {
+        --bg-color: rgb(20, 20, 20);
+        --card-color: rgb(23, 23, 23);
+      }
+      
+      body {
+    
+        background-color: var(--bg-color);
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        margin: 0px;
+        overflow: hidden;
+        padding: 0px;
+        color: rgb(240, 240, 240);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        text-align: center;
+      }
+      
+      #cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        max-width: 916px;
+        width: 100%;
+      }
+      
+      @media (max-width: 1000px) {
+        .card {
+          width: calc(33.33% - 4px);
+        }
+      }
+       
+      #cards:hover > .card::after {
+        opacity: 1;
+      }
+      
+      .card {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        height: 260px;
+        flex-direction: column;
+        position: relative;
+        width: 300px;  
+      }
+      
+      .card:hover::before {
+        opacity: 1;
+      }
+      
+      .card::before,
+      .card::after {
+        border-radius: inherit;
+        content: "";
+        height: 100%;
+        left: 0px;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        transition: opacity 500ms;
+        width: 100%;
+      }
+      
+      .card::before {
+        background: radial-gradient(
+          800px circle at var(--mouse-x) var(--mouse-y), 
+          rgba(255, 255, 255, 0.06),
+          transparent 40%
+        );
+        z-index: 3;
+      }
+      
+      .card::after {  
+        background: radial-gradient(
+          600px circle at var(--mouse-x) var(--mouse-y), 
+          rgba(255, 255, 255, 0.4),
+          transparent 40%
+        );
+        z-index: 1;
+      }
+      
+      .card > .card-content {
+        background-color: var(--card-color);
+        border-radius: inherit;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        inset: 1px;
+        padding: 10px;
+        position: absolute;
+        z-index: 2;
+      }
+      
+      /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
+      
+      h1, h2, h3, h4, span {
+        color: rgb(240, 240, 240);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        margin: 0px;
+      }
+      
+      i {  
+        color: rgb(240, 240, 240);
+      }
+      
+      .card-image {
+        align-items: center;
+        display: flex;
+        height: 140px;
+        justify-content: center;
+        overflow: hidden;
+      }
+      
+      .card-image > i {
+        font-size: 6em;
+        opacity: 0.25;
+      }
+      
+      .card-info-wrapper {
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-start;
+        padding: 0px 20px;
+      }
+      
+      .card-info {
+        align-items: flex-start;
+        display: flex;
+        gap: 10px;
+      }
+      
+      .card-info > i {  
+        font-size: 1em;
+        height: 20px;
+        line-height: 20px;
+      }
+      
+      .card-info-title > h3 {
+        font-size: 1.1em;
+        line-height: 20px;
+      }
+      
+      .card-info-title > h4 {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.85em;
+        margin-top: 8px;
+      }
+      
+      /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
+      
+      @media(max-width: 1000px) {
+        body {
+          align-items: flex-start;  
+          overflow: auto;
+        }
+        
+        #cards {    
+          max-width: 1000px;
+          padding: 10px 0px;
+        }
+        
+        .card {
+          flex-shrink: 1;
+          width: calc(50% - 4px);
+        }
+      }
+      
+      @media(max-width: 500px) {
+        .card {
+          height: 180px;
+        }
+        
+        .card-image {
+          height: 80px;  
+        }
+        
+        .card-image > i {
+          font-size: 3em;
+        }
+          
+        .card-info-wrapper {
+          padding: 0px 10px;
+        }
+        
+        .card-info > i { 
+          font-size: 0.8em; 
+        }
+        
+        .card-info-title > h3 {
+          font-size: 0.9em;
+        }
+      
+        .card-info-title > h4 {
+          font-size: 0.8em;
+          margin-top: 4px;
+        }
+      }
+      
+      @media(max-width: 320px) {
+        .card {
+          width: 100%;
+        }
+      }
+      
+      .link {
+        align-items: center;
+        backdrop-filter: blur(3px);
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        cursor: pointer;  
+        display: inline-flex;
+        gap: 5px;
+        left: 10px;
+        padding: 10px 20px;
+        position: fixed;
+        text-decoration: none;
+        z-index: 100;
+      }
+      
+      .link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      
+      .link > i, .link > span {
+        height: 20px;
+        line-height: 20px;
+      }
+      
+      .link > span {
+        color: white;
+      }
+    
+      /* homepage stuff */
+      #index-content {
+        margin-top: 60px;
+      }
+    
+      .title {
+        font-size: 60px;
+        margin: 0;
+        font-weight: 700;
+        background: -webkit-linear-gradient(rgb(0, 140, 255), rgb(0, 193, 241));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      /* Play Now button */
+      .rainbow {
+        --border-radius: 15px;
+        --border-width: 4px;
+        appearance: none;
+        position: relative;
+        padding: 1em 2em;
+        border: 0;
+        background-color: rgb(20, 20, 20);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        color: #fff;
+        z-index: 2;
+        transition: .2s;
+        text-decoration: none;
+       }
+       
+       .rainbow::after {
+        --m-i: linear-gradient(#000, #000);
+        --m-o: content-box, padding-box;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: var(--border-width);
+        border-radius: var(--border-radius);
+        background-image: conic-gradient(
+           #488cfb,
+           #29dbbc,
+           #ddf505,
+           #ff9f0e,
+           #e440bb,
+           #655adc,
+           #488cfb
+         );
+        -webkit-mask-image: var(--m-i), var(--m-i);
+        mask-image: var(--m-i), var(--m-i);
+        -webkit-mask-origin: var(--m-o);
+        mask-origin: var(--m-o);
+        -webkit-mask-clip: var(--m-o);
+        mask-composite: exclude;
+        -webkit-mask-composite: destination-out;
+        filter: hue-rotate(0);
+        animation: rotate-hue linear 500ms infinite;
+        animation-play-state: paused;
+       }
+       
+       .rainbow:hover::after {
+        animation-play-state: running;
+        cursor: pointer;
+       }
+       
+       @keyframes rotate-hue {
+        to {
+         filter: hue-rotate(1turn);
+        }
+       }
+       
+       .rainbow,
+       .rainbow::after {
+        box-sizing: border-box;
+       }
+       
+       .rainbow:active {
+        --border-width: 5px;
+       }
+      
+       .rainbow:hover {
+        cursor: pointer;
+       }
+    
+       /* navigation bar */
+       .navigation-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--card-color);
+        padding: 20px;
+        color: rgb(240, 240, 240);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      
+      
+      .navigation-bar p {
+        margin: 0 15px;
+        cursor: pointer;
+        transition: .3s;
+        font-size: 16px;
+      }
+      
+      .navigation-bar p:hover {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      
+      /* footer */
+      footer {
+        background-color: var(--card-color);
+        color: rgb(240, 240, 240);
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }  
+    
+      .splash-text {
+        font-size: 20px;
+      }
+      </style>
+
+</head>
+
+<body>
+
+
+    <div class="navigation-bar">
+        <p onclick="location.href = '/index.html';"class="active">Home</p>
+        <p onclick="location.href = '/g/index.html';">Games</p>
+        <p onclick="location.href = '/apps.html';">Apps</p>
+        <p onclick="location.href = '/go.html';">Proxy</p>
+        <p onclick="location.href = '/settings.html';">Settings</p>
+    </div>
+
+    <div id="index-content">
+
+<p class="title">OutRed</p>
+
+<div id="phrase"><p style="font-size:30x;">How are you seeing this???</p>
+    <script>
+      document.getElementById("phrase").innerHTML = getRandomPhrase();
+    </script>
+    </div><br>
+
+<a class="rainbow" href="/g/index.html">Play Now</a><br><br><br>
+
+<iframe src="https://hub.alienhub.xyz/show?utm_medium=misc" width="455" height="155" style="border: none; overflow: none"></iframe>
+<br><br>
+<div style="display:flex;">
+<!-- Grid with all features -->
+<div id="cards">
+    <a href="/g/index.html">
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <i class="fa-duotone fa fa-gamepad"></i>
+        </div>
+        <div class="card-info-wrapper">
+          <div class="card-info">
+            <div class="card-info-title">
+              <h3>Games</h3>  
+              <h4>Explore our wide variety of unblocked games.</h4>
+            </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+    </a>
+    <a href="/apps.html">
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <i class="fa fa-mobile"></i>
+        </div>
+        <div class="card-info-wrapper">
+          <div class="card-info">
+            <div class="card-info-title">
+              <h3>Apps</h3>
+              <h4>Use a wide variety of utilities to enjoy other sites/tools to the max.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+    <a href="settings.html">
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <i class="fa-duotone fa fa-gears"></i>
+        </div>
+        <div class="card-info-wrapper">
+          <div class="card-info">
+            <div class="card-info-title">
+              <h3>Settings</h3>  
+              <h4>Want to customize this website to your style and needs? We got you covered.</h4>
+            </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>
+  </div>
+
+
+        <footer>
+            <a href="https://discord.gg/outred" target="_blank"></a>
+            <p>&copy; OutRed</p>
+            <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
+        </footer>
+
+    </div>
+
+      <!-- PWA Offline script for the server worker-->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/js/sw.js");
+    }
+    </script>
+
+<script src="/js/cards.js"></script>
+
+<script src="/assets/splash-texts.js"></script>
+
+<script src="/js/displaycards.js"></script>
+
+<script src="/js/anti-adblock.js"></script>
+
+</body>
+</html>

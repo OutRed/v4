@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite | OutRed</title>
+</head>
+<body>
+
+    <script>
+        // Function to check if a year has passed since the last time the user saw the alert
+        function hasYearPassed(lastSeenTimestamp) {
+        const oneYearInMillis = 365 * 24 * 60 * 60 * 1000; // Number of milliseconds in a year
+        const now = new Date().getTime();
+        return now - lastSeenTimestamp >= oneYearInMillis;
+    }
+
+    // Function to show the alert and update localStorage with the current timestamp
+    function showAlert() {
+        alert("Hello! The chances of this not working is higher than usual becuase we only have one bare server. It will be like this until we add more bare servers. If this does not work, it is not our fault.");
+        localStorage.setItem('lastSeenTimestamp', new Date().getTime());
+    }
+
+    // Check if the user has seen the alert before
+    const lastSeenTimestamp = localStorage.getItem('lastSeenTimestamp');
+    if (lastSeenTimestamp === null || hasYearPassed(parseInt(lastSeenTimestamp))) {
+        showAlert();
+    }
+</script>
+
+    <iframe src="/uv/service/hvtrs8%2F-pna%7B.eedopcgnmw%2Ccmm-gcmgs%3Dgcmg-kd%3F44bda%6004-f844%2F445f-%3Be76%2F2f9g47cfeg0c%26nalg%3Fel_WS%24aqsgt%2Fif%3D21%5D26cdeadd-080f%2F4%3Bfg-%60b77%2F4%3Bffc6add%3Bad" allowfullscreen="true" title="launcher" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;"></iframe>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutRed | Games</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+    <div class="navigation-bar">
+        <p onclick="location.href = '/index.html';">Home</p>
+        <p onclick="location.href = '/g/index.html';">Games</p>
+        <p onclick="location.href = '/apps.html';">Apps</p>
+        <p onclick="location.href = '/go.html';">Proxy</p>
+        <p onclick="location.href = '/settings.html';">Settings</p>
+    </div>
+
+    <div class="content">
+<br><br>
+        <div class="game-frame-div" style="margin: 0 auto; max-width: 1000px;">
+            <iframe class="load-iframe" id="game-frame" scrolling="yes" frameborder="0" cellspacing="0" src="#"></iframe>
+            <div class="bar">
+                <h1 style="font-weight: normal; text-align: left;" id="g-name">No game title provided</h1>
+                <div class="buttons">
+                    <div><img class="share-icon" onclick="showSharePopup()" src="/assets/img/share-icon.webp" draggable="false"></div>
+                    <div><img class="share-icon" onclick="openInNewWindowGames()" src="/assets/img/resize.png" draggable="false"></div>
+                    <div><img class="fullscreen-svg" onclick="fullscreenFunction()" src="/assets/img/fullscreen-icon.php.webp" draggable="false"></div>
+                </div>
+              </div>
+                  <p style="font-weight: normal; text-align: left;" id="g-description">No description provided</p>
+                  </div>
+                </div>
+
+        <footer style="bottom: 0; right: 0; left: 0; position: fixed;">
+            <a href="https://discord.gg/outred" target="_blank"></a>
+            <p>&copy; OutRed</p>
+            <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
+        </footer>
+
+    </div>
+
+      <script src="/js/fullscreen.js"></script>
+      <script src="/js/localstorage-load.js"></script>
+      <script src="/js/sharebutton-load.js"></script>
+      <script src="/js/resize-games.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutRed | Apps</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+<script>
+            // Function to check if a year has passed since the last time the user saw the alert
+            function hasYearPassed(lastSeenTimestamp) {
+            const oneYearInMillis = 365 * 24 * 60 * 60 * 1000; // Number of milliseconds in a year
+            const now = new Date().getTime();
+            return now - lastSeenTimestamp >= oneYearInMillis;
+        }
+
+        // Function to show the alert and update localStorage with the current timestamp
+        function showAlert() {
+            alert("Hello! The chances of these unblocked websites/apps not working are higher than usual becuase we only have one bare server. It will be like this until we add more bare servers. If an app does not work, it is not our fault.");
+            localStorage.setItem('lastSeenTimestamp', new Date().getTime());
+        }
+
+        // Check if the user has seen the alert before
+        const lastSeenTimestamp = localStorage.getItem('lastSeenTimestamp');
+        if (lastSeenTimestamp === null || hasYearPassed(parseInt(lastSeenTimestamp))) {
+            showAlert();
+        }
+</script>
+
+    <div class="navigation-bar">
+        <p onclick="location.href = '/index.html';">Home</p>
+        <p onclick="location.href = '/g/index.html';">Games</p>
+        <p onclick="location.href = '/apps.html';" class="active">Apps</p>
+        <p onclick="location.href = '/go.html';">Proxy</p>
+        <p onclick="location.href = '/settings.html';">Settings</p>
+    </div>
+
+    <div class="content">
+
+        <h1 class="title">Apps</h1><br>
+
+        <div class="apps"></div><br>
+
+        <footer style="bottom: 0; right: 0; left: 0; position: relative;">
+            <a href="https://discord.gg/outred" target="_blank"></a>
+            <p>&copy; OutRed</p>
+            <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
+        </footer>
+
+    </div>
+
+<script src="/js/apps.js"></script>
+
+</body>
+</html>

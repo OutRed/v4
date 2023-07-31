@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutRed | Settings</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+    <div class="navigation-bar">
+        <p onclick="location.href = '/index.html';">Home</p>
+        <p onclick="location.href = '/g/index.html';">Games</p>
+        <p onclick="location.href = '/apps.html';">Apps</p>
+        <p onclick="location.href = '/go.html';">Proxy</p>
+        <p onclick="location.href = '/settings.html';" class="active">Settings</p>
+    </div>
+
+    <div class="content">
+
+        <h1 class="title">Settings</h1>
+<div class="settings-content">
+        <div class="settings-sidebar">
+            <li onclick="showTab('appearance');">Appearance</li>
+            <li onclick="showTab('tabCloaking');">Tab Cloaking</li>
+            <li onclick="showTab('panicKey');">Panic Key</li>
+            <li onclick="showTab('language');">Language</li>
+        </div>
+
+        <div class="settings-right-section"></div>
+
+                    <!-- Add the tab for Appearance here -->
+                    <div class="appearance-tab" id="appearance-tab">
+                        <h2>Choose Appearance</h2><br>
+                        <label>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label> <h2 style="font-weight: normal;">Dark Theme</h2>
+                        </label><br><br>
+                        <button class="save-button" onclick="saveAppearance()">Save</button>
+                    </div>
+                </div>
+            </div>
+        
+
+        <footer style="bottom: 0; position: fixed;">
+            <a href="https://discord.gg/outred" target="_blank"></a>
+            <p>&copy; OutRed</p>
+            <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
+        </footer>
+
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tabs first
+            const tabs = document.querySelectorAll('.appearance-tab');
+            tabs.forEach(tab => tab.style.display = 'none');
+
+                        // Show the selected tab
+                        if (tabName === 'appearance') {
+                document.getElementById('appearance-tab').style.display = 'block';
+            }
+
+        }
+
+        function saveAppearance() {
+            // Add your code here to save the selected appearance (light/dark mode)
+            // For example, you can use localStorage to store the preference.
+            // Once saved, you can close the tab or provide a message that the setting is saved.
+        }
+    </script>
+
+</body>
+</html>

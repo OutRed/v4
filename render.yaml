@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: OutRed
+    env: static
+    staticPublishPath: .
