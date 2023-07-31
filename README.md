@@ -1,17 +1,16 @@
 ![https://outred.org](https://socialify.git.ci/OutRed/outredgames/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
 
 # OutRed Games [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FOutRed%2Foutredgames&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Repo+Visits&edge_flat=false)](https://hits.seeyoufarm.com)
-(Removed old counter ^^^, so it reset, that's why it's so low 😔)
+(Removed old counter accidentally... ^^^, so it reset, that's why it's so low 😔)
 ## [Play Here!](https://outred.org)
 This website offers games to play, unblockers, and much more.
 ## Features
 - Clean UI
 - Installable as a PWA (Run Offline!)
 - Games
-- 2 Unblockers (Currently Broken)
+- UV Proxy
 - Apps
-- About:blank Embedder
-- Unblocked Apps
+- Utilities
 ## Deploy a Copy
 [![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/OutRed/outredgames)
 [![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/OutRed/outredgames)
