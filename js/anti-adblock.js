@@ -6,7 +6,7 @@ function showAlertWithExpiry() {
     }
 
     // Show the alert
-    alert("Hello! Thank you for supporting us by disabling your ad blocker. Doing so lets us keep this website running!");
+    alert("Hello! Thank you for supporting us by disabling your ad blocker so we can keep this website running forever!");
 
     // Save the time the alert was shown
     localStorage.setItem("lastAlertTime", Date.now());
