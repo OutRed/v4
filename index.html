@@ -257,6 +257,10 @@
       /* homepage stuff */
       #index-content {
         margin-top: 60px;
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     
       .title {
@@ -368,7 +372,7 @@
         color: rgba(255, 255, 255, 0.7);
       }
       
-      /* footer */
+      /* footer 
       footer {
         background-color: var(--card-color);
         color: rgb(240, 240, 240);
@@ -377,11 +381,132 @@
         bottom: 0;
         left: 0;
         right: 0;
-      }  
+      }   */
     
       .splash-text {
         font-size: 20px;
       }
+
+      /* for waves */
+.footer {
+  position: relative;
+  background: #008cff;
+  min-height: 30%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top:35%;
+  bottom: 0;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+.menu__link:hover{
+	color: white;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("/assets/img/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 12s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 12s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 10s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
       </style>
 
 </head>
@@ -401,82 +526,19 @@
 
 <p class="title">OutRed</p>
 
-<div id="phrase"><p style="font-size:30x;">How are you seeing this???</p>
+<div id="phrase"><p style="font-size:30x;">Now with "high quality" games!</p>
     <script>
       document.getElementById("phrase").innerHTML = getRandomPhrase();
     </script>
-    </div><br>
+    </div><br><br>
 
-<a class="rainbow" href="/g/index.html">Play Now</a><br><br><br>
+<a class="rainbow" href="/g/index.html">Play Now</a><br><br><br><br>
 
-<iframe src="https://hub.alienhub.xyz/show?utm_medium=misc" width="455" height="155" style="border: none; overflow: none"></iframe>
+<iframe alt="AlienHub Ad (If you cannot see the ad, please disable your ad blocker!)" src="https://hub.alienhub.xyz/show?utm_medium=misc" width="455" height="155" style="border: none; overflow: none"></iframe>
 <br><br>
-<div style="display:flex;">
-<!-- Grid with all features -->
-<div id="cards">
-    <a href="/g/index.html">
-    <div class="card">
-      <div class="card-content">
-        <div class="card-image">
-          <i class="fa-duotone fa fa-gamepad"></i>
-        </div>
-        <div class="card-info-wrapper">
-          <div class="card-info">
-            <i class="fa-duotone fa fa-gamepad"></i>
-            <div class="card-info-title">
-              <h3>Games</h3>  
-              <h4>Explore our wide variety of unblocked games.</h4>
-            </div>    
-          </div>
-        </div>
-      </div>
-    </div>
-    </a>
-    <a href="/apps.html">
-    <div class="card">
-      <div class="card-content">
-        <div class="card-image">
-          <i class="fa fa-mobile"></i>
-        </div>
-        <div class="card-info-wrapper">
-          <div class="card-info">
-            <i class="fa fa-mobile"></i>
-            <div class="card-info-title">
-              <h3>Apps</h3>
-              <h4>Use a wide variety of utilities to enjoy other sites/tools to the max.</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </a>
-    <a href="settings.html">
-    <div class="card">
-      <div class="card-content">
-        <div class="card-image">
-          <i class="fa-duotone fa fa-gears"></i>
-        </div>
-        <div class="card-info-wrapper">
-          <div class="card-info">
-            <i class="fa-duotone fa fa-gears"></i>
-            <div class="card-info-title">
-              <h3>Settings</h3>  
-              <h4>Want to customize this website to your style and needs? We got you covered.</h4>
-            </div>    
-          </div>
-        </div>
-      </div>
-    </div>
-    </a>
-  </div>
-  </div><br><br>
-
-
-        <footer>
-            <a href="https://discord.gg/outred" target="_blank"></a>
+        <!--<footer>
             <p>&copy; OutRed</p>
-            <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
-        </footer>
+        </footer>-->
     </div>
 
       <!-- PWA Offline script for the server worker-->
@@ -486,6 +548,19 @@
     }
     </script>
 
+<footer class="footer" >
+	<div class="waves">
+		<div class="wave" id="wave1"></div>
+		<div class="wave" id="wave2"></div>
+		<div class="wave" id="wave3"></div>
+		<div class="wave" id="wave4"></div>
+	</div>
+
+<br><br><br>
+	<p style="opacity: 0.75;">&copy; OutRed</p>
+
+
+<script src="https://cdn.githubraw.com/Rahib777-7/anti-adblock/main/anti-adblock.js%22%3E"></script>
 <script src="/js/cards.js"></script>
 <script src="/assets/splash-texts.js"></script>
 <script src="/js/anti-adblock.js"></script>

@@ -625,3 +625,11 @@
           background-color: #383838;
      }
      
+     /* for da wave */
+     .wave-svg-1 {
+      bottom: 0;
+      width: 100%;
+      position: fixed;
+      left: 0;
+     }
+    
