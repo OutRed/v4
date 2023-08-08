@@ -1,0 +1,149 @@
+@font-face {
+	font-family:"Ubuntu-Bold";
+	src:url("https://cdn.icivics.org/sites/all/themes/refresh/fonts/Ubuntu-Bold.ttf");
+}
+
+html,body,div,canvas {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	overflow: hidden;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	background-image: url('activate_background.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height:100%;
+	width:100%;
+	
+}
+
+.template-wrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.template-wrap canvas {
+	position: absolute; z-index: 9;
+}
+#gameContainer {
+	margin: auto;
+}
+#webgl-content {
+	width: 100%;
+	top: 0px;
+	bottom: 0px;
+	position: absolute;
+}
+
+#clickToPlayBtn {
+	display: none;
+	position: relative;
+	font-size: 10vw;
+	color: #f7911f;
+	cursor: pointer;
+	animation-name: wiggle;
+	animation-duration: 3s; 
+	animation-play-state: running;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	animation-fill-mode: none;
+}
+
+#clickToPlayBtn:hover {
+	color: #364b9f;
+}
+
+body.pendingActivation #clickToPlayBtn {
+	display: inline-block;
+}
+
+@keyframes wiggle {
+  75% { left: 0px; }
+  80%  { left: 4px;  }
+  85%  { left: -4px; }
+  90%  { left: 2px;  }
+  95%  { left: -2px); }
+  100% { left: 0px;    }
+}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	font-size: small;
+}
+
+#loadingBox {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	text-align: center;
+	background: rgb(255, 255, 255); /* fallback */
+	background: rgba(255, 255, 255, 204); 	
+	background-color: #ffffffcc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#bgBar {
+  display: none;
+  position: absolute;
+  width: 200px;
+  margin-left: -100px;
+  left: 50%;
+  height: 2px;
+  background-color: #333;
+  border-radius: 2px;  
+}
+
+#progressBar {
+  display: none;	
+  left: 50%;
+  position: absolute;
+  margin-left: -100px;
+  width: 0px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+#loadingInfo {
+  display: none;
+  color: #666;
+  letter-spacing: 1px;
+  width: 100%;
+  font-family: "Ubuntu-Bold", "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#logo1, #logo2 {
+	display: none;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+body.loading #bgBar,
+body.loading #progressBar,
+body.loading #loadingInfo,
+body.loading #logo1,
+body.loading #logo2 {
+	display: block;
+}
+
+
+body.loaded {
+	background-image: none;
+	background-color: white;
+}
+
+body.loaded #loadingBox {
+	display: none;
+}
+

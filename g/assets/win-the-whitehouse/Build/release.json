@@ -1,0 +1,13 @@
+{
+"companyName": "Filament",
+"productName": "Win the White House",
+"dataUrl": "release.data.unityweb",
+"wasmCodeUrl": "release.wasm.code.unityweb",
+"wasmFrameworkUrl": "release.wasm.framework.unityweb",
+"wasmSymbolsUrl": "release.wasm.symbols.unityweb",
+"TOTAL_MEMORY": 536870912,
+"graphicsAPI": ["WebGL 1.0", "WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

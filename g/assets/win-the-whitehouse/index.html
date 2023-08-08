@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Win the White House</title>
+    <link rel="stylesheet" href="index_files/all.min.css" />
+    <link rel="stylesheet" href="index_files/style.css" />
+
+    <script src="index_files/CompatibilityCheck.js"></script>
+
+    <script src="index_files/cameraProxyDOMCrossDomainUnity.js"></script>
+
+    <script src="index_files/jquery-2.1.4.min.js"></script>
+    <script src="index_files/main.js"></script>
+    <script src="index_files/brainpop.js"></script>
+
+    <script src="index_files/UnityProgress.js"></script>
+    <script src="index_files/UnityLoader.js"></script>
+
+    <script src="index_files/canvasScaler.js"></script>
+		<link rel="icon" href="./splash.png">
+  </head>
+
+  <body class="pendingActivation">
+    <div id="webgl-content">
+      <div class="template-wrap">
+        <div id="gameContainer" style="width: 960px; height: 600px; padding: 0px; margin: 0px; border: 0px none; position: relative; visibility: hidden; background: rgb(35, 31, 32);">
+          <canvas style="width: 100%; height: 100%;" id="#canvas"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div id="loadingBox">
+      <img id="logo1" src="index_files/progresslogo.png" max-width="600px" width="50%" />
+      <div id="bgBar" style="display: none;"></div>
+      <a id="clickToPlayBtn">
+        <i class="fas fa-play-circle"></i>
+      </a>
+      <div id="progressBar" style="width: 200px; display: none;"></div>
+      <p id="loadingInfo">Preparing...</p>
+    </div>
+
+    <div id="mobile" style="display: none; position: fixed; width: 100%; text-align: center; height: 100%; background-color: white;">
+      <br />
+      <br />
+
+      <a href='javascript:window.parent.open("https://play.google.com/store/apps/details?id=org.icivics.wtwh"); void(0);' title="Get it on Google Play">
+        <img alt="Get it on Google Play" src="index_files/google-play-badge.png" />
+      </a>
+      <p class="copyright">Android, Google Play and the Google Play logo are trademarks of Google Inc.</p>
+
+      <a href='javascript:window.parent.open("https://apps.apple.com/us/app/win-the-white-house/id1082836132"); void(0);' title="Download on the App Store">
+        <img alt="Download on the App Store" src="index_files/Get_it_on_iTunes_Badge_US_1114.png" />
+      </a>
+
+      <p class="copyright">Apple logo, iPhone, iPod touch, and iTunes are trademarks of Apple Inc.</p>
+    </div>
+
+    <script type="text/javascript">
+      document.ondragstart = function () {
+        return false;
+      };
+      var compatibilityCheckError = CompatibilityCheck();
+      if (compatibilityCheckError == "mobile") {
+        document.getElementById("mobile").style.display = "block";
+      } else if (compatibilityCheckError == null) {
+        var scaling = new canvasScaler(960, 600, "gameContainer");
+
+        gameInstance = UnityLoader.instantiate("gameContainer", "Build/release.json", {
+          onProgress: UnityProgress,
+          Module: {
+            noInitialRun: true,
+            onRuntimeInitialized: function () {
+              document.body.classList.remove("loading");
+              document.body.classList.add("pendingActivation");
+
+              var clickToPlayBtn = document.getElementById("clickToPlayBtn");
+
+              var clickHandler = function () {
+                clickToPlayBtn.removeEventListener("click", clickHandler);
+                document.body.classList.remove("pendingActivation");
+                document.body.classList.add("loading");
+
+                setTimeout(function () {
+                  gameInstance.Module.callMain();
+                  document.body.classList.remove("loading");
+                  document.body.classList.add("loaded");
+                  scaling.showElement();
+                }, 100);
+              };
+
+              clickToPlayBtn.addEventListener("click", clickHandler);
+            },
+          },
+        });
+      }
+    </script>
+
+    <script src="blob:https://www.icivics.org/e7db67c1-21eb-4f85-ae1f-4f6e98e5c58b"></script>
+  </body>
+</html>
