@@ -1,0 +1,222 @@
+// Various button styles
+
+// GENERAL BUTTONS
+
+button {
+	width: 95pt;
+	padding: 8px 16px;
+	margin: 4px;
+	z-index: 2;
+	font-weight: 500;
+	position: relative;
+	text-transform: lowercase;
+	background: @color-bg-button;
+	color: @color-text-default;
+	border: 1px solid @color-border-button;
+}
+
+button:hover {
+	color: @color-text-highlight !important;
+	border-color: @color-border-button-highlight;
+}
+
+button:active {
+	position: relative;
+	top: 1px;
+}
+
+button, ul.tabs li {
+	transition: color 0.2s;
+}
+
+button.action {
+	border-width: 2px;
+	margin: 0px;
+	margin-bottom: 0px;
+	white-space: nowrap;
+}
+
+button.action.multiline {
+	white-space: normal;
+}
+
+button.btn-secondary {
+	border-width: 1px;
+}
+
+button.action-move {
+	width: 55px;
+}
+
+button.context {
+	width: auto;
+	display: inline;
+	float: right;
+}
+
+button.btn-wide {
+	width: 110pt;
+}
+
+button.btn-narrow {
+	width: 80pt;
+}
+
+button.btn-compact {
+	width: auto;
+	min-width: 2.5em;
+	padding: 8px 10px;
+}
+
+button.btn-mini {
+	width: auto;
+	padding: 4px 8px;
+}
+
+button.btn-glyph {
+	font-weight: bold;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 1px 2px;
+	padding: 1px;
+	font-size: 1em;
+	vertical-align: middle;
+	text-align: center;
+    line-height: 1em;
+	border-width: 1px;
+	border-radius: 1px;
+}
+
+button.btn-glyph img {
+    max-width: 1em;
+    max-height: 1em;
+	margin: auto;
+}
+
+button.btn-glyph-big {
+	width: auto !important;
+	min-width: 2.5em;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+button.btn-meta {
+	width: auto;
+	padding: 2px 7px;
+	border-radius: 0px !important;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background: none;
+	border-width: 0px;
+	text-transform: lowercase;
+}
+
+button.btn-meta-float {
+	float:right;
+}
+
+ button.btn-meta:hover {
+	text-decoration: underline;
+}
+
+// ACTION BUTTON CALLOUTS
+
+div.container-btn-action {
+	display: inline-block;
+	padding: -1px;
+	margin: 4px 6px;
+	border-width: 0px;
+}
+
+table div.container-btn-action {
+    margin: 2px 2px;
+}
+
+table.dense div.container-btn-action {
+    margin: 2px 2px;
+}
+
+div.container-btn-action button {
+	margin: -1px;
+}
+
+.callout-container hr {
+	margin: 0.25em 3px;
+}
+
+// ACTION BUTTON COOLDOWNS
+
+.cooldown-reqs {
+	height: 5px;
+	width: 0%;
+	padding: 0;
+	border-width: 0px;
+	transition: all 0.1s;
+}
+
+.cooldown-duration {
+	background: @color-bg-button-cooldown-duration;
+}
+
+button .cooldown-action, button .cooldown-duration {
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 0;
+}
+
+.cooldown-action {
+	background-color: @color-bg-button-cooldown-action;
+}
+
+.cooldown-reqs {
+	background-color: @color-bg-button-cooldown-reqs;
+}
+
+// DISABLED STATES
+
+button.btn-disabled, li.disabled {
+	opacity: 0.65;
+	cursor: default !important;
+}
+
+button.btn-disabled-vision {
+	opacity: 0.2;
+	color: @color-global-invisible !important;
+}
+
+button.btn-disabled-vision:hover {
+	opacity: 0.65;
+}
+
+button.btn-disabled-basic, button.btn-disabled-vision, button.btn-disabled-resources, li.disabled {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	font-weight: normal !important;
+}
+
+button.action.btn-disabled-basic, button.btn-disabled-vision, li.disabled {
+	text-decoration: line-through !important;
+}
+
+button.action.btn-disabled-basic:before {
+	content: "\00a0";
+}
+
+button.action.btn-disabled-basic:after {
+	content: "\00a0";
+}
+
+button.btn-disabled-basic, button.btn-disabled-vision, button.btn-disabled-resources, button.btn-disabled-cooldown {
+	border-color: @color-border-button-disabled;
+	color: @color-text-disabled !important;
+}
+
+// DETAIL LABEL
+
+.button-detail-label {
+	margin: -4px 0 2px 0;
+}

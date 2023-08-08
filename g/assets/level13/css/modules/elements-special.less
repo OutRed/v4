@@ -1,0 +1,621 @@
+// Styles for special elements only used in one or two contexts
+
+// MAIN LOG
+
+#log {
+	background: none;
+}
+
+#log ul {
+	list-style-type: none;
+	padding-left:0;
+	margin: 0;
+}
+
+#log ul li {
+	margin: 0px 0px 0.8em 0px;
+}
+
+#log .msg { display: block; }
+
+#log-overlay {
+	height: 100%;
+	max-width: 214px;
+	width: 100%;
+	position: inherit;
+	pointer-events: none;
+	top: 0;
+}
+
+#log ul li.log-loaded, #log ul li.log-loaded span {
+	color: @color-text-dimmed;
+}
+
+span.time, span.msg-camp-level {
+	font-size: @font-size-tiny;
+	vertical-align: middle;
+}
+
+span.msg-count, span.time, span.msg-camp-level {
+	color: @color-text-secondary;
+}
+
+// MAIN LOG FADEDOWN
+
+.lvl13-fade-down {
+	background: -webkit-linear-gradient(@color-global-invisible 0%, @color-global-invisible 75%, @color-bg-page 100% );
+	background: linear-gradient(@color-global-invisible 0%, @color-global-invisible 75%, @color-bg-page 100% );
+	background: -o-linear-gradient(@color-global-invisible 0%, @color-global-invisible 75%, @color-bg-page 100% );
+	background: -moz-linear-gradient( @color-global-invisible 0%, @color-global-invisible 75%, @color-bg-page 100% );
+}
+
+// MAIN HEADER (RESOURCE, STATS ETC)
+
+.header-section {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 5px 0px 0px;
+	float: left;
+	padding: 0px 2px;
+}
+
+#main-header-camp {
+	width: 100%;
+}
+
+#main-header-bag {
+	min-width: 20%;
+	max-width: 25%;
+}
+
+#main-header-equipment {
+	max-height: 122px;
+	text-align: center;
+	padding: 2px;
+}
+
+#main-header-items {
+	min-width: 35px;
+	max-width: 35%;
+}
+
+#header-tribe-container {
+	margin-bottom: 5px;
+}
+
+#grid-switch-content {
+	z-index: 1;
+	position: relative;
+}
+
+#grid-main-header .unit {
+	padding: 2px;
+	position: relative;
+}
+
+#statsbar-resources .callout-container {
+	width: 33%;
+	border: 0px;
+}
+
+// "HEADER" SELF-BAR
+
+@header-self-bar-width: 60px;
+
+#header-self-bar {
+	position: fixed;
+	width: @header-self-bar-width;
+	z-index: 5;
+	text-align: center;
+	padding: 5px 3px;
+	margin-left: -80px;
+	font-size: 80%;
+}
+
+#header-self-bar ul {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#header-self-bar > span {
+	display: block;
+}
+
+#header-self-bar .stats-indicator {
+	margin: 1px 0px;
+	width: 100%;
+	line-height: 1em;
+}
+
+#header-self-bar .callout-container {
+	width: 100%;
+}
+
+#header-self-bar .stats-indicator .value {
+	font-size: @font-size-small;
+	margin: 3px 0;
+}
+
+#header-self-bar .info-callout {
+	width: 75px;
+	max-width: 75px;
+}
+
+#header-self-bar .change-indicator {
+	vertical-align: top;
+	margin: 0.2em 0 0 0.25em;
+}
+
+#header-self-bar div.callout-arrow-up {
+	margin: 0 0 0 (@header-self-bar-width/2 - @callout-arrow-size);
+}
+
+// LOCATION HEADER
+
+#grid-location-header {
+	padding: 10px 0px 0px 0px;
+}
+
+#grid-location-header h1, #grid-location-header img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#level-icon {
+	margin: 3px 3px 3px 0;
+	width: 2.5em;
+	height: 2.5em;
+}
+
+// BAG SCREEN
+
+.item-bag-options {
+	margin-top: 5px;
+}
+
+#bag-resources > .callout-container {
+	max-width: 49%;
+}
+
+// PLAYER NOTIFICATION (BUSY INDICATOR)
+
+#notification-player {
+	padding: 0px;
+	border-width: 1px;
+	border-style: solid;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-color: @color-border-strong;
+}
+
+#notification-player .progress {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+}
+
+// PLAYER POSITION INDICATOR
+
+span#out-position-indicator {
+	font-size: 80%;
+	line-height: 1.1em;
+}
+
+// FOOTER
+
+#footer {
+	padding: 1px 5px;
+	display: flex;
+    align-items: flex-end;
+    height: 100%;
+ }
+
+ul#game-options, ul#game-options-extended {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 0px;
+	line-height: 1em;
+	display: table;
+	float: right;
+}
+
+ul#game-options li, ul#game-options-extended li {
+	list-style-type: none;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#game-version, #game-msg {
+	display: inline-block;
+	text-transform: lowercase;
+}
+
+#game-msg {
+    flex-grow: 1;
+}
+
+.sticky-footer .one-quarter {
+	height: 2px;
+	padding: 0px;
+}
+
+// CAMP buildings
+
+span.improvement-badge {
+	padding: 5px;
+	margin: 1px;
+	background-color: @color-bg-box-1;
+	border: 1px solid @color-border-box-1;
+	border-radius: 5px;
+	min-width: 1em;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+span.improvement-badge.badge-disabled {
+	color: @color-text-disabled;
+}
+
+span.improvement-count {
+	font-weight: bold;
+}
+
+span.improvement-badge.improvement-upgrade-level {
+	position: absolute;
+	background-color: @color-bg-element-1;
+	top: -1px;
+	right: -1px;
+	padding: 0 1px !important;
+	font-size: @font-size-tiny;
+	width: 1em;
+}
+
+// camp population and workers
+
+#in-population-details > div {
+	width: 100%;
+}
+
+// CHANGELOG
+
+.changelog-type {
+	padding: 2px 5px;
+	border-width: 1px;
+	border-style: solid;
+	margin: 0px 5px 0px 0px;
+	border-color: @color-border-box-1;
+}
+
+#changelog {
+	font-size: @font-size-small;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#changelog ul {
+	padding: 0 0 0 2em;
+	margin: 0.25em 0 1em 0;
+	list-style-type: none;
+}
+
+#changelog li {
+	position: relative;
+	line-height: 1.35em;
+}
+
+#changelog li:before{
+	width: 7px;
+	height: 7px;
+	background: @color-bg-contrast;
+	content: ".";
+	position: absolute;
+	left: -1em;
+	top: 0.375em;
+	display: inline-block;
+	overflow: hidden;
+}
+
+// OUT MINIMAP AND MOVEMENT BUTTONS
+
+#minimap-background-container {
+	position: relative;
+    height: 224px;
+    width: 224px;
+}
+
+#minimap-container {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+
+#out-container-compass, #out-container-compass-actions {
+	text-align: center;
+	width: 224px;
+}
+
+#out-container-compass canvas, #out-container-compass-actions table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#table-out-actions-movement {
+	margin-top: 10px;
+}
+
+// MAIN MAP
+
+#mainmap-container-container {
+	.opacity-transition-reset();
+}
+
+#mainmap-container-ascii {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    font-family: monospace;
+}
+
+#mainmap-container-ascii textarea {
+	width: 100%;
+}
+
+// OUTGOING CARAVANS TABLE
+
+#trade-caravans-outgoing-container tr {
+	border-width: 3px;
+	border-bottom-width: 0px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+#trade-caravans-outgoing-container tr.selected {
+	border-color: @color-bg-element-1;
+}
+
+.trade-caravans-outgoing-plan {
+	border-width: 3px;
+	border-top-width: 0px;
+}
+
+.row-detail-indicator {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+}
+
+ .row-detail-indicator {
+	color: @color-text-secondary;
+}
+
+// INCOMING CARAVAN POPUP
+
+#incoming-caravan-popup-multiplier {
+	justify-content: flex-end;
+	font-size: @font-size-small;
+	margin-bottom: 1em;
+}
+
+// TRIBE OVERVIEW TABLE
+
+.camp-overview-production, .camp-overview-stats {
+	font-size: @font-size-small;
+}
+
+.camp-overview-name {
+	max-width: 5em;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
+
+.camp-overview-btn {
+	text-align: center;
+}
+
+td.camp-overview-level {
+	padding: 0 2px;
+	width: 1em;
+}
+
+.camp-overview-level-container {
+	background: inherit;
+	border-color: @color-border-box-1;
+	border-radius: 1.75em;
+	text-align: center;
+	font-size: @font-size-small;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	margin: 2px auto;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.lvl-container-camp-normal {
+	border-width: 3px;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+}
+
+.lvl-container-camp-outpost {
+    border-width: 2px;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+}
+
+.lvl-container-camp-capital {
+	border-width: 3px;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+}
+
+tr.camp-overview-camp {
+	border-style: solid;
+	border-width: 1px;
+}
+
+tr.camp-overview-special-row {
+}
+
+.camp-overview-lvl14 {
+	text-align: center;
+	height: 1em;
+}
+
+#camp-overview hr {
+	margin: 0;
+	border: 1px solid @color-bg-element-2;
+}
+
+// RESULT LIST
+
+#resultlist-inventorymanagement-found ul li, #resultlist-loststuff-lost ul li {
+	border-width: 0px;
+	padding-bottom: 5px;
+}
+
+#resultlist-inventorymanagement .inventorybox {
+	max-width: 550px;
+}
+
+ul.resultlist li {
+	margin: 0px 3px;
+	background-color: transparent;
+}
+
+ul.resultlist-positive li:before {
+	content: "+ ";
+}
+
+// MAIN SWITCH (TAB BAR)
+
+#switch {
+	background-color: @color-bg-page;
+}
+
+// CONTENT GRID
+	
+div.grid-content {
+	background: @color-bg-box-1;
+	border: @border-width-box-1 solid @color-border-box-1;
+}
+
+// IN-GAME DATE
+
+#in-game-date {
+	float: right;
+}
+
+// BLUPRINT PIECES
+
+.blueprint:hover {
+	border-width: 2px !important;
+}
+
+.blueprint-piece-box {
+	width: 2em;
+	height: 2em;
+	display: inline-block;
+	margin: 0px 3px;
+	border-width: 2px;
+	border-style: solid;
+	vertical-align: middle;
+}
+
+.blueprint-piece-box-found {
+	background: @color-bg-element-2;
+	border-color: @color-border-strong;
+}
+
+.blueprint-piece-box-missing {
+	background: @color-bg-box-1;
+	border: 2px solid @color-border-box-1;
+}
+
+.blueprint-piece-box img {
+	margin: 0.4em;
+	width: 1.2em;
+	height: 1.2em;
+}
+
+// CAMP EVENTS (AND PERKS)
+
+.event-starting {
+	animation: event-end 1.3s step-end infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.event-ending {
+	animation: event-end 1.3s step-end infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes event-end {
+	0%	{opacity: inherit}
+	50%	{opacity: 0.4}
+}
+
+// FIGHT POPUP
+
+#fight-popup {
+	min-width: 35%;
+}
+
+.fight-damage-indicator, .fight-status-indicator {
+	margin: 0;
+	font-size: @font-size-small;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	.opacity-transition-reset();
+}
+
+.fight-damage-indicator {
+	color: @color-border-warning;
+	right: -3em;
+}
+
+.fight-status-indicator {
+	color: @color-text-secondary;
+	right: -5em;
+}
+
+.fight-status-stunned {
+	color: @color-text-disabled;
+}
+
+#fight-popup-enemy-stats {
+	.opacity-transition-reset();
+}
+
+#fight-popup-enemy-difficulty {
+	.opacity-transition-reset();
+}
+
+// TRIBE LEVEL / MILESTONES
+
+.reqs-list-entry {
+	display: block;
+}
+
+.reqs-checkmark {
+	background-image: @img-indicator-checkmark-default;
+    background-repeat: no-repeat;
+    background-image: url(../img/eldorado/icon-checkmark-dark.png);
+    background-size: 1em 1em;
+    background-position: center;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+}
+
+// MISC
+
+#manage-save-textarea {
+	font-size: @font-size-small;
+}

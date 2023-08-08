@@ -1,0 +1,36 @@
+
+IMAGE SOURCES for LEVEL 13
+
+--------------------------------------------------
+
+Map & Resource icons, ui-level icons
+
+Noora Routasuo
+see LICENCE at project root
+
+--------------------------------------------------
+
+UI icons
+
+Eldorado Icons
+http://www.icojam.com
+see eldorado/readme.txt
+
+Open-Iconic
+(c) 2014 Waybury
+see open-iconic/ICON-LICENCE
+
+Round home icons vector 01 
+by Starder
+https://freedesignfile.com/209566-round-home-icons-vector-01/
+
+Additional icons adapted from the above.
+
+--------------------------------------------------
+
+Items and followers
+
+Fugue Icons
+(C) 2013 Yusuke Kamiyamane
+see items/FUGURE-README.txt
+

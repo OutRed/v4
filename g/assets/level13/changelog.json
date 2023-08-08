@@ -1,0 +1,636 @@
+{
+	"versions": [
+		{
+			"version": "0.5.1",
+			"phase": "alpha",
+			"final": false,
+			"changes": [
+				{
+					"type": "GD",
+					"summary": "Add milestones and limits to evidence / rumour / favour accumulation based on milestones"
+				},
+				{
+					"type": "GD",
+					"summary": "Add investigate action"
+				},
+				{
+					"type": "GD",
+					"summary": "Add breaking and repairing items"
+				},
+				{
+					"type": "GD",
+					"summary": "Add robots"
+				},
+				{
+					"type": "GD",
+					"summary": "Add more permanent and temporary effects (tired, blessed, varied injuries)"
+				},
+				{
+					"type": "GD",
+					"summary": "Add more follower types"
+				},
+				{
+					"type": "GD",
+					"summary": "Add chance that defenders (soldiers) get killed or buildings damaged during raids"
+				},
+				{
+					"type": "UI",
+					"summary": "Improve the map (modes, readability fixes and layout improvements)"
+				},
+				{
+					"type": "UI",
+					"summary": "Show potential crafting ingredient scavenging spots as soon as the sector is scouted"
+				},
+				{
+					"type": "UI",
+					"summary": "Add simple ending"
+				}
+			]
+		},
+		{
+			"version": "0.4.3",
+			"released": "2022-05-12",
+			"requiredVersion": "0.4.1",
+			"phase": "alpha",
+			"final": true,
+			"changes": [
+				{
+					"type": "WG",
+					"summary": "Fix a few issues related to fight and hazard balancing"
+				},
+				{
+					"type": "GB",
+					"summary": "Allow building a barracks regardless of camp population"
+				},
+				{
+					"type": "Dev",
+					"summary": "Fix error when using a First Aid Kit"
+				},
+				{
+					"type": "Dev",
+					"summary": "Other bugfixes"
+				}
+			]
+		},
+		{
+			"version": "0.4.2",
+			"requiredVersion": "0.4.1",
+			"released": "2022-05-03",
+			"phase": "alpha",
+			"final": true,
+			"changes": [
+				{
+					"type": "WG",
+					"summary": "Fix several issues with world generation and fight balancing that could cause soft locks"
+				},
+				{
+					"type": "GB",
+					"summary": "Adjust costs and checks to make the start a little bit easier"
+				},
+				{
+					"type": "Dev",
+					"summary": "Other bugfixes"
+				}
+			]
+		},
+		{
+			"version": "0.4.1",
+			"released": "2022-04-26",
+			"phase": "alpha",
+			"final": true,
+			"changes": [
+				{
+					"type": "GB",
+					"summary": "Unlock more levels"
+				},
+				{
+					"type": "GD",
+					"summary": "Add many more enemy types and many new items"
+				},
+				{
+					"type": "GD",
+					"summary": "Improve followers and add different follower abilities"
+				},
+				{
+					"type": "GB",
+					"summary": "Add locations with scavengeable crafting ingredients"
+				},
+				{
+					"type": "GD",
+					"summary": "Make building effects clearer (upgrades unlock building levels, no automatic effects)"
+				},
+				{
+					"type": "GD",
+					"summary": "Add upgrades to traps and buckets"
+				},
+				{
+					"type": "GD",
+					"summary": "Add map pieces and graffiti that help navigating new areas"
+				},
+				{
+					"type": "GD",
+					"summary": "Make some debuffs (hunger, thirst, cold, poison, radiation) more forgiving by adding them slowly instead of immediately"
+				},
+				{
+					"type": "GD",
+					"summary": "Polish the Rejuv Shot (block using twice; only restores stamina and doesn't affect max stamina)"
+				},
+				{
+					"type": "GB",
+					"summary": "Adjust balancing for buildings, crafting, upgrades, fights, raids and scavenging results"
+				},
+				{
+					"type": "UI",
+					"summary": "Improve UI for screen reader users"
+				}
+			]
+		},
+		{
+			"version": "0.3.3",
+			"requiredVersion": "0.3.1",
+			"released": "2021-03-23",
+			"phase": "alpha",
+			"final": true,
+			"changes": [
+				{
+					"type": "GB",
+					"summary": "Adjust upgrade/evidence balancing"
+				},
+				{
+					"type": "DEV",
+					"summary": "Small bugfixes"
+				}
+			]
+		},
+		{
+			"version": "0.3.2",
+			"requiredVersion": "0.3.1",
+			"phase": "alpha",
+			"final": true,
+			"released": "2021-02-21",
+			"changes": [
+				{
+					"type": "GB",
+					"summary": "Adjust upgrade unlocking order (ensure unlocking Knife doesn't block Compass)"
+				},
+				{
+					"type": "DEV",
+					"summary": "Small bugfixes"
+				},
+				{
+					"type": "DEV",
+					"summary": "Add tools page with limited cheats to help players affected by bugs"
+				}
+			]
+		},
+		{
+			"version": "0.3.1",
+			"phase": "alpha",
+			"final": true,
+			"released": "2021-02-18",
+			"changes": [
+				{
+					"type": "GD",
+					"summary": "New levels (the ground level and level 14, an extremely radioactive level)"
+				},
+				{
+					"type": "GD",
+					"summary": "Deity, favour, temples, shrines, greenhouses, and a new resource (rubber)"
+				},
+				{
+					"type": "GD",
+					"summary": "New equipment for surviving extremely irradiated levels"
+				},
+				{
+					"type": "GD",
+					"summary": "New consumable item that restores stamina"
+				},
+				{
+					"type": "GD",
+					"summary": "New building: beacon"
+				},
+				{
+					"type": "GD",
+					"summary": "More challenges and rewards to campless levels (more encounters, blueprints)"
+				},
+				{
+					"type": "GD",
+					"summary": "Improved sector descriptions"
+				},
+				{
+					"type": "GB",
+					"summary": "Make all fights drop crafting ingredients"
+				},
+				{
+					"type": "GB",
+					"summary": "Introduce scavenged %, giving diminishing rewards for scavenging the same sector"
+				},
+				{
+					"type": "UI",
+					"summary": "UI improvements (collect 1, simplify rest outside, animations for numbers)"
+				},
+				{
+					"type": "WG",
+					"summary": "Improved world generation (structure, hard levels, validation)"
+				}
+			]
+		},
+		{
+			"version": "0.2.7",
+			"phase": "alpha",
+			"final": true,
+			"released": "2020-02-13",
+			"requiredVersion": "0.2.5",
+			"changes": [
+				{
+					"type": "GB",
+					"summary": "Adjust upgrade unlocking order (Block Knife from being unlocked on Level 13)"
+				},
+				{
+					"type": "DEV",
+					"summary": "Bugfixes"
+				}
+			]
+		},
+		{
+			"version": "0.2.6",
+			"phase": "alpha",
+			"final": true,
+			"released": "2020-02-06",
+			"requiredVersion": "0.2.5",
+			"changes": [
+				{
+					"type": "DEV",
+					"summary": "Bugfixes"
+				}
+			]
+		},
+		{
+			"version": "0.2.5",
+			"phase": "alpha",
+			"final": true,
+			"released": "2020-02-01",
+			"changes": [
+				{
+					"type": "GD",
+					"summary": "Add possibility to improve (some) buildings for small effect boosts"
+				},
+				{
+					"type": "GD",
+					"summary": "Add active and passive rumour generation to markets"
+				},
+				{
+					"type": "GD",
+					"summary": "Add a new movement blocker: debris"
+				},
+				{
+					"type": "GB",
+					"summary": "Adjust level sizes and structure"
+				},
+				{
+					"type": "GB",
+					"summary": "Adjust balancing (raids, rumours, upgrades, reputation)"
+				},
+				{
+					"type": "GB",
+					"summary": "Add more items, equipment and crafting materials"
+				},
+				{
+					"type": "GB",
+					"summary": "Add more enemies and make enemy difficulty more dynamic"
+				},
+				{
+					"type": "UI",
+					"summary": "Improve fight UI"
+				},
+				{
+					"type": "DEV",
+					"summary": "Refactor CSS styles and color themes for easier maintanability"
+				},
+				{
+					"type": "DEV",
+					"summary": "Bugfixes and testing tools"
+				}
+			]
+		},
+		{
+			"version": "0.2.4",
+			"phase": "alpha",
+			"final": true,
+			"released": "2019-04-13",
+			"changes": [
+				{
+					"type": "DEV",
+					"summary": "Bugfixes"
+				}
+			]
+		},
+		{
+			"version": "0.2.3",
+			"phase": "alpha",
+			"final": true,
+			"released": "2019-04-07",
+			"changes": [
+				{
+					"type": "UI",
+					"summary": "Improved tech tree visualization"
+				},
+				{
+					"type": "UI",
+					"summary": "Improved maps"
+				},
+				{
+					"type": "GD",
+					"summary": "New building: caravan stable"
+				},
+				{
+					"type": "DEV",
+					"summary": "Smaller saves"
+				},
+				{
+					"type": "GB",
+					"summary": "Bigger difference between camps on different levels (population density)"
+				},
+				{
+					"type": "GB",
+					"summary": "Balancing improvements (upgrades, storage capacity, building costs)"
+				},
+				{
+					"type": "UI",
+					"summary": "Visual view of the current camp and its buildings"
+				},
+				{
+					"type": "GB",
+					"summary": "Improved world generation and better level structure"
+				}
+			]
+		},
+		{
+			"version": "0.2.2",
+			"phase": "alpha",
+			"final": true,
+			"released": "2018-08-10",
+			"changes": [
+				{
+					"type": "DEV",
+					"summary": "Option to export/import save. (Breaks old saves)"
+				},
+				{
+					"type": "GD",
+					"summary": "Manually choosing equipped items"
+				},
+				{
+					"type": "GD",
+					"summary": "Remove time-based food/water consumption and time-based stamina recovery while exploring"
+				},
+				{
+					"type": "UI",
+					"summary": "Polished reputation, raids and trade"
+				},
+				{
+					"type": "GD",
+					"summary": "Two new buildings that increase reputation: Garden and Square"
+				},
+				{
+					"type": "DEV",
+					"summary": "Improved performance"
+				}
+			]
+		},
+		{
+			"version": "0.2.1",
+			"phase": "alpha",
+			"final": true,
+			"released": "2018-03-19",
+			"changes": [{
+					"type": "GD",
+					"summary": "Simple ending to the game"
+				},
+				{
+					"type": "UI",
+					"summary": "Improved UI for building projects"
+				},
+				{
+					"type": "DEV",
+					"summary": "Lots of bugfixes, especially for late-game"
+				}
+			]
+		},
+		{
+			"version": "0.1.7",
+			"phase": "alpha",
+			"final": true,
+			"released": "2017-08-19",
+			"changes": [{
+					"type": "GD",
+					"summary": "Currency, trade partners on the map, outgoing trade caravans and incoming traders"
+				},
+				{
+					"type": "GB",
+					"summary": "More varied resources found when scavenging"
+				},
+				{
+					"type": "GB",
+					"summary": "More bag levels"
+				},
+				{
+					"type": "DEV",
+					"summary": "Bugfixes and performance improvements"
+				}
+			]
+		},
+		{
+			"version": "0.1.6",
+			"phase": "alpha",
+			"final": true,
+			"released": "2017-04-25",
+			"changes": [{
+					"type": "DEV",
+					"summary": "Lots of small bugfixes"
+				},
+				{
+					"type": "UI",
+					"summary": "A friendly popup when the game crashes"
+				},
+				{
+					"type": "UI",
+					"summary": "Visualization of the tech tree"
+				}
+			]
+		},
+		{
+			"version": "0.1.5",
+			"phase": "alpha",
+			"final": true,
+			"released": "2017-01-01",
+			"changes": [{
+					"type": "GD",
+					"summary": "Reputation logic changed (camp-dependent and changing over time)"
+				},
+				{
+					"type": "GD",
+					"summary": "New building: generator (increases reputation)"
+				},
+				{
+					"type": "GB",
+					"summary": "Rebalanced upgrades and a few new ones. Several buildings can now be upgraded"
+				},
+				{
+					"type": "UI",
+					"summary": "Lots of small UI fixes and additions"
+				}
+			]
+		},
+		{
+			"version": "0.1.4",
+			"phase": "alpha",
+			"final": true,
+			"released": "2016-11-06",
+			"changes": [{
+					"type": "GD",
+					"summary": "Improved followers and inn functionality"
+				},
+				{
+					"type": "GD",
+					"summary": "Lots of new log messages for results of player actions when exploring"
+				},
+				{
+					"type": "UI",
+					"summary": "Improved header appearance and show item stats more clearly"
+				},
+				{
+					"type": "GD",
+					"summary": "Improved sector generation (more intersections and more interesting level shapes)"
+				}
+			]
+		},
+		{
+			"version": "0.1.3",
+			"phase": "alpha",
+			"final": true,
+			"released": "2016-10-16",
+			"changes": [{
+					"type": "GD",
+					"summary": "Rework how food and water work while exploring & add springs"
+				},
+				{
+					"type": "GD",
+					"summary": "Proper inventory management and add weights for items"
+				},
+				{
+					"type": "GD",
+					"summary": "Stamina regeneration much slower while exploring and option to recover it in camp"
+				},
+				{
+					"type": "GD",
+					"summary": "New items: first aid kits and glowsticks"
+				},
+				{
+					"type": "GD",
+					"summary": "Environmental hazards: cold, radiation and poison"
+				},
+				{
+					"type": "GD",
+					"summary": "More clothing slots & items"
+				}
+			]
+		},
+		{
+			"version": "0.1.2",
+			"phase": "alpha",
+			"final": true,
+			"released": "2016-03-20",
+			"changes": [{
+					"type": "GD",
+					"summary": "Some items can be left in the camp (and not lost them when fainting)"
+				},
+				{
+					"type": "GD",
+					"summary": "Blueprints are made of pieces which must be separately collected"
+				},
+				{
+					"type": "UI",
+					"summary": "Notifications for new content in tabs like available buildigs or items"
+				},
+				{
+					"type": "UI",
+					"summary": "Improved exploration UI"
+				},
+				{
+					"type": "GD",
+					"summary": "Levels are composed of randomly generated paths and have intersections"
+				},
+				{
+					"type": "GD",
+					"summary": "Fights changed from action to random encounters"
+				},
+				{
+					"type": "GD",
+					"summary": "Exploration more risky, but also has more rewards"
+				},
+				{
+					"type": "GD",
+					"summary": "Healing injuries is no longer instant"
+				},
+				{
+					"type": "GD",
+					"summary": "New improvement: aqueduct"
+				},
+				{
+					"type": "UI",
+					"summary": "Timer for next worker"
+				},
+				{
+					"type": "GB",
+					"summary": "Levels where no camp can be built"
+				}
+			]
+		},
+		{
+			"version": "0.1.1",
+			"phase": "alpha",
+			"final": true,
+			"released": "2015-09-02",
+			"changes": [{
+					"type": "GD",
+					"summary": "Initial list of upgrades, upgrades balancing & blueprint mechanic"
+				},
+				{
+					"type": "GD",
+					"summary": "Working crafting system and all basic items. Secondary resources (crafting ingredients)"
+				},
+				{
+					"type": "GD",
+					"summary": "Exploration now requires food and water"
+				},
+				{
+					"type": "GD",
+					"summary": "Locales: new scouting opportunities that appear on some sectors"
+				},
+				{
+					"type": "UI",
+					"summary": "Black skin for dark levels/sectors"
+				}
+			]
+		},
+		{
+			"version": "0.1.0",
+			"phase": "alpha",
+			"final": true,
+			"released": "2015-07-08",
+			"changes": [{
+					"type": "GB",
+					"summary": "Initial building list"
+				},
+				{
+					"type": "GD",
+					"summary": "Basic camp game play"
+				},
+				{
+					"type": "GD",
+					"summary": "Basic exploration"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,271 @@
+// Reusable utility classes meant to be as generic as possible
+
+// GENERAL UTILITY CLASSES
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.unselectable {
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+.centered {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.strike-through, .strike-through p {
+	text-decoration: line-through;
+	opacity: 0.9;
+}
+
+.container-dimmed .dimmable {
+	opacity: 0.5;
+}
+
+span.icon {
+	padding: 2px;
+}
+
+img.icon-ui-generic {
+	height: 1.5em;
+	width: 1.5em;
+}
+
+img.icon-centered, .block-centered {
+	display: block;
+	margin: auto;
+}
+
+.shadowed-basic {
+	-webkit-box-shadow: 1px 2px @shadow-blur-radius @shadow-spread-radius @color-shadow;
+	-moz-box-shadow:    1px 2px @shadow-blur-radius @shadow-spread-radius @color-shadow;
+	box-shadow:         1px 2px @shadow-blur-radius @shadow-spread-radius @color-shadow;
+}
+
+// LEVEL 13 UTILITY CLASSES
+
+.lvl13-box-1 {
+	background-color: @color-bg-box-1;
+	border: @border-width-box-1 solid @color-border-box-1;
+}
+
+.lvl13-box-2 {
+	background: @color-bg-box-2;
+	border: 1px solid @color-border-box-2;
+}
+
+span.hl-functionality {
+	font-weight: bold;
+}
+
+.p-meta {
+	color: @color-text-meta;
+}
+
+.dimmed {
+	color: @color-text-dimmed;
+}
+
+.columns-container {
+	display: flex;
+	gap: 5px;
+}
+
+.columns-container-vcenter {
+	align-items: center;
+}
+
+.columns-child {
+	flex: 1;
+}
+
+.columns-child-small {
+	flex: 0;
+}
+
+// TABLE UTILITY CLASSES
+
+.fullwidth {
+	width: 100%;
+	margin: 0.5em 0;
+}
+
+.full-width {
+	width: 100%;
+	margin: 0.5em 0;
+}
+
+td, th {
+	transition: all 0.15s;
+}
+
+.balancing-tab table {
+	font-size: 80%;
+}
+
+table.spacious {
+	margin: 5px 0px;
+}
+
+table.spacious td {
+	padding: 2px 5px;
+}
+
+table.spacious td:last-child {
+	padding-right: 0px;
+}
+
+table.spacious td:first-child {
+	padding-left: 0px;
+}
+
+table.updating td {
+	background: @color-bg-warning;
+}
+
+table.borders td {
+	border: 1px solid @color-border-box-2;
+}
+
+table.borders th {
+	background: @color-bg-element-1;
+}
+
+table.borders th.alt-1 {
+	background: @color-bg-science;
+}
+
+table.borders th.alt-2 {
+	background: @color-bg-nature;
+}
+
+table.borders th.alt-3 {
+	background: @color-bg-community;
+}
+
+table.borders td.alt-1 {
+	background: fade(@color-bg-science, 20%)
+}
+
+table.borders td.alt-2 {
+	background: fade(@color-bg-nature, 20%);
+}
+
+table.borders td.alt-3 {
+	background: fade(@color-bg-community, 20%);
+}
+
+table th.sortable {
+	background: @color-bg-element-2;
+	cursor: pointer;
+}
+
+table.highlight-row tr:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+table th.foldable-table-header {
+	background: @color-bg-element-2;
+	cursor: pointer;
+}
+
+table th.foldable-table-header.folded-table-header {
+	background: @color-bg-element-2;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+td.folded-table-cell, th.folded-table-cell {
+    min-width: 1px !important;
+    overflow: hidden;
+    text-overflow: clip;
+    max-width: 1px;
+    padding: 0;
+    color: transparent;
+	.unselectable();
+}
+
+// TABLE CELL UTILITY CLASSES
+
+td.minwidth {
+	width: 5%;
+}
+
+td.maxwidth {
+	width: 95%;
+}
+
+td.textwidth {
+	width: 5%;
+	white-space: nowrap;
+}
+
+td.list-amount, td.list-storage {
+	min-width: 30pt;
+	text-align: center;
+}
+
+td.list-ordinal {
+	min-width: 10pt;
+	text-align: center;
+}
+
+td.list-description {
+	padding-left: 10px;
+}
+
+td.list-action {
+	text-align: center;
+	width: 100pt;
+}
+
+td.list-main {
+	text-align: center;
+}
+
+td.item-name {
+	min-width: 8em;
+}
+
+td.text-overflow {
+	font-size: @font-size-tiny;
+	width: 6em;
+	max-width: 6em;
+	overflow: hidden;
+    white-space: nowrap;
+}
+
+th.th-number {
+	text-align: center;
+}
+
+th.th-text {
+	text-align: left;
+}
+
+td.bg-reset {
+	background: @color-bg-box-1;
+}
+
+tr.current {
+	background: @color-bg-element-1;
+	border-color: @color-bg-element-1;
+}
+
+tr.header-mini {
+	font-size: @font-size-small;
+}

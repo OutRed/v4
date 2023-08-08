@@ -1,0 +1,77 @@
+// Base page layout including log, sticky footer etc
+
+@footer-height: 65px;
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	border-width: 0px !important;
+	overflow-x: hidden;
+}
+
+#grid-main {
+	height: 100%;
+}
+
+#log {
+	max-width: 244px;
+	width: 25%;
+	padding-right: 50px;
+}
+
+#switch, #switch-content {
+	padding: 0;
+}
+
+#grid-switch {
+	margin: 0px !important;
+	border: 0;
+	padding: 0;
+}
+
+#tab-header {
+	margin: 5px 0px
+}
+
+#tab-header h2 {
+	 margin: 2px 0px;
+ }
+	
+ #unit-main {
+	 padding-left: 28px; /* for the self-bar */
+ }
+
+.sticky-footer {
+	height: @footer-height;
+	padding: 10px 0;
+	display: none;
+}
+
+.sticky-footer-push {
+	margin: 0;
+	height: @footer-height;
+}
+
+.sticky-footer-wrapper {
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -@footer-height;
+}
+
+.game-opacity-controller {
+	.opacity-transition-reset();
+}
+
+div.grid-content {
+	margin: 0px 0px 15px 0px !important;
+	padding: 15px;
+}
+
+div.grid-content .grid .unit {
+	padding-top: 0;
+	padding-bottom: 0;
+}
