@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>spinningrat.online</title>
+    <meta name="author" content="twotwelve.uk">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6265T6NMY3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6265T6NMY3');
+    </script>
+
+    <!-- OpenGraph metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="spinningrat.online">
+    <!-- <meta property="og:url" content="https://spinningrat.online/"> -->
+    <meta property="og:description" content="horizontally spinning rat">
+    <meta property="og:image" content="https://spinningrat.online/social-card.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://spinningrat.online/social-card-twitter.jpg">
+    <meta name="twitter:site" content="@twotwelve">
+    <meta name="twitter:description" content="horizontally spinning rat">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Js -->
+    <script src="assets/js/p5.sound.min.js"></script>
+    <script src="assets/js/humanize-duration.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <h1>spinningrat.online | 3kh0</h1>
+    
+    <main>
+      <header>
+        <p id="view-time"></p>
+      </header>
+      <button id="start-instruction" aria-label="Click to start spinning the rat">click to spin</button>
+      <footer>
+        <div>
+          <p id="view-counter">Click to start watching the rat.</p>
+          <p id="highscore"></p>
+        </div>
+        <div>
+          <button id="sound-indicator" class="on" aria-label="Click to toggle sound">tunes: <span class="status off">on</span></button>
+          <p id="twotwelve-link"><a href="https://twotwelve.uk/" target="_blank">twotwelve.uk</a></p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

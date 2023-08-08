@@ -1,0 +1,125 @@
+@import 'reset.css';
+
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url("https://unpkg.com/98.css@0.1.18/fonts/converted/ms_sans_serif.woff") format("woff");
+  src: url("https://unpkg.com/98.css@0.1.18/fonts/converted/ms_sans_serif.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+  background: white;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Pixelated MS Sans Serif", sans-serif;
+  background: black;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: black;
+}
+
+.p5Canvas {
+  image-rendering: pixelated;
+  width: 100% !important;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0; padding: 16px;
+  background: white;
+  color: black;
+  text-align: center;
+  font-size: 32pt;
+  font-weight: 400;
+  cursor: default;
+}
+
+a {
+  color: white;
+}
+a:focus {
+  text-decoration: underline;
+}
+
+header {
+  padding: 8px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+footer {
+  padding: 8px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+p {
+  margin: 8px;
+  padding: 0;
+  color: white;
+  font-size: 8pt;
+}
+
+button {
+  margin: 6px 4px;
+  padding: 2px 4px;
+  color: white;
+  font-size: 8pt;
+  position: relative;
+  cursor: pointer;
+  float:right;
+}
+button.off {
+  border: 1px dotted red;
+}
+button.on {
+  border: 1px dotted lime;
+}
+button.off>span {
+  color: red;
+}
+button.on>span {
+  color: lime;
+}
+button:focus {
+  border-style: solid;
+}
+
+#start-instruction {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24pt;
+  cursor: default;
+}
+#start-instruction::after {
+  content:"warning: music";
+  font-size: 8pt;
+  position: absolute;
+  top: 100%; left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width:960px) {
+  h1 {
+    font-size: 48pt;
+  }
+  p, button {
+    font-size: 12pt;
+  }
+}
