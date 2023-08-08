@@ -1,0 +1,116 @@
+{
+    "goals": [
+        {
+            "name": "FreePlayStart",
+            "title": "",
+            "text": "Welcome to this Free Play Scenario!\nA few citizens are already here. Some more will arrive over the coming days.",
+            "quickText": "",
+            "nextGoal": "",
+            "subGoals": [],
+            "planning": [
+                {
+                    "type": "ScriptedStoryPart",
+                    "className": "SpawnCitizensRegularly",
+                    "spawnNumber": 100,
+                    "time": 0,
+                    "groupSizeMin": 2,
+                    "groupSizeMax": 3,
+                    "ageRangeMin": 18,
+                    "ageRangeMax": 40,
+                    "world": 0,
+                    "timeBetweenMin": 20,
+                    "timeBetweenMax": 30,
+                    "afterDoneMessage": "All the people from your ship have now arrived. Of course, your population can still grow through their offspring."
+                }
+            ]
+        }
+    ],
+    "startGoal": "FreePlayStart",
+    "lockPermanents": [],
+    "worlds": [
+        {
+            "rect": {
+                "x": 0,
+                "y": 160,
+                "width": 400,
+                "height": 80
+            },
+            "seed": 8801,
+            "worldResources": [
+                { "position": 2, "className": "Rock" },
+                { "position": 3, "className": "Rock" },
+                { "position": 4, "className": "AlienRuins" },
+                { "position": 10, "className": "Forest" },
+                { "position": 12, "className": "Rock" },
+                { "position": 14, "className": "Forest" },
+                { "position": 15, "className": "Forest" },
+                { "position": 18, "className": "Rock" },
+                { "position": 19, "className": "AlienRuins" }
+            ],
+            "buildingStacks": [
+                { "position": 5, "classNames": ["LandedExplorationShip"] }
+            ],
+            "citizens": [
+                { "amount": 3, "ageRangeMin": 20, "ageRangeMax": 25, "minX": 100, "maxX": 120 }
+            ]
+        }
+    ],
+    "generatorScripts": [ {
+        "name": "RandomMiniWorlds",
+        "args": {
+            "numberOfWorldsMin": 9,
+            "numberOfWorldsMax": 10,
+            "minX": -400,
+            "minY": 120,
+            "maxX": 600,
+            "maxY": 500,
+            "minWidth": 60,
+            "maxWidth": 240,
+            "minHeight": 20,
+            "maxHeight": 60,
+            "heightVariation": 20,
+            "initialBuildings": [],
+            "initialWorldResources": [
+                {"className": "AlienRuins", "numberMin": 0, "numberMax": 1},
+                {"className": "Forest", "numberMin": 12, "numberMax": 15},
+                {"className": "Rock", "numberMin": 20, "numberMax": 25}],
+            "spreadBuildingsEvenlyBetweenWorlds": true,
+            "spreadWorldResourcesEvenlyBetweenWorlds": false,
+            "rememberWorldSpreadBetweenBuildingsAndWorldResources": false,
+            "avoidGeneratingOverfullWorlds": true
+    }}, 
+    {
+        "name": "RandomMiniWorlds",
+        "args": {
+            "numberOfWorldsMin": 35,
+            "numberOfWorldsMax": 42,
+            "minX": -1000,
+            "minY": 120,
+            "maxX": 940,
+            "maxY": 1200,
+            "minWidth": 60,
+            "maxWidth": 300,
+            "minHeight": 20,
+            "maxHeight": 60,
+            "heightVariation": 20,
+            "initialBuildings": [],
+            "initialWorldResources": [
+                {"className": "AlienRuins", "numberMin": 3, "numberMax": 4},
+                {"className": "Forest", "numberMin": 60, "numberMax": 61},
+                {"className": "Rock", "numberMin": 50, "numberMax": 51}],
+            "spreadBuildingsEvenlyBetweenWorlds": true,
+            "spreadWorldResourcesEvenlyBetweenWorlds": false,
+            "rememberWorldSpreadBetweenBuildingsAndWorldResources": false,
+            "avoidGeneratingOverfullWorlds": true
+    }}],
+    "initialMaterials": {
+        "food": 100,
+        "stone": 20,
+        "wood": 20,
+        "knowledge": 10,
+        "machineParts": 0,
+        "refinedMetal": 0,
+        "computerChips": 0
+    },
+    "viewYFromBottom": 270
+}

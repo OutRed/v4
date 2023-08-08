@@ -1,0 +1,87 @@
+{
+    "goals": [
+        {
+            "name": "FreePlayStart",
+            "title": "",
+            "text": "Welcome to this Free Play Scenario!\nA few citizens are already here. Some more will arrive over the coming days.",
+            "quickText": "",
+            "nextGoal": "",
+            "subGoals": [],
+            "planning": [
+                {
+                    "type": "ScriptedStoryPart",
+                    "className": "SpawnCitizensRegularly",
+                    "spawnNumber": 100,
+                    "time": 0,
+                    "groupSizeMin": 2,
+                    "groupSizeMax": 3,
+                    "ageRangeMin": 18,
+                    "ageRangeMax": 40,
+                    "world": 0,
+                    "timeBetweenMin": 20,
+                    "timeBetweenMax": 30,
+                    "afterDoneMessage": "All the people from your ship have now arrived. Of course, your population can still grow through their offspring."
+                }
+            ]
+        }
+    ],
+    "startGoal": "FreePlayStart",
+    "lockPermanents": [],
+    "worlds": [
+        {
+            "rect": {
+                "x": 0,
+                "y": 160,
+                "width": 120,
+                "height": 40
+            },
+            "seed": 5601,
+            "worldResources": [
+                { "position": 0, "className": "Rock" },
+                { "position": 2, "className": "Forest" },
+                {"position": 1, "className": "AlienRuins"}
+            ],
+            "buildingStacks": [
+                { "position": 3, "classNames": ["LandedExplorationShip"] },
+                { "position": 4, "classNames": ["LandingSite"] }
+            ],
+            "citizens": [
+                { "amount": 3, "ageRangeMin": 20, "ageRangeMax": 25, "minX": 0, "maxX": 80 }
+            ]
+        }
+    ],
+    "generatorScripts": [ {
+        "name": "RandomMiniWorlds",
+        "args": {
+            "numberOfWorldsMin": 400,
+            "numberOfWorldsMax": 401,
+            "minX": -1000,
+            "minY": 120,
+            "maxX": 940,
+            "maxY": 1600,
+            "minWidth": 20,
+            "maxWidth": 100,
+            "minHeight": 20,
+            "maxHeight": 40,
+            "heightVariation": 20,
+            "initialBuildings": [{"className": "LandingSite", "numberMin": 5, "numberMax": 6}],
+            "initialWorldResources": [
+                {"className": "AlienRuins", "numberMin": 3, "numberMax": 4},
+                {"className": "Forest", "numberMin": 150, "numberMax": 151},
+                {"className": "Rock", "numberMin": 100, "numberMax": 101}],
+            "spreadBuildingsEvenlyBetweenWorlds": true,
+            "spreadWorldResourcesEvenlyBetweenWorlds": false,
+            "rememberWorldSpreadBetweenBuildingsAndWorldResources": false,
+            "avoidGeneratingOverfullWorlds": true
+    }}],
+    "initialMaterials": {
+        "food": 100,
+        "stone": 20,
+        "wood": 20,
+        "knowledge": 10,
+        "machineParts": 0,
+        "refinedMetal": 0,
+        "computerChips": 0
+    },
+    "viewYFromBottom": 270
+}

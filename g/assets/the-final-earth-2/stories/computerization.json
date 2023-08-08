@@ -1,0 +1,95 @@
+{
+    "goals": [
+        {
+            "name": "Start",
+            "title": "",
+            "text": "Civilization is recovering well and you have already inhabited some more worlds. This is one of your newest outposts, and it has been growing quite well so far.\n\nHowever, your scientists have just spotted something strange with their telescopes... They are now investigating this, and will report back shortly.",
+            "quickText": "...",
+            "nextGoal": "...",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "WoodcuttingCentre",
+                    "amount": 1
+                }
+            ],
+            "planning": [
+                {
+                    "type": "ScriptedStoryPart",
+                    "className": "AlienInvasion",
+                    "time": 0,
+                    "timeUntilInvasion": 10
+                }
+            ]
+        }
+    ],
+    "startGoal": "Start",
+    "lockPermanents": [],
+    "worlds": [
+        {
+            "rect": {
+                "x": -20,
+                "y": 160,
+                "width": 200,
+                "height": 80
+            },
+            "seed": 2000,
+            "worldResources": [        
+                { "position": 3, "className": "Forest" },
+                { "position": 6, "className": "Rock" },
+                { "position": 7, "className": "Forest" },
+                { "position": 8, "className": "Rock" },
+                { "position": 9, "className": "AlienRuins" }
+            ],
+            "buildingStacks": [
+                { "position": 2, "classNames": ["NormalHouse", "NormalHouse", "NormalHouse", "LandedExplorationShip"] }
+            ],
+            "citizens": [
+                { "amount": 15, "ageRangeMin": 20, "ageRangeMax": 25, "minX": 40, "maxX": 100 }
+            ]
+        },
+        {
+            "rect": {
+                "x": 240,
+                "y": 140,
+                "width": 180,
+                "height": 100
+            },
+            "seed": 2001,
+            "worldResources": [
+                {
+                    "position": 1,
+                    "className": "Rock"
+                },
+                {
+                    "position": 2,
+                    "className": "Forest"
+                },
+                {
+                    "position": 4,
+                    "className": "Rock"
+                },
+                {
+                    "position": 5,
+                    "className": "AlienRuins"
+                },
+                {
+                    "position": 7,
+                    "className": "Rock"
+                }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        }
+    ],
+    "initialMaterials": {
+        "food": 50,
+        "stone": 25,
+        "wood": 20,
+        "knowledge": 10,
+        "machineParts": 0,
+        "refinedMetal": 0,
+        "computerChips": 0
+    },
+    "viewYFromBottom": 270
+}

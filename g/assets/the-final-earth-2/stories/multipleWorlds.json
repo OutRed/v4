@@ -1,0 +1,380 @@
+{
+    "goals": [
+        {
+            "name": "Start",
+            "title": "",
+            "text": "Soon after building the observatory, your scientists found a world that looked promising. You decided to fly there and take a look. Apparently, your scientists didn't look very closely, because what they thought to be one world are actually multiple tiny worlds. Still, this looks like a fairly suitable location to build a city.\nTo get started, let's build a woodcutting center, a stone mine, an indoor farm and a house.",
+            "quickText": "Build a woodcutting center, a stone mine, an indoor farm and a house.",
+            "nextGoal": "MorePeople",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "WoodcuttingCentre",
+                    "amount": 1
+                },
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "StoneMine",
+                    "amount": 1
+                },
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "IndoorFarm",
+                    "amount": 1
+                },
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "NormalHouse",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "MorePeople",
+            "title": "",
+            "text": "That's a good start! You've invited some people from your previous city. They'll arrive in the coming days.\nYour citizens don't seem very happy right now. Let's build a pub to cheer them up a bit.",
+            "quickText": "Build a pub.",
+            "nextGoal": "GoBuildMPF",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "Pub",
+                    "amount": 1
+                }
+            ],
+            "planning": [
+                {
+                    "type": "ScriptedStoryPart",
+                    "className": "SpawnCitizensRegularly",
+                    "spawnNumber": 70,
+                    "time": 0,
+                    "groupSizeMin": 3,
+                    "groupSizeMax": 4,
+                    "ageRangeMin": 18,
+                    "ageRangeMax": 40,
+                    "world": 0,
+                    "timeBetweenMin": 30,
+                    "timeBetweenMax": 34,
+                    "afterDoneMessage": "All the people from your previous city have now arrived. Of course, your population can still grow through their offspring."
+                }
+            ]
+        },
+        {
+            "name": "GoBuildMPF",
+            "title": "",
+            "text": "The pub should make your citizens a bit less sad! To get to the other worlds, you'll need machine parts, so let's create a machine parts factory.",
+            "quickText": "Build a machine parts factory.",
+            "nextGoal": "MachinePartsFactoryBuilt",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "MachinePartsFactory",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "MachinePartsFactoryBuilt",
+            "title": "",
+            "text": "The machine parts factory is very useful, but currently not very efficient. Let's upgrade it to recycle scrap metal. This will reduce the amount of stone it uses.",
+            "quickText": "Upgrade your machine parts factory to make it recycle scrap metal.",
+            "nextGoal": "GoToOtherWorlds",
+            "subGoals": [
+                {
+                    "type": "PerformBuildingUpgrades",
+                    "upgradeClass": "MachinePartsFactoryEfficiency",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "GoToOtherWorlds",
+            "title": "",
+            "text": "[c]You already built some landing pads to connect worlds. Great job![/][n]Good job! Now, it's finally time to get to another world. The easiest way to do that is by building landing pads. Let's build two of them: one on your current world and one on another world you'd like to populate.[/]",
+            "quickText": "Connect the currently populated world with another by building landing pads.",
+            "nextGoal": "GoToOtherWorldsDone",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "LandingSite",
+                    "amount": 1,
+                    "onWorld": 0
+                },
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "LandingSite",
+                    "amount": 1,
+                    "notOnWorld": 0
+                }
+            ]
+        },
+        {
+            "name": "GoToOtherWorldsDone",
+            "title": "",
+            "text": "[c]You already built an experimental farm! Well done![/][n]Now that your city has some more space, it'll probably grow rapidly. You'll soon have many more mouths to feed. To make that a bit easier, let's build an experimental farm.[/]",
+            "quickText": "Build an experimental farm.",
+            "nextGoal": "GoBuildRefinedMetalFactory",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "ExperimentalFarm",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "GoBuildRefinedMetalFactory",
+            "title": "",
+            "text": "[c]You already built a refined metals factory! Good job![/][n]To build some types of buildings, raw stone isn't good enough. You'll need to refine it first. Let's build a refined metals factory to do just that.[/]",
+            "quickText": "Build a refined metals factory.",
+            "nextGoal": "GetHighHappiness",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "RefinedMetalFactory",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "GetHighHappiness",
+            "title": "",
+            "text": "[c]Wow, I'm impressed! You already got the happiness high enough to beat this goal.[/][n]Refined metals are nice, but happy citizens are certainly even nicer. So let's use some of these refined metals to improve the happiness of your citizens. Bring it to at least 80.[/]",
+            "quickText": "Bring the happiness above 80.",
+            "nextGoal": "Win",
+            "subGoals": [
+                {
+                    "type": "MinimumHappiness",
+                    "happiness": 80
+                }
+            ]
+        },
+        {
+            "name": "Win",
+            "title": "Scenario Complete!",
+            "text": "Your citizens are really happy now, and they wouldn't want to live anywhere else. Great job!\n\nYou can now play the next scenario, or continue improving your city if you'd like. Thanks for playing!",
+            "quickText": "",
+            "nextGoal": "",
+            "nextStory": "hackersandaliens",
+            "subGoals": []
+        }
+    ],
+    "startGoal": "Start",
+    "lockPermanents": [],
+    "worlds": [
+        {
+            "rect": {
+                "x": -20,
+                "y": 160,
+                "width": 200,
+                "height": 80
+            },
+            "seed": 2000,
+            "worldResources": [        
+                { "position": 3, "className": "Forest" },
+                { "position": 6, "className": "Rock" },
+                { "position": 7, "className": "Forest" },
+                { "position": 8, "className": "Rock" },
+                { "position": 9, "className": "AlienRuins" }
+            ],
+            "buildingStacks": [
+                { "position": 2, "classNames": ["LandedExplorationShip"] }
+            ],
+            "citizens": [
+                { "amount": 3, "ageRangeMin": 20, "ageRangeMax": 25, "minX": 60, "maxX": 80 }
+            ]
+        },
+        {
+            "rect": {
+                "x": 240,
+                "y": 140,
+                "width": 180,
+                "height": 100
+            },
+            "seed": 2001,
+            "worldResources": [
+                {
+                    "position": 1,
+                    "className": "Rock"
+                },
+                {
+                    "position": 2,
+                    "className": "Forest"
+                },
+                {
+                    "position": 4,
+                    "className": "Rock"
+                },
+                {
+                    "position": 5,
+                    "className": "AlienRuins"
+                },
+                {
+                    "position": 7,
+                    "className": "Rock"
+                }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": -160,
+                "y": 120,
+                "width": 120,
+                "height": 60
+            },
+            "seed": 2002,
+            "worldResources": [
+                {
+                    "position": 2,
+                    "className": "Forest"
+                },
+                {
+                    "position": 3,
+                    "className": "Rock"
+                },
+                {
+                    "position": 5,
+                    "className": "Rock"
+                }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": 420,
+                "y": 40,
+                "width": 180,
+                "height": 80
+            },
+            "seed": 2003,
+            "worldResources": [
+                {
+                    "position": 0,
+                    "className": "Forest"
+                },
+                {
+                    "position": 2,
+                    "className": "Rock"
+                },
+                {
+                    "position": 3,
+                    "className": "Forest"
+                },
+                {
+                    "position": 5,
+                    "className": "Rock"
+                },
+                {
+                    "position": 7,
+                    "className": "Forest"
+                },
+                {
+                    "position": 8,
+                    "className": "Rock"
+                }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": 400,
+                "y": 200,
+                "width": 120,
+                "height": 60
+            },
+            "seed": 2004,
+            "worldResources": [
+                {
+                    "position": 0,
+                    "className": "Forest"
+                },
+                {
+                    "position": 3,
+                    "className": "Forest"
+                },
+                {
+                    "position": 5,
+                    "className": "Rock"
+                }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": 640,
+                "y": 100,
+                "width": 220,
+                "height": 100
+            },
+            "seed": 2005,
+            "worldResources": [
+                {
+                    "position": 0,
+                    "className": "AlienRuins"
+                },
+                {
+                    "position": 1,
+                    "className": "Rock"
+                },
+                {
+                    "position": 5,
+                    "className": "Forest"
+                },
+                {
+                    "position": 6,
+                    "className": "Rock"
+                },
+                {
+                    "position": 8,
+                    "className": "Forest"
+                },
+                {
+                    "position": 10,
+                    "className": "Rock"
+                }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": -300,
+                "y": 160,
+                "width": 100,
+                "height": 60
+            },
+            "seed": 2006,
+            "worldResources": [
+                {
+                    "position": 1,
+                    "className": "Forest"
+                },
+                {
+                    "position": 2,
+                    "className": "AlienRuins"
+                },
+                {
+                    "position": 3,
+                    "className": "Forest"
+                }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        }
+    ],
+    "initialMaterials": {
+        "food": 50,
+        "stone": 5,
+        "wood": 3,
+        "knowledge": 3,
+        "machineParts": 0,
+        "refinedMetal": 0,
+        "computerChips": 0
+    },
+    "viewYFromBottom": 270
+}

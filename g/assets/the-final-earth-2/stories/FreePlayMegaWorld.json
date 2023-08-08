@@ -1,0 +1,83 @@
+{
+    "goals": [
+        {
+            "name": "FreePlayStart",
+            "title": "",
+            "text": "Welcome to this Free Play Scenario!\nA few citizens are already here. Some more will arrive over the coming days.",
+            "quickText": "",
+            "nextGoal": "",
+            "subGoals": [],
+            "planning": [
+                {
+                    "type": "ScriptedStoryPart",
+                    "className": "SpawnCitizensRegularly",
+                    "spawnNumber": 100,
+                    "time": 0,
+                    "groupSizeMin": 2,
+                    "groupSizeMax": 3,
+                    "ageRangeMin": 18,
+                    "ageRangeMax": 40,
+                    "world": 0,
+                    "timeBetweenMin": 20,
+                    "timeBetweenMax": 30,
+                    "afterDoneMessage": "All the people from your ship have now arrived. Of course, your population can still grow through their offspring."
+                }
+            ]
+        }
+    ],
+    "startGoal": "FreePlayStart",
+    "lockPermanents": [],
+    "worlds": [
+        {
+            "rect": {
+                "x": 0,
+                "y": 160,
+                "width": 1000,
+                "height": 80
+            },
+            "seed": 2000,
+            "worldResources": [
+                { "position": 0, "className": "Forest" },
+                { "position": 1, "className": "Forest" },
+                { "position": 4, "className": "AlienRuins" },
+                { "position": 5, "className": "Rock" },
+                { "position": 10, "className": "Rock" },
+                { "position": 11, "className": "Forest" },
+                { "position": 12, "className": "Rock" },
+                { "position": 15, "className": "AlienRuins" },
+                { "position": 17, "className": "Forest" },
+                { "position": 20, "className": "Rock" },
+                { "position": 22, "className": "Forest" },
+                { "position": 25, "className": "Rock" },
+                { "position": 26, "className": "Rock" },
+                { "position": 29, "className": "Forest" },
+                { "position": 30, "className": "Rock" },
+                { "position": 32, "className": "AlienRuins" },
+                { "position": 36, "className": "Rock" },
+                { "position": 38, "className": "Forest" },
+                { "position": 40, "className": "Forest" },
+                { "position": 41, "className": "Forest" },
+                { "position": 44, "className": "Rock" },
+                { "position": 46, "className": "Rock" },
+                { "position": 47, "className": "Forest" },
+                { "position": 48, "className": "AlienRuins" }
+            ],
+            "buildingStacks": [
+                { "position": 2, "classNames": ["LandedExplorationShip"] }
+            ],
+            "citizens": [
+                { "amount": 3, "ageRangeMin": 20, "ageRangeMax": 25, "minX": 60, "maxX": 80 }
+            ]
+        }
+    ],
+    "initialMaterials": {
+        "food": 100,
+        "stone": 20,
+        "wood": 20,
+        "knowledge": 10,
+        "machineParts": 0,
+        "refinedMetal": 0,
+        "computerChips": 0
+    },
+    "viewYFromBottom": 270
+}

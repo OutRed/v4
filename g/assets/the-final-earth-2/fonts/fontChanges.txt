@@ -1,0 +1,1 @@
+1: same as other numbers for small text size (10 + standard)

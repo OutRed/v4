@@ -1,0 +1,259 @@
+{
+    "goals": [
+        {
+            "name": "FreePlayStart",
+            "title": "",
+            "text": "Welcome to this Free Play Scenario!\nA few citizens are already here. Some more will arrive over the coming days.",
+            "quickText": "",
+            "nextGoal": "",
+            "subGoals": [],
+            "planning": [
+                {
+                    "type": "ScriptedStoryPart",
+                    "className": "SpawnCitizensRegularly",
+                    "spawnNumber": 100,
+                    "time": 0,
+                    "groupSizeMin": 2,
+                    "groupSizeMax": 3,
+                    "ageRangeMin": 18,
+                    "ageRangeMax": 40,
+                    "world": 0,
+                    "timeBetweenMin": 50,
+                    "timeBetweenMax": 70,
+                    "afterDoneMessage": "All the people from your ship have now arrived. Of course, your population can still grow through their offspring."
+                },
+                {
+                    "type": "ScriptedStoryPart",
+                    "className": "SpawnCitizensRegularly",
+                    "spawnNumber": 50,
+                    "time": 0,
+                    "groupSizeMin": 2,
+                    "groupSizeMax": 3,
+                    "ageRangeMin": 18,
+                    "ageRangeMax": 40,
+                    "world": 1,
+                    "timeBetweenMin": 40,
+                    "timeBetweenMax": 50,
+                    "afterDoneMessage": ""
+                }
+            ]
+        }
+    ],
+    "startGoal": "FreePlayStart",
+    "lockPermanents": [],
+    "worlds": [
+        {
+            "rect": {
+                "x": -360,
+                "y": 160,
+                "width": 400,
+                "height": 80
+            },
+            "seed": 9101,
+            "worldResources": [
+                { "position": 1, "className": "Forest" },
+                { "position": 4, "className": "Forest" },
+                { "position": 5, "className": "Forest" },
+                { "position": 10, "className": "Forest" },
+                { "position": 13, "className": "Forest" },
+                { "position": 16, "className": "Forest" }
+            ],
+            "buildingStacks": [
+                { "position": 17, "classNames": ["LandedExplorationShip"] },
+                { "position": 19, "classNames": ["LandingSite"] }
+            ],
+            "citizens": [
+                { "amount": 3, "ageRangeMin": 20, "ageRangeMax": 25, "minX": 340, "maxX": 380 }
+            ]
+        },
+        {
+            "rect": {
+                "x": 400,
+                "y": 160,
+                "width": 460,
+                "height": 80
+            },
+            "seed": 9102,
+            "worldResources": [
+                { "position": 2, "className": "Rock" },
+                { "position": 4, "className": "Rock" },
+                { "position": 6, "className": "Rock" },
+                { "position": 7, "className": "Rock" },
+                { "position": 10, "className": "Rock" },
+                { "position": 13, "className": "Rock" },
+                { "position": 17, "className": "Rock" },
+                { "position": 18, "className": "Rock" }
+            ],
+            "buildingStacks": [
+                { "position": 0, "classNames": ["LandingSite"] },
+                { "position": 1, "classNames": ["NormalHouse"] }
+            ],
+            "citizens": [
+                { "amount": 3, "ageRangeMin": 20, "ageRangeMax": 25, "minX": 0, "maxX": 60 }
+            ]
+        },
+        {
+            "rect": {
+                "x": 480,
+                "y": 320,
+                "width": 80,
+                "height": 40
+            },
+            "seed": 9103,
+            "worldResources": [
+                { "position": 1, "className": "AlienRuins" }
+            ],
+            "buildingStacks": [
+                { "position": 0, "classNames": ["LandingSite"] }
+            ],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": -700,
+                "y": 0,
+                "width": 340,
+                "height": 60
+            },
+            "seed": 9104,
+            "worldResources": [
+                { "position": 1, "className": "Forest" },
+                { "position": 4, "className": "Forest" },
+                { "position": 5, "className": "Forest" },
+                { "position": 6, "className": "Forest" },
+                { "position": 9, "className": "Forest" },
+                { "position": 11, "className": "Forest" },
+                { "position": 12, "className": "Forest" },
+                { "position": 15, "className": "Forest" }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": -600,
+                "y": 440,
+                "width": 420,
+                "height": 100
+            },
+            "seed": 9105,
+            "worldResources": [
+                { "position": 0, "className": "Forest" },
+                { "position": 1, "className": "Forest" },
+                { "position": 4, "className": "Forest" },
+                { "position": 5, "className": "Forest" },
+                { "position": 8, "className": "Forest" },
+                { "position": 12, "className": "Forest" },
+                { "position": 15, "className": "Forest" },
+                { "position": 18, "className": "Forest" }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": -940,
+                "y": 200,
+                "width": 460,
+                "height": 100
+            },
+            "seed": 9106,
+            "worldResources": [
+                { "position": 1, "className": "Forest" },
+                { "position": 3, "className": "Forest" },
+                { "position": 4, "className": "Forest" },
+                { "position": 8, "className": "Forest" },
+                { "position": 15, "className": "Forest" },
+                { "position": 16, "className": "Forest" },
+                { "position": 18, "className": "Forest" },
+                { "position": 21, "className": "Forest" }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": 740,
+                "y": 400,
+                "width": 340,
+                "height": 80
+            },
+            "seed": 9107,
+            "worldResources": [
+                { "position": 1, "className": "Rock" },
+                { "position": 5, "className": "Rock" },
+                { "position": 7, "className": "Rock" },
+                { "position": 10, "className": "Rock" },
+                { "position": 11, "className": "Rock" },
+                { "position": 14, "className": "Rock" },
+                { "position": 15, "className": "AlienRuins" }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": 940,
+                "y": 0,
+                "width": 80,
+                "height": 40
+            },
+            "seed": 9108,
+            "worldResources": [
+                { "position": 2, "className": "AlienRuins" }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        {
+            "rect": {
+                "x": 520,
+                "y": 640,
+                "width": 500,
+                "height": 80
+            },
+            "seed": 9109,
+            "worldResources": [
+                { "position": 1, "className": "AlienRuins" },
+                { "position": 8, "className": "Rock" },
+                { "position": 14, "className": "Rock" },
+                { "position": 15, "className": "Rock" },
+                { "position": 18, "className": "Rock" },
+                { "position": 20, "className": "Rock" },
+                { "position": 24, "className": "Rock" }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        },
+        
+        {
+            "rect": {
+                "x": -800,
+                "y": 660,
+                "width": 300,
+                "height": 80
+            },
+            "seed": 9110,
+            "worldResources": [
+                { "position": 0, "className": "Forest" },
+                { "position": 2, "className": "Forest" },
+                { "position": 5, "className": "Forest" },
+                { "position": 10, "className": "Forest" },
+                { "position": 11, "className": "Forest" },
+                { "position": 14, "className": "Forest" }
+            ],
+            "buildingStacks": [],
+            "citizens": []
+        }
+    ],
+    "initialMaterials": {
+        "food": 150,
+        "stone": 20,
+        "wood": 20,
+        "knowledge": 10,
+        "machineParts": 0,
+        "refinedMetal": 0,
+        "computerChips": 0
+    },
+    "viewYFromBottom": 270
+}
