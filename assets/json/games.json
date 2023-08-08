@@ -21,24 +21,6 @@
       "description": ""
     },
     {
-      "title": "MCJE (IE only)",
-      "root": "mcje",
-      "file": "Mine.html",
-      "img": "C1B5E635-A242-4D0F-8524-DE4B5164F534.jpeg"
-    },
-    {
-      "title": "Pic Client",
-      "root": "piclient",
-      "file": "piclient.html",
-      "img": "B969467B-2495-4872-A739-B6ECA873FF5A.jpeg"
-    },
-    {
-      "title": "CMM Client",
-      "root": "CMM Client",
-      "file": "CMM Client.html",
-      "img": "EC4B216C-B637-41A3-A3D9-79D4048DD7A3.jpeg"
-    },
-    {
       "title": "10 Minutes Till Dawn",
       "root": "10-minutes-till-dawn",
       "file": "index.html",
@@ -2059,12 +2041,6 @@
       "root": "n-gon",
       "file": "index.html",
       "img": "bot.png"
-    },
-    {
-      "title": "osu!",
-      "root": "osu!",
-      "file": "index.html",
-      "img": "osu.png"
     },
     {
       "title": "Overwatch",
