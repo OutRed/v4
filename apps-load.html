@@ -48,11 +48,21 @@
 
     </div>
 
+    <script>
+        const iframe = document.getElementById('game-frame');
+        iframe.src = $__uvconfig.encode ('${item.src};'); // put the uv encode function in place of the encode url function
+        document.body.appendChild(iframe);
+    </script>
+
       <script src="/js/fullscreen.js"></script>
       <script src="/js/localstorage-load-apps.js"></script>
       <script src="/js/sharebutton-load.js"></script>
       <script src="/js/resize-apps.js"></script>
       <script src="/loadencodeduv.js"></script>
+      <script src="/uv/uv.sw.js"></script>
+      <script src="/uv/uv.bundle.js"></script>
+      <script src="/uv/uv.config.js"></script>
+      <script src="/uv/uv.handler.js"></script>
 
 </body>
 </html>
