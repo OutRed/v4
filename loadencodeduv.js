@@ -1,10 +1,10 @@
 function registerSW() {
-    navigator.serviceWorker.register('./loadsw.js', {
+    navigator.serviceWorker.register('./sw.js', {
         scope: __uv$config.prefix
     })
 }
 
-function getLink(url) {
+function getLink(src) {
     if (!__uv$config) throw new Error("UV is not imported")
     try {
         new URL(url)
