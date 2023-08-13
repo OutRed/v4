@@ -1,0 +1,44 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Slice all the Fruits!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="score">
+                Score: <span id="scorevalue">0</span>
+            </div>
+            <div id="trialsLeft">   
+            </div>
+            <div id="fruitsContainer">
+                <img id="fruit1" class="fruit">
+            </div>
+            <div id="startreset">
+                Start Game
+            </div>
+            <div id="instruction">
+                <p style="font-weight: bold; font-size: 130%; margin-bottom: 0px; padding-top: 10px;">Instructions:</p>
+                <ul style="margin-top: 5px; text-align: left;">
+                <li>Slice the fruits to gain score.<li>You start with 3 lives. <li>Skipping a fruit takes one life.
+                </ul>
+            </div>
+            
+            <div id="gameOver">
+                
+            </div>
+        </div>
+        <br>
+        <audio id="slicesound">
+            <source src="audio/slicefruit.mp3"></source>
+            <source src="audio/slicefruit.ogg"></source>
+        </audio>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="jquery.js"></script>
+    </body>
+</html>
