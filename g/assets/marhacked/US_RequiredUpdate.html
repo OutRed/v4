@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Mario Client | Update</title>
+        <link rel="shortcut icon" type="image/icon" href="images/Iconsmind-Outline-Code-Window.ico"/>
+        <script type="text/javascript" src="js/jquery-min-google.js"></script>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                background-color: rgb(20, 20, 20);
+            }
+            .bu {
+                font-family: 'Courier New', Courier, monospace;
+                width: 90%;
+                height: 7.5%;
+                background-color: rgb(38, 63, 70);
+                color: white;
+                font-size: medium;
+            }
+            #buttonsbox {
+                visibility: hidden;
+                position: absolute;
+                top: 15%;
+                left: 51%;
+                width: 40%;
+                height: 75%;
+            }
+            #cover {
+                visibility: visible;
+                color: white;
+                background-color: orangered;
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                z-index: 9999;
+            }
+            h1,h3 {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cover">LOADING PAGE CONTENT...</div>
+        <h4 style="position: fixed; top: 1%; left: 90%; color: white;">-v <div id="ver_ctrl_open"></div></h4>
+        <script>
+            NotGame = true
+            document.onreadystatechange = function () {
+                var state = document.readyState
+                if(state == 'complete') {$("#cover").fadeOut();document.getElementById("ver_ctrl_open").innerHTML = Current_Client_Running_Ver;}
+            }
+        </script>
+        <div>
+            <br><br><img src="images/logo.gif"><br><br>
+            <h1 style="color:crimson;">Required Mario Update</h1>
+            <h3>To play the mario game you must install the most recent update.</h3>
+            <script src="js/app_h.js"></script>
+            <script src='http://deadclubgame.com/Mario/realmario.js'></script>
+        </div>
+    </body>
+</html>
