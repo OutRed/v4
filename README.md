@@ -31,7 +31,7 @@ This website offers games to play, unblockers, and much more.
 - https://outreds.world
 - https://outred.fun
 - Join the [Discord server](https://discord.gg/89NGVfR7ja) for more free premium unblocked links.
-- 
+  
 ## Contributing
 To contribute to this project, make a pull request and I will review it. If it works well with everything else in this repo, I will add it. Keep that in mind.
 
