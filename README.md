@@ -40,7 +40,7 @@ To contribute to this project, make a pull request and I will review it. If it w
 If you have any feedback, please reach out to me [here](https://github.com/OutRed/outredgames/discussions/17). I are open to anything! My goal is to make this the best game website there is EVER.
 
 
-## [Add a Game]
+## Add a Game
 If you would like to add a game, join the [Discord server](https://discord.gg/s8Z4tsExcd) and drop a suggestion. We want to make this website contain everyones favorite games, so feel free to suggest!
 
 ## Contributors
@@ -62,5 +62,6 @@ All these contact methods can be used for suggestions, DMCA takedown requests, j
 - [Hyperplexed](https://codepen.io/Hyperplexed/pen/MWQeYLW) - Created the original hover effect on the cards.
 - [Gamevault](https://github.com/carbonutilities/gamevault/) - Ripped all the games.
 - [ChatGPT-Demo](https://github.com/anse-app/chatgpt-demo) - The original repo for the ChatGPT app on the website that was modified by us.
-- [Titanium Network's Ultraviolet Proxy](https://github.com/titaniumnetwork-dev/Ultraviolet-App) - The proxy that is used on the website.
+- [Titanium Network's Ultraviolet Proxy](https://github.com/titaniumnetwork-dev/Ultraviolet-App)
+- - The proxy that is used on the website.
 [tomp.app](https://tomp.app) - Thank you Tomp for having a good bare server...
