@@ -7,6 +7,13 @@
       "description": ""
     },
     {
+      "title": "Neon Rocket",
+      "root": "neonrocket",
+      "file": "index.html",
+      "img": "fruit1.png",
+      "description": "Neon Rocket is a game where you are a shuttle! Try to get to the launch pad while using the arrow keys, and do not forget to collect all the stars!"
+    },
+    {
       "title": "1",
       "root": "1",
       "file": "index.html",
