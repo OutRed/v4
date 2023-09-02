@@ -1,5 +1,12 @@
 [
     {
+      "title": "Fruit Cutter",
+      "root": "fruitcutter",
+      "file": "index.html",
+      "img": "fruit1.png",
+      "description": ""
+    },
+    {
       "title": "1",
       "root": "1",
       "file": "index.html",

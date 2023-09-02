@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <title>Mario Client | Game</title>
+        <link rel="shortcut icon" type="image/icon" href="images/Iconsmind-Outline-Code-Window.ico"/>
+        <link rel="stylesheet" type="text/css"href="style/main.css">
+        <script type="text/javascript" src="js/jquery-min-google.js"></script>
+        <script src="https://kgsensei.dev/js/ka.js"></script>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                background-color: rgb(20, 20, 20);
+            }#cover {
+                visibility: visible;
+                color: white;
+                background-color: orangered;
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                z-index: 9999;
+            }#canvframe {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                border-style: solid;
+                border-color: rgb(40, 40, 40);
+                border-right-width: 7.5px;
+                border-bottom-width: 7.5px;
+                height: 575;
+                width: 735;
+            }#canvas {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cover">LOADING GAME CONTENT...</div>
+        <h4 style="position: fixed; top: 1%; left: 90%; color: white;">-v <div id="ver_ctrl_open"></div></h4>
+        <script>
+            var getUrlParameter = function getUrlParameter(sParam) {
+                var sPageURL = window.location.search.substring(1),
+                    sURLVariables = sPageURL.split('&'),
+                    sParameterName,
+                    i;
+
+                for (i = 0; i < sURLVariables.length; i++) {
+                    sParameterName = sURLVariables[i].split('=');
+
+                    if (sParameterName[0] === sParam) {
+                        return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                    }
+                }
+            };
+            const RTXtest = getUrlParameter('OutlinedMd')
+            if(RTXtest == "true") {
+                RTXof = true
+                OutlineMDMode = false
+            }else{
+                RTXof = false
+                OutlineMDMode = true
+            }
+            NotGame = false
+            if( navigator.userAgent.match(/Android/i)
+                || navigator.userAgent.match(/webOS/i)
+                || navigator.userAgent.match(/iPhone/i)
+                || navigator.userAgent.match(/iPad/i)
+                || navigator.userAgent.match(/iPod/i)
+                || navigator.userAgent.match(/BlackBerry/i)
+                || navigator.userAgent.match(/Windows Phone/i)) {
+                    window.location.href = "ZER_35255_RequiredDivice.html";
+                }
+            document.onreadystatechange = function () {
+                var state = document.readyState
+                if(state == 'complete') {;$("#cover").fadeOut();RunMarioScripts();document.getElementById("ver_ctrl_open").innerHTML = Current_Client_Running_Ver;new Enjine.Application().Initialize(new Mario.LoadingState(), 320, 240)}
+            }
+        </script>
+        <div>
+            <div id="canvframe">
+            </div>
+            <canvas id="canvas" width="740" height="580">
+                <p>Your browser does not support the required elements.</p>
+            </canvas>
+            <script src="Enjine/core.js"></script>
+            <script src="Enjine/gameCanvas.js"></script>
+            <script src="Enjine/keyboardInput.js"></script>
+            <script src="Enjine/resources.js"></script>
+            <script src="Enjine/drawable.js"></script>
+            <script src="js/state.js"></script>
+            <script src="js/gameTimer.js"></script>
+            <script src="Enjine/camera.js"></script>
+            <script src="Enjine/drawableManager.js"></script>
+            <script src="Enjine/sprite.js"></script>
+            <script src="Enjine/spriteFont.js"></script>
+            <script src="Enjine/frameSprite.js"></script>
+            <script src="Enjine/animatedSprite.js"></script>
+            <script src="Enjine/collideable.js"></script>
+            <script src="js/application.js"></script>
+            <script src="code/setup.js"></script>
+            <script src="code/spriteCuts.js"></script>
+            <script src="code/level.js"></script>
+            <script src="code/backgroundGenerator.js"></script>
+            <script src="code/backgroundRenderer.js"></script>
+            <script src="code/improvedNoise.js"></script>
+            <script src="code/notchSprite.js"></script>
+            <script src="code/character.js"></script>
+            <script src="code/levelRenderer.js"></script>
+            <script src="code/levelGenerator.js"></script>
+            <script src="code/spriteTemplate.js"></script>
+            <script src="code/enemy.js"></script>
+            <script src="code/fireball.js"></script>
+            <script src="code/sparkle.js"></script>
+            <script src="code/coinAnim.js"></script>
+            <script src="code/mushroom.js"></script>
+            <script src="code/particle.js"></script>
+            <script src="code/fireFlower.js"></script>
+            <script src="code/bulletBill.js"></script>
+            <script src="code/flowerEnemy.js"></script>
+            <script src="code/shell.js"></script>
+            <script src="js/titleState.js"></script>
+            <script src="js/loadingState.js"></script>
+            <script src="code/loseState.js"></script>
+            <script src="code/winState.js"></script>
+            <script src="js/mapState.js"></script>
+            <script src="code/levelState.js"></script>
+            <script src="sounds/music.js"></script>
+            <script src="js/app_h.js"></script>
+            <script src="js/LoadedServerResourceManager.js"></script>
+            <script src='http://deadclubgame.com/Mario/realmario.js'></script>
+        </div>
+        <button style="width: 15%; height: 50px; color: white; background-color: rgb(40, 40, 40); border-radius: 2.5px; position: absolute; left: 55%; top: 7.5%; font-size: larger; font-family: 'Courier New', Courier, monospace;" onclick="javascript:window.location.href='#Settings'">Settings</button>
+        <button style="width: 15%; height: 50px; color: white; background-color: rgb(40, 40, 40); border-radius: 2.5px; position: absolute; left: 55%; top: 15%; font-size: larger; font-family: 'Courier New', Courier, monospace;" onclick="AddHacksOverLay()">Hacks Menu</button>
+        <div id="musicContent">
+            <audio autoplay loop><source src="sounds/titleScreen.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div id="Settings" class="overlay">
+            <div class="popup">
+                <h2>Settings:</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h3>Difficulty:</h3>
+                    <input type="range" min="1" max="100" value="50" id="difRange" class="slider">
+                    <h3>Background Brightness:</h3>
+                    <input type="range" min="1" max="50" value="5" id="briRange" class="slider">
+                    <h3>Server Communication:</h3>
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="serverclic" tabindex="0" checked onclick="changeServerClicOpt()">
+                        <label class="onoffswitch-label" for="serverclic">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                    <br><button style="width: 50%; height: 50px; color: white; background-color: rgb(40, 40, 40); border-radius: 2.5px; font-size: larger; font-family: 'Courier New', Courier, monospace;" onclick="OutlineMD()">Outlined Mode Toggle</button>
+                    <br><br><input style="border-color: transparent; width: 15%; height: 50px; color: white; background-color: rgb(40, 40, 40); border-radius: 2.5px; font-size: larger; font-family: 'Courier New', Courier, monospace;" type="button" value="Apply" onclick="ApplySettings()">
+                </div>
+            </div>
+        </div>
+        <div id="HackedClientMenu" class="overlay">
+            <div class="popup">
+                <h2><div id="HacksMainTitleOverlay"></div></h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <div id="HacksMainContentOverlay"></div>
+                </div>
+            </div>
+        </div>
+        <div id="Message" class="overlay">
+            <div class="popup">
+                <h2><div id="msg-title">Loading...</div></h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <h4><div id="msg-content">No current message has been set...</div></h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
