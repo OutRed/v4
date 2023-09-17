@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutRed | Home</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!--  PWA LINKS -->
+    <link rel="manifest" href="./js/json/manifest.json" />
+    <meta name="theme-color" content="#6C0BA9"/>
+
+      <!-- TEMP -->
+<style>
+  body {
+    overflow: none;
+  }
+
+  #index-content {
+    margin-top: 90px;
+  }
+</style>
+ <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-B5MYT5J8LH');
+ </script>
+</head>
+<body>
+
+    <div id="index-content">
+
+<p class="title">OutRed</p>
+
+<div id="phrase"><p style="font-size:30x;"><a style="text-decoration: none; color: white;"href="https://discord.gg/outred">We've taken a pause on development for private reasons. This website may not be accessible again depending on the outcome of current events. Please stay tuned, future updates will be posted on this page about this website.</a></p>
+<br><br>
+<footer style="position: fixed; bottom: 0;">
+  <a href="https://discord.gg/outred" target="_blank"></a>
+  <p>&copy; OutRed</p>
+  <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
+</footer>
+    </div>
+
+      <!-- PWA Offline script for the server worker-->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/js/sw.js");
+    }
+    </script>
+
+<script src="/js/cards.js"></script>
+<script src="/assets/splash-texts.js"></script>
+<script src="/js/anti-adblock.js"></script>
+<script src="/js/load-cards.js"></script>
+
+</body>
+</html>
