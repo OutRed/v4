@@ -32,12 +32,26 @@
  </script>
 </head>
 <body>
+    <div class="navigation-bar">
+        <p onclick="location.href = '/index.html';"class="active">Home</p>
+        <p onclick="location.href = '/g/index.html';">Games</p>
+        <p onclick="location.href = '/apps.html';">Apps</p>
+        <p onclick="location.href = '/go.html';">Proxy</p>
+    </div>
 
     <div id="index-content">
 
 <p class="title">OutRed</p>
 
-<div id="phrase"><p style="font-size:30x;"><a style="text-decoration: none; color: white;"href="https://discord.gg/outred">We've taken a pause on development for legal concerns. This website may not be accessible again depending on the outcome of current events. Please stay tuned, future updates will be posted on this page about this website. <br><br>Feel free to use the <a class="hyperlink" href="/go.html">proxy</a> while the games are inaccessible.<br><br>All other pages have been temporarily locked, so don't try anything :)</a></p>
+<div id="phrase"><p style="font-size:30x;"><a style="text-decoration: none; color: white;"href="https://discord.gg/outred">discord.gg/outred</a></p>
+    <script>
+      document.getElementById("phrase").innerHTML = getRandomPhrase();
+    </script>
+    </div><br><br>
+<!-- Original alienthub link: https://hub.alienhub.xyz/show?utm_medium=misc -->
+<a class="rainbow" href="/g/index.html">Play Now</a><br><br><br><br>
+
+<iframe alt="AlienHub Ad (If you cannot see the ad, please disable your ad blocker!)" src="https://hub.alienhub.xyz/show?utm_medium=misc" width="455" height="155" style="border: none; overflow: none"></iframe>
 <br><br>
 <footer style="position: fixed; bottom: 0;">
   <a href="https://discord.gg/outred" target="_blank"></a>
@@ -54,6 +68,7 @@
     </script>
 
 <script src="/js/cards.js"></script>
+<script src="/assets/splash-texts.js"></script>
 <script src="/js/anti-adblock.js"></script>
 <script src="/js/load-cards.js"></script>
 
