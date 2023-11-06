@@ -46,7 +46,7 @@ If you would like to add a game, join the [Discord server](https://discord.gg/s8
 ## Contributors
 
 Thank you to all the contributors!
-If you want to be a developer, join the [Discord server](https://discord.gg/s8ZtsExcd) and get in touch with me, then make a PR.
+If you want to be a developer, please make a Pull Request and I will review it ASAP.
 
 [![Contrib](https://contrib.rocks/image?repo=OutRed/outredgames#)](https://github.com/OutRed/outredgames/graphs/contributors)
 
