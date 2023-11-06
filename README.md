@@ -13,7 +13,7 @@ This website offers games to play, unblockers, and much more.
 - UV Proxy
 - Apps
   
-## Free Deployment Options
+## Deploy a copy of the website
 [![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/OutRed/outredgames)
 [![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/OutRed/outredgames)
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/OutRed/outredgames)
