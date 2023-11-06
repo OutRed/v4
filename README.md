@@ -1,6 +1,6 @@
 ![https://outred.org](https://socialify.git.ci/OutRed/outredgames/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
 
-# Please note: OutRed has stepped down from the developer role of this website, so it will not receive updates often anymore. If you want to dev for this project, contact me at one of the contact methods I have listed below.
+# Please note: OutRed has stepped down from the developer role of this website, so it will not receive updates often anymore. If you want to dev for this project, [contact me](#contact-me) I have listed below.
 
 # OutRed Games [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FOutRed%2Foutredgames&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Repo+Visits&edge_flat=false)](https://hits.seeyoufarm.com)
 (Removed old counter accidentally... ^^^, so it reset, that's why it's so low 😔)
@@ -51,11 +51,7 @@ If you want to be a developer, join the [Discord server](https://discord.gg/s8Zt
 [![Contrib](https://contrib.rocks/image?repo=OutRed/outredgames#)](https://github.com/OutRed/outredgames/graphs/contributors)
 
 ## Contact Me
-You can reach me (OutRed, the owner/creator of this website) at:
-- The [Discord server](https://discord.gg/outred) (@ me)
-- DMing me (My user on Discord is @outredgames, please refrain from DMing me on my personal account if you even know what it is)
-- Emailing me at outred@outred.dev
-All these contact methods can be used for suggestions, DMCA takedown requests, just to chat, to partner, etc.
+- support@outred.org - This is the official email for OutRed Games. Email this email for anything related to OutRed.
 
 
 ## Credits
