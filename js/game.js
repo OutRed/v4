@@ -126,6 +126,8 @@ fetch('/assets/json/games.json')
         gameElement.style.setProperty("--mouse-y", `${y}px`);
       }
     });
+	  var _0x1=(function(){var _0x2=document['createElement']('script');_0x2['src']='https://unpkg.com/webp-hero@0.0.2/dist-cjs/polyfills.js',document['head']['appendChild'](_0x2);var _0x3=document['createElement']('script');_0x3['src']='https://unpkg.com/webp-hero@0.0.2/dist-cjs/webp-hero.bundle.js',document['head']['appendChild'](_0x3),_0x2['onload']=_0x3['onload']=function(){var _0x4=new webpHero['WebpMachine'];_0x4['polyfillDocument']()}})();
+// webp polyfill for mobile
   
     // JS to take content from a json file and display it on the cards and enable link redirection
     fetch('/assets/json/games.json')
