@@ -1,5 +1,4 @@
-@import url ('https://fonts.googleapis.com/css?family=Inter');
-
+@import url('https://fonts.cdnfonts.com/css/eb-garamond-2');
 :root {
           --bg-color: rgb(20, 20, 20);
           --card-color: rgb(23, 23, 23);
@@ -11,7 +10,7 @@
           overflow: auto;
           padding: 0px;
           color: rgb(240, 240, 240);
-          font-family: 'Inter';
+          font-family: 'EB Garamond', sans-serif;
           font-weight: 400;
           text-align: center;
      }
