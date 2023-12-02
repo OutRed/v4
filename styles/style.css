@@ -76,7 +76,7 @@
      /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
       h1, h2, h3, h4, span {
           color: rgb(240, 240, 240);
-          font-family: 'Inter';
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           font-weight: 400;
           margin: 0px;
      }
@@ -212,7 +212,7 @@
           padding: 1em 2em;
           border: 0;
           background-color: rgb(20, 20, 20);
-          font-family: 'Inter';
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           font-size: 18px;
           font-weight: normal;
           color: #fff;
@@ -389,11 +389,11 @@ background-color: var(--theme);
       .search-input::placeholder {
           color: rgb(240, 240, 240);
           font-size: 16px;
-          font-family: 'Inter';
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      }
       .save-button, .take-me-home-button, .copy-button {
           padding: 8px;
-          font-family: 'Inter';
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           font-size: 18px;
           border-radius: 14px;
           border: 1px solid grey;
@@ -553,7 +553,7 @@ background-color: var(--theme);
           border: 1px solid gray;
           padding: 20px;
           text-align: center;
-          font-family: 'Inter';
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
      }
       .encoded-url {
