@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -163,93 +163,211 @@
     <div class="content">
 
         <h1 class="title">Apps</h1><br><br>
-
-    
 <center>
-<div class="card" onclick="openIframe(this);">
-    <!-- The iframe container -->
-    <div id="iframeContainer"></div>
+    <div class="card" onclick="openIframe(this);">
+        <!-- The iframe container -->
+        <div class="iframeContainer"></div>
 
-    <script>
-        var iframeOpened = false;
+        <!-- Close button -->
+        <div class="close-button" onclick="closeIframe(event)">Close</div>
 
-        function openIframe(divElement) {
-            // Check if the iframe has already been opened
-            if (!iframeOpened) {
-                // Set the flag to prevent further openings
-                iframeOpened = true;
+        <!-- Fullscreen button -->
+        <div class="fullscreen-button" onclick="toggleFullscreen(event)">Fullscreen</div>
 
-                // Create an iframe element
-                var iframe = document.createElement('iframe');
-                
-                // Set the source URL for the iframe
-                iframe.src = "https://pro2.minoa.cat/uv/service/hvtrs8%2F-dksaopd%2Ccmm-arp";
-                
-                // Set width and height attributes (adjust as needed)
-                iframe.width = "600";
-                iframe.height = "400";
-                
-                // Append the iframe to the container
-                document.getElementById('iframeContainer').appendChild(iframe);
-                
-                // Add a class or style to the clicked div to visually indicate that it has been clicked
-                divElement.classList.add('clicked');
+        <script>
+            var iframeOpened = false;
+
+            function openIframe(divElement) {
+                // Check if the iframe has already been opened
+                if (!iframeOpened) {
+                    // Set the flag to prevent further openings
+                    iframeOpened = true;
+
+                    // Create an iframe element
+                    var iframe = document.createElement('iframe');
+
+                    // Set the source URL for the iframe
+                    iframe.src = "https://pro2.minoa.cat/uv/service/hvtrs8%2F-dksaopd%2Ccmm-arp";
+
+                    // Set width and height attributes (adjust as needed)
+                    iframe.width = "600";
+                    iframe.height = "400";
+
+                    // Append the iframe to the container
+                    divElement.querySelector('.iframeContainer').appendChild(iframe);
+
+                    // Add a class or style to the clicked div to visually indicate that it has been clicked
+                    divElement.classList.add('clicked');
+                }
             }
-        }
-    </script>
 
-    <p class="title" style="font-size:24px;">Discord</p>
-    
-    <br>
-    <center>
-        <img src="https://skylarsdiscordiswherxy.netlify.app/assets/img/apps/discord.png">
-    </center>
-</div>
-<div></div></center>
-<br><br>
-<center>
-<div class="card" onclick="openIframe(this);">
-    <!-- The iframe container -->
-    <div id="iframeContainer"></div>
-
-    <script>
-        var iframeOpened = false;
-
-        function openIframe(divElement) {
-            // Check if the iframe has already been opened
-            if (!iframeOpened) {
-                // Set the flag to prevent further openings
-                iframeOpened = true;
-
-                // Create an iframe element
-                var iframe = document.createElement('iframe');
-                
-                // Set the source URL for the iframe
-                iframe.src = "https://pro2.minoa.cat/uv/service/hvtrs8%2F-wuw%2Cymuvu%60e%2Ccmm-";
-                
-                // Set width and height attributes (adjust as needed)
-                iframe.width = "600";
-                iframe.height = "400";
-                
-                // Append the iframe to the container
-                document.getElementById('iframeContainer').appendChild(iframe);
-                
-                // Add a class or style to the clicked div to visually indicate that it has been clicked
-                divElement.classList.add('clicked');
+            function closeIframe(event) {
+                event.stopPropagation(); // Prevent the card from being clicked
+                iframeOpened = false;
+                var card = event.target.closest('.card');
+                card.classList.remove('clicked');
+                card.querySelector('.iframeContainer').innerHTML = '';
             }
-        }
-    </script>
 
-    <p class="title" style="font-size:24px;">Youtube</p>
-    
-    <br>
-    <center>
-        <img src="https://skylarsdiscordiswherxy.netlify.app/assets/img/clipboard-image.png">
-    </center>
-</div>
-<div></div></center>
+            function toggleFullscreen(event) {
+                event.stopPropagation(); // Prevent the card from being clicked
+                var card = event.target.closest('.card');
+                card.querySelector('.iframeContainer').classList.toggle('fullscreen');
+            }
+        </script>
+
+        <p class="title" style="font-size: 24px;">Youtube</p>
+
+        <br>
+        <center>
+            <img src="https://skylarsdiscordiswherxy.netlify.app/assets/img/clipboard-image.png">
+        </center>
+    </div>
+    <br><br><div class="card" onclick="openIframe(this);">
+        <!-- The iframe container -->
+        <div class="iframeContainer"></div>
+
+        <!-- Close button -->
+        <div class="close-button" onclick="closeIframe(event)">Close</div>
+
+        <!-- Fullscreen button -->
+        <div class="fullscreen-button" onclick="toggleFullscreen(event)">Fullscreen</div>
+
+        <script>
+            var iframeOpened = false;
+
+            function openIframe(divElement) {
+                // Check if the iframe has already been opened
+                if (!iframeOpened) {
+                    // Set the flag to prevent further openings
+                    iframeOpened = true;
+
+                    // Create an iframe element
+                    var iframe = document.createElement('iframe');
+
+                    // Set the source URL for the iframe
+                    iframe.src = "https://pro2.minoa.cat/uv/service/hvtrs8%2F-dksaopd%2Ccmm-arp";
+
+                    // Set width and height attributes (adjust as needed)
+                    iframe.width = "600";
+                    iframe.height = "400";
+
+                    // Append the iframe to the container
+                    divElement.querySelector('.iframeContainer').appendChild(iframe);
+
+                    // Add a class or style to the clicked div to visually indicate that it has been clicked
+                    divElement.classList.add('clicked');
+                }
+            }
+
+            function closeIframe(event) {
+                event.stopPropagation(); // Prevent the card from being clicked
+                iframeOpened = false;
+                var card = event.target.closest('.card');
+                card.classList.remove('clicked');
+                card.querySelector('.iframeContainer').innerHTML = '';
+            }
+
+            function toggleFullscreen(event) {
+                event.stopPropagation(); // Prevent the card from being clicked
+                var card = event.target.closest('.card');
+                card.querySelector('.iframeContainer').classList.toggle('fullscreen');
+            }
+        </script>
+
+        <p class="title" style="font-size: 24px;">Discord</p>
+
+        <br>
+        <center>
+            <img src="https://skylarsdiscordiswherxy.netlify.app/assets/img/apps/discord.png">
+        </center>
+    </div>
+          
+
+        <br>
+        
+    <div></div>
+          <div>
+            <style>
+    .card {
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .iframeContainer {
+        display: none;
+    }
+
+    .card.clicked .iframeContainer {
+        display: block;
+    }
+
+    .card.clicked .close-button,
+    .card.clicked .fullscreen-button {
+        display: block;
+    }
+
+    .close-button,
+    .fullscreen-button {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        padding: 5px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .card.clicked .close-button,
+    .card.clicked .fullscreen-button {
+        display: block;  /* Corrected line */
+    }
+</style>
+          </div>
+</center>
 
 
+
+
+
+<style>
+    .card {
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .iframeContainer {
+        display: none;
+    }
+
+    .card.clicked .iframeContainer {
+        display: block;
+    }
+
+    .card.clicked .close-button,
+    .card.clicked .fullscreen-button {
+        display: block;
+    }
+
+    .close-button,
+    .fullscreen-button {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        padding: 5px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+
+<br>
 
         <!-- ad banner -->
         <script type="text/javascript">
@@ -282,25 +400,8 @@
     <div id="vtoverlay" class="vtoverlay vthidden w3-animate-right
     w3-container">
     <div class="vtmain vthidden" id="vtmain">
-      <div class="vtcontactus">
-          <a id="linktest" href="https://www.virustotal.com">
-            <img class="vtlogo-popup" style=" width: 32px; 
-            height: 32px;" src="moz-extension://2f9a2ede-fb84-44de-ae29-7594ec200cb3/icons/vt-logo.svg">
-          </a>
-          <a href="https://www.virustotal.com">VT4Browsers
-          </a>
       </div>
-      <span id="vtclose"><strong>X</strong></span>
-      <div class="vttextpopup vthidden" id="statustext">
-        <div class="vtscanstatus" id="vtscanstatus"></div>
-        <div class="vtprogress vthidden" id="vtprogress"></div>
-        <br id="brfile">
-        <div class="vtscanstatus" id="vtscanfilelink"></div>
-      </div>
-      <div class="vttextpopup vthidden" id="widgettext">
-        <div id="vtwidgetError"></div>
-      </div>
-    </div>
-    </div>
-    </div>
-    <div id="vt-augment-container" class="vtzindex vt-augment drawer" style="background: rgb(49, 61, 90);"></div></div><span class="vttooltiptext vthidden">&nbsp;Click to open VirusTotal report&nbsp;<br>with VT Augment</span><style></style></body></html>
+    
+      </body>
+      
+      </html>
