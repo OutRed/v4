@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	
+    <!--School-Security-Prevent-Tab-Close-->
+    <script>
+        // This small script prevents GoGuardian and any other School security Apps from closing the tab.
+        window.addEventListener('beforeunload', function (event) {
+            event.preventDefault();
+            return (event.returnValue = "");
+        });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OutRed | Games</title>
     <link rel="stylesheet" href="/styles/style.css">
