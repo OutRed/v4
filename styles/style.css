@@ -193,7 +193,7 @@
      }
      /* homepage stuff */
       .content {
-          margin-top: 60px;
+          margin-top: 80px;
      }
       .title {
           font-size: 60px;
@@ -267,7 +267,6 @@
           justify-content: center;
           align-items: center;
           background-color: var(--card-color);
-          padding: 20px;
           color: rgb(240, 240, 240);
           position: fixed;
           top: 0;
@@ -278,28 +277,28 @@
           box-shadow: 0px 0px 20px #000000;
           z-index: 9999;
      }
-.navactive {
- background-color: rgb(29, 130, 255);
-  transform: scale(1.05);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 15px; 
-}
-background-color: var(--theme);
-           border-radius: 0;
-           transform: none;
-           text-shadow: none;
-}
-      .navigation-bar p {
-          margin: 0 15px;
-          cursor: pointer;
-          transition: .3s;
+
+     .navigation-bar p {
+        margin-left: 30px;
+        cursor: pointer;
+        transition: .3s;
      }
-      .navigation-bar p:hover {
-          color: rgba(255, 255, 255, 0.7);
+
+     .navigation-bar p:hover {
+        cursor: pointer;
+        color: grey;
      }
-      .navigation-bar .active p {
-          color: 5px solid rgb(0, 140, 255);
+
+     .active {
+        border: 4px solid rgb(0, 140, 255);
+        border-radius: 50px;
+        padding: 6px;
      }
+
+     .active:hover {
+        color: white;
+     }
+
      /* footer */
       footer {
           background-color: var(--card-color);
