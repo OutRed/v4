@@ -4,7 +4,7 @@
       "root": "fruitcutter",
       "file": "index.html",
       "img": "fruit1.png",
-      "description": ""
+      "description": "Description coming soon!"
     },
     {
       "title": "Neon Rocket",
@@ -18,21 +18,21 @@
       "root": "1",
       "file": "index.html",
       "img": "meta/apple-touch-icon.png",
-      "description": ""
+      "description": "Description coming soon!"
     },
     {
       "title": "Fortnite",
       "root": "ftnte",
       "file": "index.html",
       "img": "fartnite.png",
-      "description": ""
+      "description": "Description coming soon!"
     },
     {
       "title": "osu!",
       "root": "osu",
       "file": "index.html",
       "img": "osu.png",
-      "description": ""
+      "description": "Description coming soon!"
     },
     {
       "title": "10 Minutes Till Dawn",
