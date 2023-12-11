@@ -1,20 +1,12 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html lang="en"><head>
-    
-    <!--School-Security-Prevent-Tab-Close-->
-    <script>
-        // This small script prevents GoGuardian and any other School security Apps from closing the tab.
-        window.addEventListener('beforeunload', function (event) {
-            event.preventDefault();
-            return (event.returnValue = "");
-        });
-    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OutRed | Apps</title>
     <link rel="stylesheet" href="/styles/style.css">
      <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -22,74 +14,8 @@
 
   gtag('config', 'G-B5MYT5J8LH');
 </script>
-<link href="data:text/css,%3Ais(%5Bid*%3D'google_ads_iframe'%5D%2C%5Bid*%3D'taboola-'%5D%2C.taboolaHeight%2C.taboola-placeholder%2C%23credential_picker_container%2C%23credentials-picker-container%2C%23credential_picker_iframe%2C%5Bid*%3D'google-one-tap-iframe'%5D%2C%23google-one-tap-popup-container%2C.google-one-tap-modal-div%2C%23amp_floatingAdDiv%2C%23ez-content-blocker-container)%20%7Bdisplay%3Anone!important%3Bmin-height%3A0!important%3Bheight%3A0!important%3B%7D" rel="stylesheet" type="text/css"><style>
-  .vt-augment {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .vt-augment.drawer {
-    display: none;
-    width: 700px;
-    background: white;
-    border: 1px solid #e6e6e6;
-    text-align: left;
-    z-index: 102;
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    box-shadow: -4px 5px 8px -3px rgba(17, 17, 17, .16);
-    animation: slideToRight 0.5s 1 forwards;
-    transform: translateX(100vw);
-  }
-  .vt-augment.drawer[opened] {
-    display: flex;
-    animation: slideFromRight 0.2s 1 forwards;
-  }
-  .vt-augment > .spinner {
-    position: absolute;
-    z-index: 199;
-    top: calc(50% - 50px);
-    left: calc(50% - 50px);
-    border: 8px solid rgba(0, 0, 0, 0.2);
-    border-left-color: white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1.2s linear infinite;
-  }
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-  @keyframes slideFromRight {
-    0% {
-      transform: translateX(100vw);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  @keyframes slideToRight {
-    100% {
-      transform: translateX(100vw);
-      display: none;
-    }
-  }
-  @media screen and (max-width: 700px) {
-    .vt-augment.drawer {
-      width: 100%;
-    }
-  }
-</style></head>
+</head>
 <body>
-    <div class="navigation-bar">
-  <p onclick="window.location.href='/index.html'">Home</p>
-  <p onclick="window.location.href='/g/index.html'">Games</p>
-  <p onclick="window.location.href='/apps.html'" class="active">Apps</p>
-  <p onclick="window.location.href='/go.html'">Proxy</p>
-</div>
 
 <script>
             // Function to check if a year has passed since the last time the user saw the alert
@@ -111,97 +37,19 @@
             showAlert();
         }
 </script>
-  
+
+<div class="navigation-bar">
+  <p onclick="window.location.href='/index.html'">Home</p>
+  <p onclick="window.location.href='/g/index.html'">Games</p>
+  <p onclick="window.location.href='/apps.html'" class="active">Apps</p>
+  <p onclick="window.location.href='/go.html'">Proxy</p>
+</div>
 
     <div class="content">
 
-       
-          
+        <h1 class="title">Apps</h1><br>
 
-        <br>
-        
-    <div></div>
-          <div>
-            <style>
-    .card {
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .iframeContainer {
-        display: none;
-    }
-
-    .card.clicked .iframeContainer {
-        display: block;
-    }
-
-    .card.clicked .close-button,
-    .card.clicked .fullscreen-button {
-        display: block;
-    }
-
-    .close-button,
-    .fullscreen-button {
-        display: none;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        padding: 5px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    .card.clicked .close-button,
-    .card.clicked .fullscreen-button {
-        display: block;  /* Corrected line */
-    }
-</style>
-          </div>
-</center>
-
-
-
-
-
-<style>
-    .card {
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .iframeContainer {
-        display: none;
-    }
-
-    .card.clicked .iframeContainer {
-        display: block;
-    }
-
-    .card.clicked .close-button,
-    .card.clicked .fullscreen-button {
-        display: block;
-    }
-
-    .close-button,
-    .fullscreen-button {
-        display: none;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        padding: 5px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-</style>
-
-<br>
+        <h1>We'll be back later!</h1>
 
         <!-- ad banner -->
         <script type="text/javascript">
@@ -212,14 +60,14 @@
                 'width' : 728,
                 'params' : {}
             };
-            
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://plantationexhaust.com/7a33ea3bd131ec5ad5051e8181267d9c/invoke.js"></scr' + 'ipt>');
         </script><br><br>
 
         <div class="apps"></div><br>
 
         <footer style="bottom: 0; right: 0; left: 0; position: relative;">
             <a href="https://discord.gg/outred" target="_blank"></a>
-            <p>© OutRed</p>
+            <p>&copy; OutRed</p>
             <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
         </footer>
 
@@ -227,15 +75,5 @@
 
 <script src="/js/apps.js"></script>
 
-
-
-<div>
-    <div class="vtResetstyles">
-    <div id="vtoverlay" class="vtoverlay vthidden w3-animate-right
-    w3-container">
-    <div class="vtmain vthidden" id="vtmain">
-      </div>
-    
-      </body>
-      
-      </html>
+</body>
+</html>
