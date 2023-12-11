@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <!--School-Security-Prevent-Tab-Close-->
+    <script>
+        // This small script prevents GoGuardian and any other School security Apps from closing the tab.
+        window.addEventListener('beforeunload', function (event) {
+            event.preventDefault();
+            return (event.returnValue = "");
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OutRed | Settings</title>
@@ -92,13 +101,117 @@
     </script>
     <div class="content">
         <center><h1>Settings</h1></center>
-    <center>
+<center>
 <div class="buttons">
+    <style>body[theme="rose_gold"] {
+    --text-color: #ffffff;
+    --background: #f3a683;
+    --navbar: #e79a58;
+    --accent: #ff9a8b;
+}
+body[theme="midnight"] {
+    --text-color: white;
+    --background: #1a2023;
+    --navbar: #0e1213;
+    --accent: #0284d4;
+}
+body[theme="main"] {
+    --text-color: white;
+    --background: #1a2023;
+    --navbar: #0e1213;
+    --accent: #0284d4;
+}
+body[theme="lgbtq"] {
+    --text-color: black;
+    --background: url("https://www.rd.com/wp-content/uploads/2021/05/traditional-gay-pride-flag.jpg?resize=2048");
+    --navbar: #bcf3f6;
+    --accent: #DDF9FA;
+}
+
+
+body[theme="forest"] {
+    --text-color: white;
+    --background: #2c3e50;
+    --navbar: #1c221d;
+    --accent: #27ae60;
+}
+
+body[theme="ocean"] {
+    --text-color: white;
+    --background: #34495e;
+    --navbar: #2d1a79;
+    --accent: #2980b9;
+}
+body[theme="amoled"] {
+    --text-color: #ebebeb;
+    --background: #000000;
+    --navbar: #0f0f0f;
+    --accent: #0284d4;
+}
+body[theme="white"] {
+    --text-color: #000000;
+    --background: #ffffff;
+    --navbar: #dbdbdb;
+    --accent: #0284d4;
+}
+body[theme="sunset"] {
+    --text-color: #ffffff;
+    --background: linear-gradient(#f08b08, #f15e08);
+    --navbar: #f09f08;
+    --accent: #0284d4;
+}
+body[theme="flash"] {
+    --text-color: #ffffff;
+    --background: #ffffff;
+    --navbar: #ffffff;
+    --accent: #ffffff;
+}
+body[theme="matrix"] {
+    --text-color: #e0e0e0;
+    --background: linear-gradient(#000000, #006b09);
+    --navbar: #080808;
+    --accent: #0284d4;
+}
+body[theme="beach"] {
+    --text-color: #000000;
+    --background: #f6d7b0;
+    --navbar: #87CEEB;
+    --accent: #0284d4;
+}
+body[theme="murica"] {
+    --text-color: #000000;
+    --background: linear-gradient(#e21f1f, #2233cf);
+    --navbar: #e22e2e;
+    --accent: #0284d4;
+}
+body[theme="modern"] {
+    --text-color: #000000;
+    --background: url("https://yourcatholicfoundation.org.au/wp-content/uploads/2019/09/Main-Image-bg.jpg");
+    --navbar: #313131;
+    --accent: #0284d4;
+}
+</style>
+  <style>
+    
+    input {
+     background-color: #fff;
+     transition: 0.4s border;
+     border-radius: 5px;
+     border: none;
+     font-size: 20px;
+     color: black;
+     text-align: center;
+     padding: 5px 15px;
+     margin: 5px auto;
+  }
+  input:focus {
+    outline: none;
+ }
+  </style>
 <input id="title" class="input" type="settings" placeholder="Title" onkeyup="setTitle(this.value)">
 <input id="icon" class="input" type="settings" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())">
 </div>
-    </center>
-        <script>var _0x101ccc=_0x1342;(function(_0x300086,_0xbb859c){var _0x7842af=_0x1342,_0x308601=_0x300086();while(!![]){try{var _0x345aca=parseInt(_0x7842af(0xd7))/(-0xc2e*0x2+0xa2b*0x1+ -0x9e*-0x17)*(-parseInt(_0x7842af(0x17b))/(0x25bb*-0x1+ -0x263*0x1+ -0x20*-0x141))+ -parseInt(_0x7842af(0xe9))/(-0x1*0xe3b+ -0x2207+0x1*0x3045)+parseInt(_0x7842af(0x175))/(-0x4c7*0x1+ -0x1*-0x1ef7+ -0x4*0x68b)*(-parseInt(_0x7842af(0x164))/(-0x6b2+0x1151+ -0xa9a))+parseInt(_0x7842af(0x16e))/(-0x25f9+0x154b+0x10b4)*(-parseInt(_0x7842af(0x151))/(0x11a5*-0x2+ -0xb73+0x49*0xa4))+parseInt(_0x7842af(0x17a))/(-0x18a8+0x17db*0x1+0xd5)+parseInt(_0x7842af(0xd9))/(-0x69*0x4e+ -0x3*-0x2e6+0x1755)+parseInt(_0x7842af(0xd5))/(-0x7d*-0x4b+0x1e21+ -0x42b6);if(_0x345aca===_0xbb859c)
+    </center>        <script>var _0x101ccc=_0x1342;(function(_0x300086,_0xbb859c){var _0x7842af=_0x1342,_0x308601=_0x300086();while(!![]){try{var _0x345aca=parseInt(_0x7842af(0xd7))/(-0xc2e*0x2+0xa2b*0x1+ -0x9e*-0x17)*(-parseInt(_0x7842af(0x17b))/(0x25bb*-0x1+ -0x263*0x1+ -0x20*-0x141))+ -parseInt(_0x7842af(0xe9))/(-0x1*0xe3b+ -0x2207+0x1*0x3045)+parseInt(_0x7842af(0x175))/(-0x4c7*0x1+ -0x1*-0x1ef7+ -0x4*0x68b)*(-parseInt(_0x7842af(0x164))/(-0x6b2+0x1151+ -0xa9a))+parseInt(_0x7842af(0x16e))/(-0x25f9+0x154b+0x10b4)*(-parseInt(_0x7842af(0x151))/(0x11a5*-0x2+ -0xb73+0x49*0xa4))+parseInt(_0x7842af(0x17a))/(-0x18a8+0x17db*0x1+0xd5)+parseInt(_0x7842af(0xd9))/(-0x69*0x4e+ -0x3*-0x2e6+0x1755)+parseInt(_0x7842af(0xd5))/(-0x7d*-0x4b+0x1e21+ -0x42b6);if(_0x345aca===_0xbb859c)
 break;else
 _0x308601['push'](_0x308601['shift']());}catch(_0x175dc2){_0x308601['push'](_0x308601['shift']());}}}(_0x48a0,-0x1a0500+0x6233*-0x16+0x1*0x301a5b));var tab=localStorage[_0x101ccc(0x137)](_0x101ccc(0x149));if(tab)
 try{var tabData=JSON[_0x101ccc(0x13d)](tab);}catch{var tabData={};}
