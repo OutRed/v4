@@ -460,14 +460,14 @@ footer {
 .save-button,
 .take-me-home-button,
 .copy-button {
-	padding: 8px;
+	padding: 10px;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 18px;
-	border-radius: 14px;
+	border-radius: 20px;
 	border: 1px solid grey;
 	background-color: var(--card-color);
 	color: white;
-	transition: 0.2s;
+	transition: .2s;
 }
 
 .save-button:hover,
@@ -480,7 +480,7 @@ footer {
 .save-button:active,
 .take-me-home-button:active,
 .copy-button:active {
-	opacity: .3;
+	opacity: .1;
 }
 
 .settings-sidebar {
@@ -777,11 +777,32 @@ input:checked+.slider:before {
 	transition: .2s;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-	background: #555;
-}
-
 a {
     color: rgb(0, 140, 255);
+}
+
+.tab-cloak-input {
+	padding: 14px;
+	background-color: rgba(189, 189, 189, 0.1);
+	border-radius: 20px;
+	border: 1px solid rgb(80, 80, 80);
+	width: 10%;
+	font-size: 14px;
+	caret-color: rgb(240, 240, 240);
+	color: white;
+	transition: 0.3s;
+}
+
+.tab-cloak-input:focus {
+	outline: none;
+	-webkit-box-shadow: 0px 0px 20px #000000;
+	-moz-box-shadow: 0px 0px 20px #000000;
+	box-shadow: 0px 0px 20px #000000;
+	border: 1px solid grey;
+}
+
+.tab-cloak-input::placeholder {
+	color: rgb(240, 240, 240);
+	font-size: 16px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
