@@ -342,9 +342,9 @@ i {
 }
 
 .active {
-	border: 4px solid rgb(0, 140, 255);
+	border: 3px solid rgb(0, 140, 255);
 	border-radius: 50px;
-	padding: 6px;
+    padding: 5px;
 }
 
 .active:hover {
