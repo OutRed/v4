@@ -21,20 +21,6 @@
       "description": "Description coming soon!"
     },
     {
-      "title": "Fortnite",
-      "root": "ftnte",
-      "file": "index.html",
-      "img": "fartnite.png",
-      "description": "Description coming soon!"
-    },
-    {
-      "title": "osu!",
-      "root": "osu",
-      "file": "index.html",
-      "img": "osu.png",
-      "description": "Description coming soon!"
-    },
-    {
       "title": "10 Minutes Till Dawn",
       "root": "10-minutes-till-dawn",
       "file": "index.html",

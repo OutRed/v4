@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutRed | Settings</title>
+    <link rel="stylesheet" href="/styles/style.css">
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B5MYT5J8LH');
+</script>
+</head>
+<body>
+
+    <div>
+        <style> /* Navbar */
+.navbar ul {
+  list-style-type: none;
+  background-color: transparent; /* Darker and semi-transparent */
+  padding: 0px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-align: center;
+
+  transition: background-color 0.3s;
+  justify-content: center;
+  
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul:hover {
+  background-color: transparent;
+}
+
+.navbar a {
+  color: rgb(219, 219, 219);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: left; /* 50% away from the left */
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, border-radius 0.3s; /* Added border-radius transition */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+.navbar a:hover {
+  background-color: rgb(29, 130, 255);
+  transform: scale(1.05);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 15px; /* Rounded corners on hover */
+}
+
+.navbar li {
+  float: left;
+}
+</style>
+        <nav class="navbar" >
+      <ul>
+          <li><a href="./" class="navlink">Home</a></li>
+          <li><a href="/g/index.html">Games</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="go.html">Proxy</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+  </nav>
+    </div>
+    <script type="text/javascript">
+        atOptions = {
+            'key' : '7a33ea3bd131ec5ad5051e8181267d9c',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://plantationexhaust.com/7a33ea3bd131ec5ad5051e8181267d9c/invoke.js"></scr' + 'ipt>');
+    </script>
+    <div class="content">
+        <center><h1>Settings</h1></center>
+    <center>
+<div class="buttons">
+<input id="title" class="input" type="settings" placeholder="Title" onkeyup="setTitle(this.value)">
+<input id="icon" class="input" type="settings" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())">
+</div>
+  
+    
+
+        <!-- archiving this code. never got to finishing. maybe someone will come back and finish this. for now, I (outred) step down from being a dev for this. i now am the manager - i manage hosting, domains, analytics, discord server(s) etc. -->
+
+        <h1 class="title">Settings</h1>
+<div class="settings-content">
+        <div class="settings-sidebar">
+            <li onclick="showTab('appearance');">Appearance</li>
+            <li onclick="showTab('tabCloaking');">Tab Cloaking</li>
+            <li onclick="showTab('panicKey');">Panic Key</li>
+            <li onclick="showTab('language');">Language</li>
+        </div>
+
+        <div class="settings-right-section"></div>
+
+                    Add the tab for Appearance here 
+                    <div class="appearance-tab" id="appearance-tab">
+                        <h2>Choose Appearance</h2><br>
+                        <label>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label> <h2 style="font-weight: normal;">Dark Theme</h2>
+                        </label><br><br>
+                        <button class="save-button" onclick="saveAppearance()">Save</button>
+                    </div>
+                </div>
+            </div> 
+        
+
+        <footer style="bottom: 0; position: fixed;">
+            <a href="https://discord.gg/outred" target="_blank"></a>
+            <p>&copy; OutRed</p>
+            <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
+        </footer>
+
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tabs first
+            const tabs = document.querySelectorAll('.appearance-tab');
+            tabs.forEach(tab => tab.style.display = 'none');
+
+                        // Show the selected tab
+                        if (tabName === 'appearance') {
+                document.getElementById('appearance-tab').style.display = 'block';
+            }
+
+        }
+
+        function saveAppearance() {
+            // Add your code here to save the selected appearance (light/dark mode)
+            // For example, you can use localStorage to store the preference.
+            // Once saved, you can close the tab or provide a message that the setting is saved.
+        }
+    </script>
+
+</body>
+</html>

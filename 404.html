@@ -16,69 +16,10 @@
 </script>
 </head>
 <body>
-
-      <div>
-        <style> /* Navbar */
-.navbar ul {
-  list-style-type: none;
-  background-color: transparent; /* Darker and semi-transparent */
-  padding: 0px;
-  margin-top: 10px;
-  overflow: hidden;
-  text-align: center;
-
-  transition: background-color 0.3s;
-  justify-content: center;
-  
-}
-.navbar {
-  display: flex;
-  justify-content: center;
-  padding-top: 5px;
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar ul:hover {
-  background-color: transparent;
-}
-
-.navbar a {
-  color: rgb(219, 219, 219);
-  text-decoration: none;
-  padding: 15px;
-  display: block;
-  text-align: left; /* 50% away from the left */
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 600;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s, border-radius 0.3s; /* Added border-radius transition */
-  border-radius: 5px; /* Rounded corners on hover */
-}
-
-.navbar a:hover {
-  background-color: rgb(29, 130, 255);
-  transform: scale(1.05);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 15px; /* Rounded corners on hover */
-}
-
-.navbar li {
-  float: left;
-}
-</style>
-        <nav class="navbar" >
-      <ul>
-          <li><a href="./" class="navlink">Home</a></li>
-          <li><a href="/g/index.html">Games</a></li>
-          <li><a href="apps.html">Apps</a></li>
-          <li><a href="go.html">Proxy</a></li>
-        </ul>
-  </nav>
-    </div>
+  <div class="navigation-bar">
+    <p onclick="window.location.href='/index.html'" class="active">Home</p>
+    <p onclick="window.location.href='/g/index.html'">Games</p>
+  </div>
 
     <div class="content">
 
@@ -102,8 +43,8 @@
      
     </center>
 
-    <div id="sfn" style="display: none;" class="message">
-      Please make a issue about this happening on the <a href="https://github.com/OutRed/v4/issues">Github issue tracker</a>.<br /> Requested URL: <span id="full">Fetching...</span><br />
+    <div id="sfn" style="display: none;" class="message"><br>
+      Please make a ticket about this happening in the <a href="https://discord.gg/FB6NtPkfwY">Discord server</a>.<br><br> Requested URL: <span id="full">Fetching...</span><br />
       Referrer: <span id="ref">Fetching...</span><br />
       Title: <span id="title">Fetching...</span><br />
       Screen height: <span id="height">Fetching...</span><br />
