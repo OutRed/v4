@@ -61,3 +61,4 @@ If you want to be a developer, please make a Pull Request and I will review it A
 - [Titanium Network's Ultraviolet Proxy](https://github.com/titaniumnetwork-dev/Ultraviolet-App)
 - - The proxy that is used on the website.
 [tomp.app](https://tomp.app) - Thank you Tomp for having a good bare server...
+- [Favicon](https://www.flaticon.com/free-icons/game-console)
