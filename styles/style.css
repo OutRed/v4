@@ -288,6 +288,7 @@ i {
 	filter: hue-rotate(0);
 	animation: rotate-hue linear 500ms infinite;
 	animation-play-state: paused;
+    transition: .2s;
 }
 
 .rainbow:hover::after {

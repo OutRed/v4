@@ -49,3 +49,11 @@ const phrases = [
   function getRandomPhrase() {
     return phrases[Math.floor(Math.random() * phrases.length)];
   }
+
+  // Define the message
+const message = "If you know what you are doing in here, join our developer team! https://discord.gg/nZnaMtEEke";
+
+// Repeat the message in the console
+for (let i = 0; i < 3; i++) {
+  console.log("%c" + message, "color: red; font-size: 16px;");
+}

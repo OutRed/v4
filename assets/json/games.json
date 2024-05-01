@@ -158,23 +158,11 @@
       "file": "index.html",
       "img": "awesometanks2.jpg"
     },
-      {
-      "title": "Ball Dodge",
-      "root": "balldodge",
-      "file": "balldodge.html",
-      "img": "2BD297A6-93B9-40CF-9735-70B50A9BADF6.jpeg"
-    },
     {
       "title": "Backrooms",
       "root": "backrooms",
       "file": "index.html",
       "img": "img/splash.jpg"
-    },
-    {
-      "title": "Bacon May Die",
-      "root": "bacon-may-die",
-      "file": "index.html",
-      "img": "splash.png"
     },
     {
       "title": "Bad Ice Cream",
