@@ -39,7 +39,7 @@ If you have any feedback, please reach out to me [here](https://github.com/OutRe
 
 
 ## Add a Game
-If you would like to add a game, join the [Discord server](https://discord.gg/s8Z4tsExcd) and drop a suggestion. We want to make this website contain everyones favorite games, so feel free to suggest!
+If you would like to add a game, join the [Discord server](https://discord.gg/nZnaMtEEke) and drop a suggestion. We want to make this website contain everyones favorite games, so feel free to suggest!
 
 ## Contributors
 
