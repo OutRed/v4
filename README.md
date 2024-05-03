@@ -1,7 +1,5 @@
 ![https://outred.org](https://socialify.git.ci/OutRed/outredgames/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
 
-# Note: OutRed has stepped down from the developer role of this website, so it will not receive updates often anymore. If you want to dev for this project, [contact me](#contact-me) I have listed below.
-
 # OutRed Games [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FOutRed%2Foutredgames&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Repo+Visits&edge_flat=false)](https://hits.seeyoufarm.com)
 (Removed old counter accidentally... ^^^, so it reset, that's why it's so low 😔)
 ## [Play Here!](https://outred.org)
@@ -41,7 +39,7 @@ If you have any feedback, please reach out to me [here](https://github.com/OutRe
 
 
 ## Add a Game
-If you would like to add a game, join the [Discord server](https://discord.gg/s8Z4tsExcd) and drop a suggestion. We want to make this website contain everyones favorite games, so feel free to suggest!
+If you would like to add a game, join the [Discord server](https://discord.gg/nZnaMtEEke) and drop a suggestion. We want to make this website contain everyones favorite games, so feel free to suggest!
 
 ## Contributors
 
