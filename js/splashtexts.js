@@ -43,17 +43,36 @@ const phrases = [
     "🎵 How I ain't bring nothing to the table, when I'm the table 🎵",
     "Phillipians 4:6-7",
     "Proven fact: By playing online games it increases your creativity, therfore increasig your grades!",
-    "If you're seeing this message, consider yourself one of the elite gamers ☝️🤓"
+    "If you're seeing this message, consider yourself one of the elite gamers ☝️🤓",
+    "What color is your Bugatti?",
+    "Don't vape, kids 😄👍"
   ];
 
   function getRandomPhrase() {
     return phrases[Math.floor(Math.random() * phrases.length)];
   }
 
-  // Define the message
+// Define the message
 const message = "If you know what you are doing in here, join our developer team! https://discord.gg/nZnaMtEEke";
 
-// Repeat the message in the console
-for (let i = 0; i < 3; i++) {
-  console.log("%c" + message, "color: red; font-size: 16px;");
+// Function to log the message to the console
+function logToConsole() {
+    console.log("%c" + message, "color: red; font-size: 32px;");
 }
+
+// Set up a counter variable to control how many times the message is repeated
+let count = 0;
+
+// Set up the interval to repeat the message
+const intervalId = setInterval(function() {
+    // Log the message to the console
+    logToConsole();
+    
+    // Increment the counter
+    count++;
+    
+    // If the message has been repeated 3 times, stop the interval
+    if (count === 3) {
+        clearInterval(intervalId);
+    }
+}, 500); // Repeat every half second (500 milliseconds)

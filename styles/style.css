@@ -469,7 +469,7 @@ footer {
 	border: 1px solid grey;
 	background-color: var(--card-color);
 	color: white;
-	transition: .2s;
+    transition: .2s;
 }
 
 .save-button:hover,
@@ -482,7 +482,7 @@ footer {
 .save-button:active,
 .take-me-home-button:active,
 .copy-button:active {
-	opacity: .1;
+	border: 1px solid grey;
 }
 
 .settings-sidebar {
