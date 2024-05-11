@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: var(--bg-color);
+	background-color: rgb(12, 12, 12);
 	height: 100vh;
 	justify-content: center;
 	overflow: auto;
@@ -320,48 +320,37 @@ i {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--card-color);
+	background-color: rgb(8, 8, 8);
 	color: rgb(240, 240, 240);
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	-webkit-box-shadow: 0px 0px 20px #000000;
-	-moz-box-shadow: 0px 0px 20px #000000;
-	box-shadow: 0px 0px 20px #000000;
 	z-index: 9999;
+	border-bottom: 1px solid rgb(36, 36, 36);
 }
 
 .navigation-bar p {
-	margin-left: 30px;
+	margin-left: 35px;
 	cursor: pointer;
 	transition: .3s;
 }
 
 .navigation-bar p:hover {
 	cursor: pointer;
-	color: grey;
-}
-
-.active {
-	border: 3px solid rgb(0, 140, 255);
-	border-radius: 50px;
-    padding: 5px;
-}
-
-.active:hover {
-	color: white;
+	color: rgb(189, 189, 189);
 }
 
 /* footer */
 footer {
-	background-color: var(--card-color);
+	background-color: rgb(8, 8, 8);
 	color: rgb(240, 240, 240);
-	padding: 10px;
+	padding: 2px;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	position: relative;
+	border-top: 1px solid rgb(36, 36, 36);
 }
 
 #phrase {
@@ -764,7 +753,7 @@ input:checked+.slider:before {
 
 /* width */
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 8px;
 }
 
 /* Track */
@@ -788,7 +777,7 @@ a {
 	background-color: rgba(189, 189, 189, 0.1);
 	border-radius: 20px;
 	border: 1px solid rgb(80, 80, 80);
-	width: 10%;
+	width: 20%;
 	font-size: 14px;
 	caret-color: rgb(240, 240, 240);
 	color: white;
