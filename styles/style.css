@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: rgb(12, 12, 12);
+	background-color: rgb(16, 16, 16);
 	height: 100vh;
 	justify-content: center;
 	overflow: auto;
@@ -320,14 +320,14 @@ i {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(8, 8, 8);
+	background-color: rgb(12, 12, 12);
 	color: rgb(240, 240, 240);
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 9999;
-	border-bottom: 1px solid rgb(36, 36, 36);
+	border-bottom: 1px solid rgb(40, 40, 40);
 }
 
 .navigation-bar p {
@@ -343,14 +343,14 @@ i {
 
 /* footer */
 footer {
-	background-color: rgb(8, 8, 8);
+	background-color: rgb(12, 12, 12);
 	color: rgb(240, 240, 240);
 	padding: 2px;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	position: relative;
-	border-top: 1px solid rgb(36, 36, 36);
+	border-top: 1px solid rgb(40, 40, 40);
 }
 
 #phrase {
@@ -458,7 +458,6 @@ footer {
 	border: 1px solid grey;
 	background-color: var(--card-color);
 	color: white;
-    transition: .2s;
 }
 
 .save-button:hover,
@@ -471,7 +470,7 @@ footer {
 .save-button:active,
 .take-me-home-button:active,
 .copy-button:active {
-	border: 1px solid grey;
+	border: 1px solid rgb(175, 175, 175);
 }
 
 .settings-sidebar {
@@ -572,7 +571,7 @@ input:checked+.slider:before {
 }
 
 .settings-sidebar {
-	flex: 0 0 200px;
+	flex: 0 0 300px;
 	/* Sidebar width */
 }
 
@@ -629,7 +628,7 @@ input:checked+.slider:before {
 .fullscreen-svg:hover,
 .share-icon:hover,
 .resize-icon:hover {
-	transform: scale(1.15);
+	border: 1px solid rgba(175, 175, 175);
 	cursor: pointer;
 }
 
@@ -648,6 +647,7 @@ input:checked+.slider:before {
 	text-align: center;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(175, 175, 175);
 }
 
 .encoded-url {
