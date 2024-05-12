@@ -248,6 +248,19 @@ i {
 	-webkit-text-fill-color: transparent;
 }
 
+/*
+.title-nav {
+	margin-left: 5px;
+	font-size: 32px;
+	margin: 0;
+	font-weight: 700;
+	background: -webkit-linear-gradient(rgb(0, 140, 255), rgb(0, 193, 241));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	align-self: center;
+	left: 30px;
+} */
+
 /* Play Now button */
 .rainbow {
 	--border-radius: 15px;
