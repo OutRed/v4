@@ -1,82 +1,8 @@
-[
+[  
     {
-        "title": "Netflix",
-        "src": "hvtrs8%2F-wuw%2Cngtdlkx%2Ccmm-",
-        "img": "ntfx.png"
-    },
-    {
-        "title": "Prime Video",
-        "src": "hvtrs8%2F-wuw%2Cppioetifem.aoo%2Fmfdeps-nmnrrkmghmmgpcgg%2Fped%3Dfv%5Dwgb%5Dfmrae%5Drmov",
-        "img": "prime-video.jpg"
-    },
-    {
-        "title": "Hulu",
-        "src": "hvtrs8%2F-wuw%2Chwlw.aoo%2Fuencmmg",
-        "img": "hulu.png"
-    },
-    {
-        "title": "YouTube",
-        "src": "hvtrs8%2F-wuw%2Cymuvu%60e%2Ccmm-",
-        "img": "youtube.jpg"
-    },
-    {
-        "title": "Spotify",
-        "src": "hvtrs8%2F-orel.qpmtkf%7B.aoo%2F",
-        "img": "spotify.png"
-    },
-    {
-        "title": "Snapchat",
-        "src": "hvtrs8%2F-aacmultq.qncpahct%2Ccmm-aacmultq%2Ft2-lmgkn%3Dcmnvilug%3D%272Daacmultq%250Fuencmmg-",
-        "img": "snapchat.png"
-    },
-    {
-        "title": "CoolMathGames",
-        "src": "hvtrs8%2F-wuw%2Ccmonmctjgcmgs%2Ccmm-",
-        "img": "coolmathgames.webp"
-    },
-    {
-        "title": "GeForce NOW",
-        "src": "hvtrs8%2F-pna%7B.eedopcgnmw%2Ccmm-mcln%2F",
-        "img": "geforcenow.jpg"
-    },
-    {
-        "title": "Twitter",
-        "src": "hvtrs8%2F-tuivtgr%2Ccmm-",
-        "img": "twitter.png"
-    },
-    {
-        "title": "Instagram",
-        "src": "hvtrs8%2F-wuw%2Cilsvaercm%2Ccmm-",
-        "img": "instagram.png"
-    },
-    {
-        "title": "Reddit",
-        "src": "hvtrs8%2F-wuw%2Crgdfiv.aoo%2F%3Drft%3F57166",
-        "img": "reddit.png"
-    },
-    {
-        "title": "TikTok",
-        "src": "hvtrs8%2F-wuw%2Ctkkvoi.aoo%2Fgxrlmrg",
-        "img": "tiktok.png"
-    },
-    {
-        "title": "Google",
-        "src": "hvtr%3A-%2Feomgne%2Ccmm",
-        "img": "google.jpg"
-    },
-    {
-        "title": "Chess.com",
-        "src": "hvtr%3A-%2Fahgsq.aoo",
-        "img": "chesscom.png"
-    },
-    {
-        "title": "Discord Login",
-        "src": "hvtr%3A-%2Ffiqcmrf.aoo%2Fnoeil",
-        "img": "discord.webp"
-    },
-    {
-        "title": "ChatGPT",
-        "src": "hvtrs8%2F-cjav.muvrgd%2Copg-",
-        "img": "chat.jpg"
+        "title": "Chatroom",
+        "src": "/chatroom.html",
+        "img": "chatroom.png"
     }
+
 ]

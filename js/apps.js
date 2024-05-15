@@ -31,9 +31,9 @@
   
             // Add event listener to each game element to handle the click event and redirect to the link
             game.addEventListener("click", () => {
-              localStorage.setItem('currentapp', `/uv/service/${item.src}`);
+              localStorage.setItem('currentapp', `${item.src}`);
               localStorage.setItem('currenttitle', item.title);
-              window.location.href = '/apps-load.html'; 
+              window.location.href = '/chatroom.html'; 
             });
           });
         }

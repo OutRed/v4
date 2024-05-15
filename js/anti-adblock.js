@@ -1,5 +1,5 @@
-function showAlertWithExpiry() {
-    // Check if the alert was already shown within the last week
+/*function showAlertWithExpiry() {
+     //Check if the alert was already shown within the last week
     var lastAlertTime = localStorage.getItem("lastAlertTime");
     if (lastAlertTime && Date.now() - lastAlertTime < 7 * 24 * 60 * 60 * 1000) {
       return; // Don't show the alert if less than a week has passed
@@ -13,4 +13,4 @@ function showAlertWithExpiry() {
   }
 
   // Show the alert when the page is loaded
-  showAlertWithExpiry();
+  showAlertWithExpiry(); */

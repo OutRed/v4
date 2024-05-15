@@ -26,6 +26,7 @@ function resetTitle() {
     // Remove the title and input value from localStorage
     localStorage.removeItem("pageTitle");
     localStorage.removeItem("inputValue");
+    document.getElementById("titleInput").value = "";
 }
 
 // Function to set the title and input value from localStorage
@@ -74,6 +75,7 @@ function resetFavicon() {
     // Reset the favicon of the webpage
     var favicon = document.getElementById("favicon");
     favicon.href = defaultFavicon;
+    document.getElementById("faviconInput").value = "";
     
     // Remove the favicon from localStorage
     localStorage.removeItem("faviconURL");

@@ -6,7 +6,7 @@
       <title>OutRed | Settings</title>
       <link rel="stylesheet" href="/styles/style.css">
       <script src="js/tabcloak.js"></script>
-      <link id="favicon" rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+      <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
       <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
       <script>
@@ -22,28 +22,36 @@
     <div id="navbar"></div>
 
       <div class="content">
-         <center>
-         <!-- archiving this code. never got to finishing. maybe someone will come back and finish this. for now, I (outred) step down from being a dev for this. i now am the manager - i manage hosting, domains, analytics, discord server(s) etc. -->
-         <h1 class="title">Settings</h1>
+         <h1 class="title">Tab Cloaking</h1>
          <br><br>
-         <h2>Tab Cloaking</h2>
-         <br>
-         <div style="text-align: left; margin-left: 35%">
+         <div class="settings-content">
+            <div class="settings-sidebar">
+               <li onclick="window.location.href='/settings/index.html'">Overview</li>
+               <li onclick="window.location.href='/settings/appearance.html'">Appearance</li>
+               <li onclick="window.location.href='/settings/tabcloak.html'">Tab Cloaking</li>
+               <li onclick="window.location.href='/settings/panickey.html'">Panic Key</li>
+               <li onclick="window.location.href='/settings/language.html'">Language</li>
+           </div>
+           <div style="text-align: left; margin-left: 35%">
             <!-- Input field for the user to enter the new title -->
-            <input class="tab-cloak-input" type="text" id="titleInput" placeholder="Enter new title">
+            <input style="width: 200px" class="tab-cloak-input" type="text" id="titleInput" placeholder="Enter new title">
             <!-- Button to update the title -->
             <button class="take-me-home-button" onclick="updateTitle()">Save</button>
             <!-- Button to reset the title --> 
             <button class="take-me-home-button" onclick="resetTitle()">Reset</button><br><br><br>
             <!-- Input field for the user to enter the favicon URL -->
-            <input class="tab-cloak-input" type="text" id="faviconInput" placeholder="Enter favicon URL">
+            <input style="width: 200px;" class="tab-cloak-input" type="text" id="faviconInput" placeholder="Enter favicon URL">
             <!-- Button to update the favicon -->
             <button class="take-me-home-button" onclick="updateFavicon()">Save</button>
             <!-- Button to reset the favicon -->
             <button class="take-me-home-button" onclick="resetFavicon()">Reset</button><br>
          </div>
+
+
+         </div>
+         <center>
          <br>
-         <h3>(More settings coming soon)</h3>
+
          <footer style="bottom: 0; position: fixed;">
             <a href="https://discord.gg/outred" target="_blank"></a>
             <p>&copy; OutRed</p>
@@ -64,17 +72,11 @@
          }
          
          function saveAppearance() {
-             // Add your code here to save the selected appearance (light/dark mode)
-             // For example, you can use localStorage to store the preference.
-             // Once saved, you can close the tab or provide a message that the setting is saved.
+             // Add code here to save the selected appearance (light/dark mode)
          }
       </script>
-      <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-         new Crate({
-             server: '1012472708010889217', // OutRed Hub
-             channel: '1056002719757914212' // #🌐・website-chat
-         })
-      </script>
+
             <script src="/js/navbar.js"></script>
+            <script src="/js/tabcloak.js"></script>
    </body>
 </html>
