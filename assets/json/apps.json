@@ -1,8 +1,7 @@
-[  
-    {
-        "title": "Chatroom",
-        "src": "/chatroom.html",
-        "img": "chatroom.png"
-    }
-
+[
+  {
+    "title": "Chatroom",
+    "src": "/chatroom.html",
+    "img": "chatroom.png"
+  }
 ]

@@ -1,104 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OutRed | 404</title>
-    <link rel="stylesheet" href="/styles/style.css">
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-B5MYT5J8LH');
-</script>
-</head>
-<body>
-  <div class="navigation-bar">
-    <p onclick="window.location.href='/index.html'">Home</p>
-    <p onclick="window.location.href='/g/index.html'">Games</p>
-    <p onclick="window.location.href='/settings.html'" class="active">Settings</p>
-  </div>
+      gtag("config", "G-B5MYT5J8LH");
+    </script>
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <p onclick="window.location.href='/index.html'">Home</p>
+      <p onclick="window.location.href='/g/index.html'">Games</p>
+      <p onclick="window.location.href='/settings.html'" class="active">
+        Settings
+      </p>
+    </div>
 
     <div class="content">
+      <script type="text/javascript">
+        atOptions = {
+          key: "7a33ea3bd131ec5ad5051e8181267d9c",
+          format: "iframe",
+          height: 90,
+          width: 728,
+          params: {},
+        };
+        document.write(
+          "<scr" +
+            'ipt type="text/javascript" src="http' +
+            (location.protocol === "https:" ? "s" : "") +
+            '://plantationexhaust.com/7a33ea3bd131ec5ad5051e8181267d9c/invoke.js"></scr' +
+            "ipt>"
+        );
+      </script>
+      <br /><br />
 
-        <script type="text/javascript">
-            atOptions = {
-                'key' : '7a33ea3bd131ec5ad5051e8181267d9c',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-            };
-            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://plantationexhaust.com/7a33ea3bd131ec5ad5051e8181267d9c/invoke.js"></scr' + 'ipt>');
-        </script><br><br>
+      <br /><br />
+      <h1 class="title">404 Error</h1>
+      <br /><br />
 
-        <br><br><h1 class="title">404 Error</h1><br><br>
+      <h2>Uh oh, looks like you're a lost gamer!</h2>
+      <br /><br />
 
-        <h2>Uh oh, looks like you're a lost gamer!</h2><br><br>
+      <a href="/index.html"
+        ><button class="take-me-home-button">Take me home!</button></a
+      ><br /><br />
+      <button class="take-me-home-button" onclick="statsForNerds()">
+        Stats for nerds
+      </button>
 
-        <a href="/index.html"><button class="take-me-home-button">Take me home!</button></a><br /><br />
-            <button class="take-me-home-button" onclick="statsForNerds()">Stats for nerds</button>
-     
-    </center>
+      <div id="sfn" style="display: none" class="message">
+        <br />
+        Please make a ticket about this happening in the
+        <a href="https://discord.gg/FB6NtPkfwY">Discord server</a>.<br /><br />
+        Requested URL: <span id="full">Fetching...</span><br />
+        Referrer: <span id="ref">Fetching...</span><br />
+        Title: <span id="title">Fetching...</span><br />
+        Screen height: <span id="height">Fetching...</span><br />
+        Screen width: <span id="width">Fetching...</span><br />
+        Window height: <span id="winheight">Fetching...</span><br />
+        Window width: <span id="winwidth">Fetching...</span><br />
+        Cookies: <span id="cookie">Fetching...</span><br />
+        User agent: <span id="ua">Fetching...</span><br />
+        OS platform: <span id="plat">Fetching...</span><br />
+        Online: <span id="online">Fetching...</span><br />
+        Error code: 404<br />
+      </div>
 
-    <div id="sfn" style="display: none;" class="message"><br>
-      Please make a ticket about this happening in the <a href="https://discord.gg/FB6NtPkfwY">Discord server</a>.<br><br> Requested URL: <span id="full">Fetching...</span><br />
-      Referrer: <span id="ref">Fetching...</span><br />
-      Title: <span id="title">Fetching...</span><br />
-      Screen height: <span id="height">Fetching...</span><br />
-      Screen width: <span id="width">Fetching...</span><br />
-      Window height: <span id="winheight">Fetching...</span><br />
-      Window width: <span id="winwidth">Fetching...</span><br />
-      Cookies: <span id="cookie">Fetching...</span><br />
-      User agent: <span id="ua">Fetching...</span><br />
-      OS platform: <span id="plat">Fetching...</span><br />
-      Online: <span id="online">Fetching...</span><br />
-      Error code: 404<br />
-    </div>
-
-    <script>
-      function statsForNerds() {
-        var x = document.getElementById("sfn");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-          console.log("[ℹ️] Showing the stats for nerds!");
-        } else {
-          x.style.display = "none";
-          console.log("[ℹ️] Hiding the stats for nerds!");
+      <script>
+        function statsForNerds() {
+          var x = document.getElementById("sfn");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            console.log("[ℹ️] Showing the stats for nerds!");
+          } else {
+            x.style.display = "none";
+            console.log("[ℹ️] Hiding the stats for nerds!");
+          }
         }
-      }
-      document.getElementById("full").innerText = window.location.href;
-      document.getElementById("ref").innerHTML = document.referrer;
-      document.getElementById("title").innerText = document.title;
-      document.getElementById("height").innerHTML = screen.height + "px";
-      document.getElementById("width").innerHTML = screen.width + "px";
-      document.getElementById("winheight").innerHTML = window.innerHeight + "px";
-      document.getElementById("winwidth").innerHTML = window.innerWidth + "px";
-      document.getElementById("cookie").innerText = navigator.cookieEnabled;
-      document.getElementById("ua").innerHTML = navigator.userAgent;
-      document.getElementById("plat").innerHTML = navigator.platform;
-      document.getElementById("online").innerHTML = navigator.onLine;
-    </script>
+        document.getElementById("full").innerText = window.location.href;
+        document.getElementById("ref").innerHTML = document.referrer;
+        document.getElementById("title").innerText = document.title;
+        document.getElementById("height").innerHTML = screen.height + "px";
+        document.getElementById("width").innerHTML = screen.width + "px";
+        document.getElementById("winheight").innerHTML =
+          window.innerHeight + "px";
+        document.getElementById("winwidth").innerHTML =
+          window.innerWidth + "px";
+        document.getElementById("cookie").innerText = navigator.cookieEnabled;
+        document.getElementById("ua").innerHTML = navigator.userAgent;
+        document.getElementById("plat").innerHTML = navigator.platform;
+        document.getElementById("online").innerHTML = navigator.onLine;
+      </script>
 
-
-        <footer style="bottom:0; position:fixed;">
-            <a href="https://discord.gg/outred" target="_blank"></a>
-            <p>&copy; OutRed</p>
-            <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
-        </footer>
-
+      <footer style="bottom: 0; position: fixed">
+        <a href="https://discord.gg/outred" target="_blank"></a>
+        <p>&copy; OutRed</p>
+        <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
+      </footer>
     </div>
-    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-      new Crate({
-          server: '1012472708010889217', // OutRed Hub
-          channel: '1056002719757914212' // #🌐・website-chat
-      })
-    </script>
 
-<script src="/js/cards.js"></script>
-
-</body>
+    <script src="/js/cards.js"></script>
+  </body>
 </html>

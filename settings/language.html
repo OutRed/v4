@@ -1,87 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OutRed | Settings</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link id="favicon" rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-    <script src="js/tabcloak.js"></script>
-    <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B5MYT5J8LH');
-</script>
-
-</head>
-<body>
-
-    <div id="navbar"></div>
-
-    <div class="content">
-    <center>
-        <!-- archiving this code. never got to finishing. maybe someone will come back and finish this. for now, I (outred) step down from being a dev for this. i now am the manager - i manage hosting, domains, analytics, discord server(s) etc. -->
-
-        <h1 class="title">Language</h1>
-        <br><br>
-<div class="settings-content">
-        <div class="settings-sidebar">
-            <li onclick="window.location.href='/settings/index.html'">Overview</li>
-            <li onclick="window.location.href='/settings/appearance.html'">Appearance</li>
-            <li onclick="window.location.href='/settings/tabcloak.html'">Tab Cloaking</li>
-            <li onclick="window.location.href='/settings/panickey.html'">Panic Key</li>
-            <li onclick="window.location.href='/settings/language.html'">Language</li>
-        </div>
-
-        <div class="settings-right-section"></div>
-                    <div class="appearance-tab" id="appearance-tab">
-                        <h2>Choose Appearance</h2><br>
-                        <label>
-                            <label class="switch">
-                                <input type="checkbox" checked>
-                                <span class="slider round"></span>
-                              </label> <h2 style="font-weight: normal;">Dark Theme</h2>
-                        </label><br><br>
-                        <button class="save-button" onclick="saveAppearance()">Save</button>
-                    </div>
-                </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>OutRed | Settings</title>
+      <link rel="stylesheet" href="/styles/style.css">
+      <link id="favicon" rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+      <script src="js/tabcloak.js"></script>
+      <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-B5MYT5J8LH');
+      </script>
+   </head>
+   <body>
+      <div id="navbar"></div>
+      <div class="content">
+         <center>
+         <!-- archiving this code. never got to finishing. maybe someone will come back and finish this. for now, I (outred) step down from being a dev for this. i now am the manager - i manage hosting, domains, analytics, discord server(s) etc. -->
+         <h1 class="title">Language</h1>
+         <br><br>
+         <div class="settings-content">
+            <div class="settings-sidebar">
+               <li onclick="window.location.href='/settings/index.html'">Overview</li>
+               <li onclick="window.location.href='/settings/appearance.html'">Appearance</li>
+               <li onclick="window.location.href='/settings/tabcloak.html'">Tab Cloaking</li>
+               <li onclick="window.location.href='/settings/panickey.html'">Panic Key</li>
+               <li onclick="window.location.href='/settings/language.html'">Language</li>
             </div>
-        
-
-        <footer style="bottom: 0; position: fixed;">
-            <a href="https://discord.gg/outred" target="_blank"></a>
-            <p>&copy; OutRed</p>
-            <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
-        </footer>
-
-    </div>
-
-    <script>
-        function showTab(tabName) {
-            // Hide all tabs first
-            const tabs = document.querySelectorAll('.appearance-tab');
-            tabs.forEach(tab => tab.style.display = 'none');
-
-                        // Show the selected tab
-                        if (tabName === 'appearance') {
-                document.getElementById('appearance-tab').style.display = 'block';
-            }
-
-        }
-
-        function saveAppearance() {
-            // Add your code here to save the selected appearance (light/dark mode)
-            // For example, you can use localStorage to store the preference.
-            // Once saved, you can close the tab or provide a message that the setting is saved.
-        }
-    </script>
-
-<script src="/js/navbar.js"></script>
-
-</body>
+            <div class="settings-right-section"></div>
+            <div class="appearance-tab" id="appearance-tab">
+               <h2>Choose Appearance</h2>
+               <br>
+               <label>
+               <label class="switch">
+               <input type="checkbox" checked>
+               <span class="slider round"></span>
+               </label> 
+               <h2 style="font-weight: normal;">Dark Theme</h2>
+               </label><br><br>
+               <button class="save-button" onclick="saveAppearance()">Save</button>
+            </div>
+         </div>
+      </div>
+      <footer style="bottom: 0; position: fixed;">
+         <a href="https://discord.gg/outred" target="_blank"></a>
+         <p>&copy; OutRed</p>
+         <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
+      </footer>
+      </div>
+      <script>
+         function showTab(tabName) {
+             // Hide all tabs first
+             const tabs = document.querySelectorAll('.appearance-tab');
+             tabs.forEach(tab => tab.style.display = 'none');
+         
+                         // Show the selected tab
+                         if (tabName === 'appearance') {
+                 document.getElementById('appearance-tab').style.display = 'block';
+             }
+         
+         }
+         
+         function saveAppearance() {
+             // Add your code here to save the selected appearance (light/dark mode)
+         }
+      </script>
+      <script src="/js/navbar.js"></script>
+   </body>
 </html>
