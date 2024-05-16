@@ -25,7 +25,6 @@ This website offers games to play, unblockers, and much more.
 
 ## Free Links:
 - https://outred.org
-- https://outred.dev
 - https://outreds.world
 - https://outred.fun
 - Join the [Discord server](https://discord.gg/89NGVfR7ja) for more free premium unblocked links.
