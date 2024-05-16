@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OutRed | 404</title>
     <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="/assets/favicon.png"
+      type="image/x-icon"
+    />
+    <script src="js/tabcloak.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -21,13 +29,7 @@
     </script>
   </head>
   <body>
-    <div class="navigation-bar">
-      <p onclick="window.location.href='/index.html'">Home</p>
-      <p onclick="window.location.href='/g/index.html'">Games</p>
-      <p onclick="window.location.href='/settings.html'" class="active">
-        Settings
-      </p>
-    </div>
+    <div id="navbar"></div>
 
     <div class="content">
       <script type="text/javascript">
@@ -46,7 +48,6 @@
             "ipt>"
         );
       </script>
-      <br /><br />
 
       <br /><br />
       <h1 class="title">404 Error</h1>
@@ -80,6 +81,7 @@
         Error code: 404<br />
       </div>
 
+      <!-- thank you 3kh0 for the original script to show stats for nerds! -->
       <script>
         function statsForNerds() {
           var x = document.getElementById("sfn");
@@ -114,5 +116,6 @@
     </div>
 
     <script src="/js/cards.js"></script>
+    <script src="/js/navbar.js"></script>
   </body>
 </html>

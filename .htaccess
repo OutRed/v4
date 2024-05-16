@@ -1,5 +1,9 @@
+# hello skid, or person that wants to see how this works.
+
+# sets the 404 page as 404.html:
 ErrorDocument 404 /404.html
 
+# makes it so if a href sends it to a file without .html extension, it wont have 404 error:
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
