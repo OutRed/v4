@@ -15,6 +15,12 @@
   document.head.appendChild(s);
 })();
 
+/* ── Monetag Vignette Banner ─────────────────────────────────── */
+(function (s) {
+  s.dataset.zone = '10847787';
+  s.src = 'https://n6wxm.com/vignette.min.js';
+})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+
 /* ── Settings Store ──────────────────────────────────────────── */
 // Exposed on window so settings.js and other scripts can access it
 window.OR = {
