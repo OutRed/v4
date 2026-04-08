@@ -5,6 +5,16 @@
 
 'use strict';
 
+/* ── Monetag Multitag ────────────────────────────────────────── */
+(function () {
+  var s = document.createElement('script');
+  s.src = 'https://quge5.com/88/tag.min.js';
+  s.setAttribute('data-zone', '227550');
+  s.async = true;
+  s.setAttribute('data-cfasync', 'false');
+  document.head.appendChild(s);
+})();
+
 /* ── Settings Store ──────────────────────────────────────────── */
 // Exposed on window so settings.js and other scripts can access it
 window.OR = {
