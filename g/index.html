@@ -1,80 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OutRed | Games</title>
-    <link rel="stylesheet" href="/styles/style.css" />
-    <script src="/js/tabcloak.js"></script>
-    <link
-      id="favicon"
-      rel="shortcut icon"
-      href="/assets/favicon.png"
-      type="image/x-icon"
-    />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OutRed — Play</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+</head>
+<body>
 
-      gtag("config", "G-B5MYT5J8LH");
-    </script>
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
-  </head>
-  <body>
-    <div id="navbar"></div>
+<div class="page">
+  <div class="container">
+    <div class="player-layout">
 
-    <div class="content">
-      <h1 class="title">Games</h1>
-      <br />
+      <!-- ── PLAYER MAIN ───────────────────────────────────── -->
+      <div class="player-main">
 
-      <input
-        type="text"
-        class="search-input"
-        onkeyup="search_game()"
-        id="searchbar"
-        placeholder="Search for a game..."
-      /><br /><br /><br />
-      <!-- ad banner (have to add them back to keep this running :( )-->
+        <!-- AD: above player -->
+        <div class="ad-slot ad-full-banner" id="ad-above-player" style="margin-bottom:14px;">
+          <!-- REPLACE with ad tag (728×90) -->
+        </div>
 
-      <script type="text/javascript">
-        atOptions = {
-          key: "219a9727b101d5450d07fc0ab2e40039",
-          format: "iframe",
-          height: 60,
-          width: 468,
-          params: {},
-        };
-      </script>
-      <script
-        type="text/javascript"
-        src="//plantationexhaust.com/219a9727b101d5450d07fc0ab2e40039/invoke.js"
-      ></script>
-      <br /><br />
+        <!-- Iframe wrapper -->
+        <div id="player-wrap">
+          <iframe
+            id="game-iframe"
+            src="about:blank"
+            allowfullscreen
+            allow="fullscreen; autoplay; encrypted-media"
+            loading="lazy"
+            title="Game"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-popups allow-modals"
+          ></iframe>
+        </div>
 
-      <div class="games"></div>
-      <br /><br />
-      <h3 style="font-weight: normal">
-        Couldn't find what you were looking for? Suggest it in our
-        <a href="https://discord.gg/FB6NtPkfwY">Discord server</a>!
-      </h3>
-      <br /><br />
+        <!-- Controls bar -->
+        <div class="player-bar">
+          <div class="player-title-wrap">
+            <div class="player-title" id="game-title">Loading…</div>
+            <div class="player-desc"  id="game-desc"></div>
+          </div>
+          <div class="player-btns">
+            <button class="btn-icon" onclick="shareGame()" id="share-btn" title="Share game" aria-label="Share">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </button>
+            <button class="btn-icon" onclick="openNewTab()" title="Open in new tab" aria-label="Open in new tab">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </button>
+            <button class="btn-icon" onclick="toggleFullscreen()" id="fs-btn" title="Fullscreen" aria-label="Fullscreen">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+            </button>
+          </div>
+        </div>
 
-      <footer>
-        <a href="https://discord.gg/wjTN9eVvVQ" target="_blank"></a>
-        <p>&copy; OutRed</p>
-        <a href="https://github.com/OutRed/v4" target="_blank"></a>
-      </footer>
+        <!-- AD: below player -->
+        <div class="player-below">
+          <div class="ad-slot ad-full-banner" id="ad-below-player">
+            <!-- REPLACE with ad tag (728×90) -->
+          </div>
+        </div>
+
+        <!-- Related games -->
+        <div class="section" style="padding-top:36px;">
+          <div class="section-header">
+            <h2 class="section-title">More Games</h2>
+            <a href="/games.html" class="section-link">Browse all →</a>
+          </div>
+          <div class="games-grid" id="related-grid">
+            <div class="skeleton skel-card"></div>
+            <div class="skeleton skel-card"></div>
+            <div class="skeleton skel-card"></div>
+            <div class="skeleton skel-card"></div>
+            <div class="skeleton skel-card"></div>
+            <div class="skeleton skel-card"></div>
+          </div>
+        </div>
+
+      </div><!-- /player-main -->
+
+      <!-- ── SIDEBAR ───────────────────────────────────────── -->
+      <aside class="player-sidebar">
+
+        <!-- AD: Rectangle -->
+        <div class="ad-slot ad-rectangle" id="ad-player-sidebar-top">
+          <!-- REPLACE with ad tag (300×250) -->
+        </div>
+
+        <!-- More Games widget -->
+        <div class="widget">
+          <div class="widget-title">More Games</div>
+          <div class="top-games-list" id="sidebar-game-list">
+            <!-- Populated by player.js -->
+          </div>
+          <a href="/games.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;margin-top:12px;">Browse All →</a>
+        </div>
+
+        <!-- AD: Half page (tall) -->
+        <div class="ad-slot" style="width:300px; height:250px;" id="ad-player-sidebar-bottom">
+          <!-- REPLACE with ad tag (300×250 or 300×600) -->
+        </div>
+
+      </aside>
     </div>
+  </div>
+</div>
 
-    <script src="/js/game.js"></script>
-    <script src="/js/navbar.js"></script>
-  </body>
+<script src="/js/core.js"></script>
+<script src="/js/games.js"></script>
+<script src="/js/player.js"></script>
+
+</body>
 </html>

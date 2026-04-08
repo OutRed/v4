@@ -1,63 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>OutRed | Settings</title>
-      <link rel="stylesheet" href="/styles/style.css">
-      <link id="favicon" rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-      <script src="/js/tabcloak.js"></script>
-      <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'G-B5MYT5J8LH');
-      </script>
-   </head>
-   <body>
-      <div id="navbar"></div>
-      <div class="content">
-      <center>
-      <!-- archiving this code. never got to finishing. maybe someone will come back and finish this. for now, I (outred) step down from being a dev for this. i now am the manager - i manage hosting, domains, analytics, discord server(s) etc. -->
-      <h1 class="title">Panic Key</h1>
-      <br><br>
-      <div class="settings-content">
-         <div class="settings-sidebar">
-            <li onclick="window.location.href='/settings/index.html'">Overview</li>
-            <li onclick="window.location.href='/settings/appearance.html'">Appearance</li>
-            <li onclick="window.location.href='/settings/tabcloak.html'">Tab Cloaking</li>
-            <li onclick="window.location.href='/settings/panickey.html'">Panic Key</li>
-            <li onclick="window.location.href='/settings/language.html'">Language</li>
-         </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panic Key — OutRed Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+</head>
+<body data-settings-page="panickey">
+
+<div class="page">
+  <div class="container settings-page">
+    <div class="settings-layout">
+
+      <nav class="settings-nav">
+        <div class="settings-nav-label">Settings</div>
+        <a href="/settings/">⚙️ &nbsp;General</a>
+        <a href="/settings/appearance.html">🎨 &nbsp;Appearance</a>
+        <a href="/settings/tabcloak.html">🕵️ &nbsp;Tab Cloak</a>
+        <a href="/settings/panickey.html" class="active">⚡ &nbsp;Panic Key</a>
+      </nav>
+
+      <div>
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <h2>Panic Key</h2>
+            <p>Set a hotkey that instantly redirects you to another website — perfect for quickly hiding what you're doing.</p>
+          </div>
+          <div class="settings-body">
+
+            <!-- Current key -->
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <h3>Current Panic Key</h3>
+                <p>Press this key anywhere on the site to instantly redirect.</p>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px;">
+                <span
+                  id="key-display"
+                  style="
+                    display:inline-block; min-width:48px;
+                    background:var(--surface-2); border:1px solid var(--border);
+                    border-radius:var(--radius-sm); padding:6px 14px;
+                    font-size:0.9rem; font-weight:700; text-align:center;
+                    font-family:monospace; color:var(--accent);
+                  "
+                >None</span>
+                <button id="capture-key-btn" class="btn btn-secondary btn-sm">Set Key</button>
+                <input type="hidden" id="panic-key-hidden" />
+              </div>
+            </div>
+
+            <!-- Redirect URL -->
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <h3>Redirect URL</h3>
+                <p>Where to go when the panic key is pressed.</p>
+              </div>
+              <input
+                type="url"
+                id="panic-url"
+                class="settings-input"
+                placeholder="https://google.com"
+              />
+            </div>
+
+            <!-- Quick presets -->
+            <div class="settings-row" style="flex-direction:column; align-items:flex-start; gap:12px;">
+              <div class="settings-row-info">
+                <h3>URL Presets</h3>
+                <p>Click to set the redirect destination quickly.</p>
+              </div>
+              <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <button class="btn btn-secondary btn-sm" onclick="setUrl('https://google.com')">Google</button>
+                <button class="btn btn-secondary btn-sm" onclick="setUrl('https://classroom.google.com')">Google Classroom</button>
+                <button class="btn btn-secondary btn-sm" onclick="setUrl('https://docs.google.com')">Google Docs</button>
+                <button class="btn btn-secondary btn-sm" onclick="setUrl('https://khanacademy.org')">Khan Academy</button>
+              </div>
+            </div>
+
+            <!-- Clear -->
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <h3>Clear Panic Key</h3>
+                <p>Remove the panic key and URL settings.</p>
+              </div>
+              <button id="panic-clear" class="btn btn-ghost btn-sm" style="color:var(--accent);border-color:var(--accent-border);">Clear</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div style="
+          margin-top:16px; padding:16px 20px;
+          background:var(--accent-dim); border:1px solid var(--accent-border);
+          border-radius:var(--radius); font-size:0.85rem; color:var(--text-muted);
+          line-height:1.6;
+        ">
+          <strong style="color:var(--accent);">Tip:</strong> The panic key works on every page. Press your chosen key and you'll be taken to the redirect URL instantly.
+        </div>
       </div>
-      <footer style="bottom: 0; position: fixed;">
-         <a href="https://discord.gg/outred" target="_blank"></a>
-         <p>&copy; OutRed</p>
-         <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
-      </footer>
-      <script>
-         function showTab(tabName) {
-             // Hide all tabs first
-             const tabs = document.querySelectorAll('.appearance-tab');
-             tabs.forEach(tab => tab.style.display = 'none');
-         
-                         // Show the selected tab
-                         if (tabName === 'appearance') {
-                 document.getElementById('appearance-tab').style.display = 'block';
-             }
-         
-         }
-         
-         function saveAppearance() {
-             // Add your code here to save the selected appearance (light/dark mode)
-             // For example, you can use localStorage to store the preference.
-             // Once saved, you can close the tab or provide a message that the setting is saved.
-         }
-      </script>
-      <script src="/js/navbar.js"></script>
-   </body>
+
+    </div>
+  </div>
+</div>
+
+<script src="/js/core.js"></script>
+<script src="/js/settings.js"></script>
+<script>
+  function setUrl(url) {
+    const el = document.getElementById('panic-url');
+    if (el) { el.value = url; el.dispatchEvent(new Event('input')); }
+  }
+</script>
+
+</body>
 </html>

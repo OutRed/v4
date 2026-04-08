@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>OutRed | Settings</title>
-      <link rel="stylesheet" href="/styles/style.css">
-      <script src="js/tabcloak.js"></script>
-      <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'G-B5MYT5J8LH');
-      </script>
-   </head>
-   <body>
-      <div id="navbar"></div>
-      <div class="content">
-      <h1 class="title">Tab Cloaking</h1>
-      <br><br>
-      <div class="settings-content">
-         <div class="settings-sidebar">
-            <li onclick="window.location.href='/settings/index.html'">Overview</li>
-            <li onclick="window.location.href='/settings/appearance.html'">Appearance</li>
-            <li onclick="window.location.href='/settings/tabcloak.html'">Tab Cloaking</li>
-            <li onclick="window.location.href='/settings/panickey.html'">Panic Key</li>
-            <li onclick="window.location.href='/settings/language.html'">Language</li>
-         </div>
-         <div style="text-align: left; margin-left: 35%">
-            <!-- Input field for the user to enter the new title -->
-            <input style="width: 200px" class="tab-cloak-input" type="text" id="titleInput" placeholder="Enter new title">
-            <!-- Button to update the title -->
-            <button class="take-me-home-button" onclick="updateTitle()">Save</button>
-            <!-- Button to reset the title --> 
-            <button class="take-me-home-button" onclick="resetTitle()">Reset</button><br><br><br>
-            <!-- Input field for the user to enter the favicon URL -->
-            <input style="width: 200px;" class="tab-cloak-input" type="text" id="faviconInput" placeholder="Enter favicon URL">
-            <!-- Button to update the favicon -->
-            <button class="take-me-home-button" onclick="updateFavicon()">Save</button>
-            <!-- Button to reset the favicon -->
-            <button class="take-me-home-button" onclick="resetFavicon()">Reset</button><br>
-         </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tab Cloak — OutRed Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+</head>
+<body data-settings-page="tabcloak">
+
+<div class="page">
+  <div class="container settings-page">
+    <div class="settings-layout">
+
+      <nav class="settings-nav">
+        <div class="settings-nav-label">Settings</div>
+        <a href="/settings/">⚙️ &nbsp;General</a>
+        <a href="/settings/appearance.html">🎨 &nbsp;Appearance</a>
+        <a href="/settings/tabcloak.html" class="active">🕵️ &nbsp;Tab Cloak</a>
+        <a href="/settings/panickey.html">⚡ &nbsp;Panic Key</a>
+      </nav>
+
+      <div>
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <h2>Tab Cloak</h2>
+            <p>Disguise your browser tab with a fake title and favicon so it looks like you're doing something else.</p>
+          </div>
+          <div class="settings-body">
+
+            <!-- Presets -->
+            <div class="settings-row" style="flex-direction:column; align-items:flex-start; gap:14px;">
+              <div class="settings-row-info">
+                <h3>Quick Presets</h3>
+                <p>Click a preset to instantly apply that site's title and favicon.</p>
+              </div>
+              <div id="cloak-presets" style="display:flex; flex-wrap:wrap; gap:10px;">
+                <!-- Populated by settings.js -->
+              </div>
+            </div>
+
+            <!-- Custom title -->
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <h3>Custom Tab Title</h3>
+                <p>The text shown in the browser tab.</p>
+              </div>
+              <input
+                type="text"
+                id="cloak-title"
+                class="settings-input"
+                placeholder="e.g. Classroom"
+              />
+            </div>
+
+            <!-- Custom favicon -->
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <h3>Custom Favicon URL</h3>
+                <p>Direct URL to an icon image (.ico, .png).</p>
+              </div>
+              <input
+                type="url"
+                id="cloak-favicon"
+                class="settings-input"
+                placeholder="https://…/favicon.ico"
+              />
+            </div>
+
+            <!-- Clear -->
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <h3>Clear Tab Cloak</h3>
+                <p>Remove all cloak settings and restore OutRed defaults.</p>
+              </div>
+              <button id="cloak-clear" class="btn btn-ghost btn-sm" style="color:var(--accent);border-color:var(--accent-border);">Clear</button>
+            </div>
+
+          </div>
+        </div>
+
+        <p style="font-size:0.8rem; color:var(--text-dim); margin-top:14px; line-height:1.6;">
+          Tab cloak is applied every time the page loads. Changes take effect on the next page visit.
+        </p>
       </div>
-      <center>
-      <br>
-      <footer style="bottom: 0; position: fixed;">
-         <a href="https://discord.gg/outred" target="_blank"></a>
-         <p>&copy; OutRed</p>
-         <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
-      </footer>
-      <script>
-         function showTab(tabName) {
-             // Hide all tabs first
-             const tabs = document.querySelectorAll('.appearance-tab');
-             tabs.forEach(tab => tab.style.display = 'none');
-         
-                         // Show the selected tab
-                         if (tabName === 'appearance') {
-                 document.getElementById('appearance-tab').style.display = 'block';
-             }
-         
-         }
-         
-         function saveAppearance() {
-             // Add code here to save the selected appearance (light/dark mode)
-         }
-      </script>
-      <script src="/js/navbar.js"></script>
-      <script src="/js/tabcloak.js"></script>
-   </body>
+
+    </div>
+  </div>
+</div>
+
+<script src="/js/core.js"></script>
+<script src="/js/settings.js"></script>
+
+</body>
 </html>

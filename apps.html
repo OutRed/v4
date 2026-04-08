@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OutRed | Apps</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <!--  PWA LINKS -->
-    <link rel="manifest" href="/assets/json/manifest.json" />
-    <meta name="theme-color" content="#6C0BA9" />
-    <link
-      id="favicon"
-      rel="shortcut icon"
-      href="/assets/favicon.png"
-      type="image/x-icon"
-    />
-    <script src="js/tabcloak.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apps &amp; Sites — OutRed</title>
+  <meta name="description" content="Access popular websites and apps through OutRed." />
+  <meta name="theme-color" content="#e63946" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+  <link rel="manifest" href="/assets/json/manifest.json" />
+</head>
+<body>
 
-      gtag("config", "G-B5MYT5J8LH");
-    </script>
-  </head>
-  <body>
-    <div class="content">
-      <div id="navbar"></div>
+<div class="page">
+  <div class="container" style="padding-top:40px; padding-bottom:80px;">
 
-      <h1 class="title">Apps</h1>
-      <br /><br />
-      <div class="apps"></div>
-      <br /><br />
+    <!-- ── AD: Leaderboard ───────────────────────────────────── -->
+    <div class="ad-slot ad-leaderboard" id="ad-apps-top" style="margin-bottom:36px; margin-left:auto; margin-right:auto;">
+      <!-- REPLACE with ad tag (728×90) -->
     </div>
 
-    <footer style="position: fixed; bottom: 0">
-      <a href="https://dsc.gg/outred" target="_blank"></a>
-      <p>&copy; OutRed</p>
-      <a href="https://github.com/OutRed/v4" target="_blank"></a>
-    </footer>
+    <div style="margin-bottom:28px;">
+      <h1 style="font-size:clamp(1.6rem,4vw,2.4rem); margin-bottom:6px;">Apps &amp; Sites</h1>
+      <p style="color:var(--text-muted); font-size:0.9rem;">Quick access to popular sites and web apps.</p>
+    </div>
 
-    <script src="/js/navbar.js"></script>
-    <script src="/js/apps.js"></script>
-    <script src="/js/resize-apps.js"></script>
-  </body>
+    <div class="apps-grid" id="apps-grid">
+      <!-- Populated by JS -->
+      <div class="skeleton" style="height:130px; border-radius:var(--radius);"></div>
+      <div class="skeleton" style="height:130px; border-radius:var(--radius);"></div>
+      <div class="skeleton" style="height:130px; border-radius:var(--radius);"></div>
+      <div class="skeleton" style="height:130px; border-radius:var(--radius);"></div>
+      <div class="skeleton" style="height:130px; border-radius:var(--radius);"></div>
+      <div class="skeleton" style="height:130px; border-radius:var(--radius);"></div>
+    </div>
+
+    <!-- ── AD: mid ─────────────────────────────────────────── -->
+    <div class="ad-slot ad-full-banner" id="ad-apps-mid" style="margin-top:40px; margin-bottom:0;">
+      <!-- REPLACE with ad tag -->
+    </div>
+
+  </div>
+</div>
+
+<script src="/js/core.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    const grid = document.getElementById('apps-grid');
+    try {
+      const res  = await fetch('/assets/json/apps.json');
+      const apps = await res.json();
+
+      grid.innerHTML = '';
+      apps.forEach(app => {
+        const card = document.createElement('div');
+        card.className = 'app-card';
+        card.innerHTML = `
+          <img
+            src="/assets/img/apps/${app.img || 'no-img.jpg'}"
+            alt="${app.title}"
+            onerror="this.onerror=null;this.src='/assets/img/no-img.jpg'"
+          />
+          <div class="app-card-name">${app.title}</div>
+        `;
+        card.addEventListener('click', () => {
+          if (app.url) window.open(app.url, '_blank', 'noopener');
+        });
+        grid.appendChild(card);
+      });
+    } catch (e) {
+      grid.innerHTML = `<p style="color:var(--text-muted); grid-column:1/-1; text-align:center; padding:40px;">Could not load apps.</p>`;
+    }
+  });
+</script>
+
+</body>
 </html>

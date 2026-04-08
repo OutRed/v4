@@ -1,94 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OutRed | Home</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <!--  PWA LINKS -->
-    <link rel="manifest" href="/assets/json/manifest.json" />
-    <meta name="theme-color" content="#6C0BA9" />
-    <link
-      id="favicon"
-      rel="shortcut icon"
-      href="/assets/favicon.png"
-      type="image/x-icon"
-    />
-    <script src="js/tabcloak.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OutRed — Free Browser Games</title>
+  <meta name="description" content="Play hundreds of free browser games on OutRed. No download, no signup. Jump in instantly." />
+  <meta name="theme-color" content="#e63946" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+  <link rel="manifest" href="/assets/json/manifest.json" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="OutRed — Free Browser Games" />
+  <meta property="og:description" content="Hundreds of free games. No download, no signup." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://outred.org" />
+</head>
+<body>
 
-    <!-- TEMP -->
-    <style>
-      body {
-        overflow: none;
-      }
+<div class="page">
 
-      #index-content {
-        margin-top: 90px;
-      }
-    </style>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-B5MYT5J8LH");
-    </script>
-
-    <script src="/js/splashtexts.js"></script>
-  </head>
-  <body>
-    <div id="navbar"></div>
-    <script
-      src="snow.js"
-      type="9be7c424e46e3e34fc2173ae-text/javascript"
-    ></script>
-
-    <div id="index-content">
-      <br /><br /><br /><br /><br />
-
-      <p class="title">OutRed</p>
-      <br />
-
-      <div id="phrase">
-        <p style="font-size: 30x">
-          <a
-            style="text-decoration: none; color: white"
-            href="https://discord.gg/FB6NtPkfwY"
-            >Loading...</a
-          >
-        </p>
-        <!-- splash text code -->
-        <script>
-          document.getElementById("phrase").innerHTML = getRandomPhrase();
-        </script>
+  <!-- ── HERO ──────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+          <span id="hero-game-count">500+</span> Games &amp; Counting
+        </div>
+        <h1>Play Free Games.<br/>No Download Needed.</h1>
+        <p class="hero-sub">Hundreds of browser games, ready instantly. No accounts, no installs — just click and play.</p>
+        <div class="hero-cta">
+          <a href="/games.html" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+            Browse Games
+          </a>
+          <a href="/apps.html" class="btn btn-secondary">Apps &amp; Sites</a>
+        </div>
       </div>
-      <br /><br /><br />
-      <!-- the play now rainbow button -->
-      <a class="rainbow" href="/g/index.html">Play Now</a
-      ><br /><br /><br /><br />
-      <br /><br />
-      <!-- the footer -->
-      <footer style="position: fixed; bottom: 0">
-        <a href="https://discord.gg/FB6NtPkfwY" target="_blank"></a>
-        <p>&copy; OutRed</p>
-        <a href="https://github.com/OutRed/v4" target="_blank"></a>
-      </footer>
+    </div>
+  </section>
+
+  <!-- ── AD: Leaderboard below hero ────────────────────────── -->
+  <div class="container" style="padding-top:28px;">
+    <div class="ad-slot ad-leaderboard" id="ad-hero-leaderboard">
+      <!-- REPLACE with ad network leaderboard tag (728×90) -->
+    </div>
+  </div>
+
+  <!-- ── STATS ──────────────────────────────────────────────── -->
+  <div class="stats-strip" style="margin-top:40px;">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num" id="stat-games">500+</div>
+        <div class="stat-label">Games</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Downloads</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Free</div>
+        <div class="stat-label">Always</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Any</div>
+        <div class="stat-label">Device</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FEATURED GAMES ─────────────────────────────────────── -->
+  <div class="container">
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">Featured Games</h2>
+        <a href="/games.html" class="section-link">View all →</a>
+      </div>
+      <div class="games-grid games-grid-lg" id="featured-grid">
+        <!-- Skeleton -->
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+      </div>
     </div>
 
-    <!-- PWA Offline script for the server worker-->
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/js/sw.js");
+    <!-- ── AD: Mid-page banner ─────────────────────────────── -->
+    <div class="ad-slot ad-leaderboard" id="ad-mid" style="margin:0 auto 52px;">
+      <!-- REPLACE with ad network tag (728×90) -->
+    </div>
+
+    <!-- ── POPULAR NOW ──────────────────────────────────────── -->
+    <div class="section" style="padding-top:0;">
+      <div class="section-header">
+        <h2 class="section-title">Popular Right Now</h2>
+        <a href="/games.html" class="section-link">See more →</a>
+      </div>
+      <div class="games-grid" id="popular-grid">
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+        <div class="skeleton skel-card"></div>
+      </div>
+    </div>
+
+    <!-- ── AD: Before browse all CTA ───────────────────────── -->
+    <div class="ad-slot ad-banner" id="ad-bottom" style="margin-bottom:40px;">
+      <!-- REPLACE with ad network banner tag (728×60 or responsive) -->
+    </div>
+
+    <!-- Browse All CTA -->
+    <div style="text-align:center; padding-bottom:72px;">
+      <p style="color:var(--text-muted); margin-bottom:16px;">Looking for something specific?</p>
+      <a href="/games.html" class="btn btn-primary" style="font-size:1rem; padding:14px 36px;">
+        Browse All Games →
+      </a>
+    </div>
+  </div>
+
+</div><!-- end .page -->
+
+<script src="/js/core.js"></script>
+<script src="/js/games.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      const games = await GameLib.load();
+
+      // Update counts
+      const count = games.length;
+      ['hero-game-count','stat-games'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = count + '+';
+      });
+
+      // Featured: first 6 games
+      const featuredGrid = document.getElementById('featured-grid');
+      if (featuredGrid) {
+        featuredGrid.innerHTML = '';
+        games.slice(0, 6).forEach(g => featuredGrid.appendChild(GameLib.createCard(g)));
       }
-    </script>
-    <!-- the script that loads the nav bar, so i can change it in that one file and it changes across the entire site -->
-    <script src="/js/navbar.js"></script>
-  </body>
+
+      // Popular: random 10
+      const popularGrid = document.getElementById('popular-grid');
+      if (popularGrid) {
+        popularGrid.innerHTML = '';
+        [...games].sort(() => Math.random() - 0.5).slice(0, 10).forEach(g =>
+          popularGrid.appendChild(GameLib.createCard(g))
+        );
+      }
+    } catch (err) {
+      console.error('Failed to load games:', err);
+    }
+  });
+</script>
+
+</body>
 </html>

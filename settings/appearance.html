@@ -1,76 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>OutRed | Settings</title>
-      <link rel="stylesheet" href="/styles/style.css">
-      <link id="favicon" rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-      <script src="/js/tabcloak.js"></script>
-      <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'G-B5MYT5J8LH');
-      </script>
-   </head>
-   <body>
-      <div id="navbar"></div>
-      <div class="content">
-         <center>
-         <!-- archiving this code. never got to finishing. maybe someone will come back and finish this. for now, I (outred) step down from being a dev for this. i now am the manager - i manage hosting, domains, analytics, discord server(s) etc. -->
-         <h1 class="title">Appearance</h1>
-         <br><br>
-         <div class="settings-content">
-            <div class="settings-sidebar">
-               <li onclick="window.location.href='/settings/index.html'">Overview</li>
-               <li onclick="window.location.href='/settings/appearance.html'">Appearance</li>
-               <li onclick="window.location.href='/settings/tabcloak.html'">Tab Cloaking</li>
-               <li onclick="window.location.href='/settings/panickey.html'">Panic Key</li>
-               <li onclick="window.location.href='/settings/language.html'">Language</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appearance — OutRed Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+  <style>
+    .theme-btn {
+      width: 100%; padding: 16px;
+      background: var(--surface-2); border: 2px solid var(--border);
+      border-radius: var(--radius); cursor: pointer;
+      transition: all var(--ease); display: flex; align-items: center; gap: 12px;
+      font-weight: 600; font-size: 0.875rem; color: var(--text-muted);
+    }
+    .theme-btn:hover { border-color: var(--border-hover); color: var(--text); }
+    .theme-btn.active { border-color: var(--accent); color: var(--text); background: var(--accent-dim); }
+    .theme-swatch {
+      width: 32px; height: 32px; border-radius: 8px; flex-shrink: 0;
+    }
+  </style>
+</head>
+<body data-settings-page="appearance">
+
+<div class="page">
+  <div class="container settings-page">
+    <div class="settings-layout">
+
+      <nav class="settings-nav">
+        <div class="settings-nav-label">Settings</div>
+        <a href="/settings/">⚙️ &nbsp;General</a>
+        <a href="/settings/appearance.html" class="active">🎨 &nbsp;Appearance</a>
+        <a href="/settings/tabcloak.html">🕵️ &nbsp;Tab Cloak</a>
+        <a href="/settings/panickey.html">⚡ &nbsp;Panic Key</a>
+      </nav>
+
+      <div>
+        <div class="settings-card">
+          <div class="settings-card-header">
+            <h2>Appearance</h2>
+            <p>Customize how OutRed looks.</p>
+          </div>
+          <div class="settings-body">
+
+            <!-- Theme -->
+            <div class="settings-row" style="flex-direction:column; align-items:flex-start; gap:16px;">
+              <div class="settings-row-info">
+                <h3>Theme</h3>
+                <p>Choose your preferred color theme. (Dark is recommended for gaming.)</p>
+              </div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; width:100%; max-width:480px;">
+                <button class="theme-btn active" data-theme-btn="dark">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#0b0b12,#181824);border:1px solid rgba(255,255,255,0.1);"></span>
+                  Dark (Default)
+                </button>
+                <button class="theme-btn" data-theme-btn="midnight">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#050510,#0d0d24);border:1px solid rgba(100,100,255,0.2);"></span>
+                  Midnight Blue
+                </button>
+                <button class="theme-btn" data-theme-btn="dim">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#1a1a2e,#252540);border:1px solid rgba(255,255,255,0.08);"></span>
+                  Dim
+                </button>
+                <button class="theme-btn" data-theme-btn="amoled">
+                  <span class="theme-swatch" style="background:#000;border:1px solid rgba(255,255,255,0.05);"></span>
+                  AMOLED Black
+                </button>
+              </div>
             </div>
-            <div class="settings-right-section"></div>
-            <div class="appearance-tab" id="appearance-tab">
-               <h2>Choose Appearance</h2>
-               <br>
-               <label>
-               <label class="switch">
-               <input type="checkbox" checked>
-               <span class="slider round"></span>
-               </label> 
-               <h2 style="font-weight: normal;">Dark Theme</h2>
-               </label><br><br>
-               <button class="save-button" onclick="saveAppearance()">Save</button>
+
+            <!-- Snow effect -->
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <h3>Snow Effect</h3>
+                <p>Show animated snowflakes on the homepage.</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" id="snow-toggle" />
+                <span class="toggle-track"></span>
+              </label>
             </div>
-         </div>
+
+          </div>
+        </div>
+
+        <p style="font-size:0.8rem; color:var(--text-dim); margin-top:14px;">
+          Additional theme options coming soon. Suggest themes in our <a href="https://discord.gg/FB6NtPkfwY" target="_blank" style="color:var(--accent);">Discord</a>.
+        </p>
       </div>
-      <footer style="bottom: 0; position: fixed;">
-         <a href="https://discord.gg/outred" target="_blank"></a>
-         <p>&copy; OutRed</p>
-         <a href="https://github.com/OutRed/outredgames" target="_blank"></a>
-      </footer>
-      </div>
-      <script>
-         function showTab(tabName) {
-             // Hide all tabs first
-             const tabs = document.querySelectorAll('.appearance-tab');
-             tabs.forEach(tab => tab.style.display = 'none');
-         
-                         // Show the selected tab
-                         if (tabName === 'appearance') {
-                 document.getElementById('appearance-tab').style.display = 'block';
-             }
-         
-         }
-         
-         function saveAppearance() {
-             // Add your code here to save the selected appearance (light/dark mode)
-         }
-      </script>
-      <script src="/js/navbar.js"></script>
-   </body>
+
+    </div>
+  </div>
+</div>
+
+<script src="/js/core.js"></script>
+<script src="/js/settings.js"></script>
+
+</body>
 </html>
