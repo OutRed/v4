@@ -76,11 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('active');
       }
       btn.addEventListener('click', () => {
-        OR.set('theme', btn.dataset.themeBtn);
+        const t = btn.dataset.themeBtn;
+        OR.set('theme', t);
+        // Apply immediately — no reload needed
+        document.documentElement.setAttribute('data-theme', t);
         themeButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        // Future: apply theme
-        toast('Theme saved!', 'success');
+        toast('Theme applied!', 'success');
       });
     });
 

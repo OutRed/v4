@@ -27,6 +27,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (descEl)  descEl.textContent   = desc || 'No description available.';
   document.title = `${title} — OutRed`;
 
+  // Fade in once game loads (hides the loading gif)
+  if (iframe) {
+    iframe.addEventListener('load', () => {
+      if (iframe.src && iframe.src !== 'about:blank') {
+        iframe.classList.add('loaded');
+      }
+    });
+  }
+
   // ── Controls ──────────────────────────────────────────────────
   window.toggleFullscreen = function () {
     if (!document.fullscreenElement) {

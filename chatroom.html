@@ -1,123 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chatroom</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <!--  PWA LINKS -->
-    <link rel="manifest" href="/assets/json/manifest.json" />
-    <meta name="theme-color" content="#6C0BA9" />
-    <link
-      id="favicon"
-      rel="shortcut icon"
-      href="/assets/favicon.png"
-      type="image/x-icon"
-    />
-    <script src="js/tabcloak.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-B5MYT5J8LH"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat — OutRed</title>
+  <meta name="theme-color" content="#e63946" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link id="favicon" rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+  <link rel="manifest" href="/assets/json/manifest.json" />
+  <script src="/js/tabcloak.js"></script>
+  <style>
+    /* Warning modal */
+    .warning-overlay {
+      position: fixed; inset: 0; z-index: 9000;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+    .warning-modal {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 40px 36px;
+      max-width: 480px; width: 100%;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+    .warning-modal img {
+      width: 80px; height: 80px;
+      margin: 0 auto 20px;
+      opacity: 0.9;
+    }
+    .warning-modal h2 {
+      font-size: 1.4rem; margin-bottom: 14px;
+    }
+    .warning-modal p {
+      font-size: 0.875rem; color: var(--text-muted);
+      line-height: 1.7; margin-bottom: 28px;
+    }
+    .warning-actions {
+      display: flex; gap: 12px; justify-content: center;
+    }
 
-      gtag("js", new Date());
+    /* Chat embed area */
+    .chat-wrap {
+      width: 100%; max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 28px 64px;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .chat-header {
+      display: flex; align-items: center; gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .chat-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: #57f287; box-shadow: 0 0 8px #57f28788;
+      flex-shrink: 0;
+    }
+    .chat-embed {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      height: calc(100vh - var(--nav-h) - 140px);
+      min-height: 500px;
+    }
+    .chat-embed widgetbot,
+    .chat-embed iframe {
+      width: 100% !important;
+      height: 100% !important;
+      border: none;
+    }
 
-      gtag("config", "G-B5MYT5J8LH");
+    /* AD slot below chat */
+    .chat-ad { margin-top: 8px; }
+  </style>
+</head>
+<body>
 
-      // Function to continue loading iframe
-      function continueLoading() {
-        document.getElementById("overlay").style.display = "none";
-        document.getElementById("content").style.display = "block";
-      }
-    </script>
-    <style>
-      /* CSS for overlay */
-      .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-        z-index: 1000; /* Ensure it's above other elements */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+<!-- Warning Modal -->
+<div class="warning-overlay" id="warning-overlay">
+  <div class="warning-modal">
+    <img src="/assets/img/warning.png" alt="Warning" draggable="false" />
+    <h2>Heads up</h2>
+    <p>
+      This chatroom is powered by our Discord server and is <strong>not moderated</strong> by OutRed.
+      You may encounter inappropriate messages or behavior.
+      By continuing, you acknowledge that OutRed is not responsible for any content within the chat.
+    </p>
+    <div class="warning-actions">
+      <a href="/apps.html" class="btn btn-secondary">Go Back</a>
+      <button class="btn btn-primary" onclick="enterChat()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Enter Chat
+      </button>
+    </div>
+  </div>
+</div>
 
-      #warning-message {
-        background-color: rgb(23, 23, 23);
-        padding: 20px;
-        border-radius: 25px;
-        text-align: center;
-        color: white;
-        width: 50%;
-        height: auto;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgb(82, 82, 82);
-      }
+<div class="page">
+  <div class="chat-wrap" id="chat-content" style="display:none;">
 
-      #content {
-        display: none; /* Hide initially */
-      }
-    </style>
-  </head>
-  <body>
-    <br />
-    <div id="overlay" class="overlay">
-      <div id="warning-message">
-        <img
-          src="/assets/img/warning.png"
-          alt="Warning"
-          height="200px"
-          width="200px"
-          draggable="false"
-        />
-        <h1 style="font-weight: bold">Warning</h1>
-        <p>
-          This chatroom is not moderated by OutRed Games. Users may encounter
-          inappropriate messages, slurs, or behavior. By participating in the
-          chatroom, you acknowledge that OutRed Games is not responsible for any
-          content or interactions within the chatroom. Proceed with caution.
-        </p>
-        <button
-          onclick="window.location.href='/apps.html'"
-          class="take-me-home-button"
-        >
-          Go back
-        </button>
-        <button onclick="continueLoading()" class="take-me-home-button">
-          Continue
-        </button>
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="chat-dot"></div>
+      <div>
+        <div style="font-weight:700; font-size:1rem;">OutRed Community Chat</div>
+        <div style="font-size:0.78rem; color:var(--text-muted);">Powered by Discord · <a href="https://discord.gg/FB6NtPkfwY" target="_blank" rel="noopener" style="color:var(--accent);">Open in Discord ↗</a></div>
       </div>
     </div>
-    <div id="navbar"></div>
-    <div id="content">
-      <div class="content">
-        <!-- Widgetbot iframe -->
-        <widgetbot
-          server="1012472708010889217"
-          channel="1056002719757914212"
-          width="90%"
-          height="600"
-        ></widgetbot>
-        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-      </div>
+
+    <!-- AD: above chat embed -->
+    <div class="ad-slot ad-full-banner" id="ad-chat-top">
+      <!-- REPLACE with ad tag (728×90) -->
     </div>
-    <footer style="position: fixed; bottom: 0">
-      <a href="https://discord.gg/FB6NtPkfwY" target="_blank"></a>
-      <p>&copy; OutRed</p>
-      <a href="https://github.com/OutRed/v4" target="_blank"></a>
-    </footer>
-    <script src="/js/navbar.js"></script>
-  </body>
+
+    <!-- Discord Widgetbot embed -->
+    <div class="chat-embed">
+      <widgetbot
+        server="1012472708010889217"
+        channel="1056002719757914212"
+      ></widgetbot>
+      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+    </div>
+
+    <!-- AD: below chat -->
+    <div class="ad-slot ad-full-banner chat-ad" id="ad-chat-bottom">
+      <!-- REPLACE with ad tag -->
+    </div>
+
+  </div>
+</div>
+
+<script src="/js/core.js"></script>
+<script>
+  function enterChat() {
+    document.getElementById('warning-overlay').style.display = 'none';
+    document.getElementById('chat-content').style.display = 'block';
+    sessionStorage.setItem('chat-ok', '1');
+  }
+
+  // Skip warning if already accepted this session
+  if (sessionStorage.getItem('chat-ok')) enterChat();
+</script>
+
+</body>
 </html>

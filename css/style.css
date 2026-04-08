@@ -41,6 +41,31 @@
   --glow-accent:  0 0 32px var(--accent-glow);
 }
 
+/* ── Theme Overrides ─────────────────────────────────────────── */
+[data-theme="midnight"] {
+  --bg:        #04040e;
+  --surface:   #09091a;
+  --surface-2: #0f0f28;
+  --surface-3: #171738;
+  --surface-4: #202055;
+}
+
+[data-theme="dim"] {
+  --bg:        #1c1c2e;
+  --surface:   #24243c;
+  --surface-2: #2c2c50;
+  --surface-3: #363660;
+  --surface-4: #404075;
+}
+
+[data-theme="amoled"] {
+  --bg:        #000000;
+  --surface:   #070707;
+  --surface-2: #101010;
+  --surface-3: #1a1a1a;
+  --surface-4: #222222;
+}
+
 /* ── Reset ───────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
@@ -541,6 +566,22 @@ h3 { font-size: 1rem; font-weight: 600; }
 }
 #player-wrap iframe {
   width: 100%; height: 100%; border: none; display: block;
+}
+
+/* Loading gif background — visible until game content covers it */
+#player-wrap {
+  background:
+    url('/assets/img/loading-spinner.gif') center center / 64px 64px no-repeat,
+    #000;
+}
+
+/* Iframe fade-in after game loads */
+#game-iframe {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+#game-iframe.loaded {
+  opacity: 1;
 }
 
 /* Fullscreen styles */
