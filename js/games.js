@@ -5,7 +5,8 @@
 
 'use strict';
 
-const GameLib = (() => {
+// Exposed on window so player.js can access it
+window.GameLib = (() => {
   let _cache = null;
 
   /* ── Data ─────────────────────────────────────────────────── */

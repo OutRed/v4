@@ -6,7 +6,8 @@
 'use strict';
 
 /* ── Settings Store ──────────────────────────────────────────── */
-const OR = {
+// Exposed on window so settings.js and other scripts can access it
+window.OR = {
   get(key, fallback = null) {
     try {
       const v = localStorage.getItem('or_' + key);
