@@ -4,1830 +4,2134 @@
     "root": "1",
     "file": "index.html",
     "img": "meta/apple-touch-icon.png",
-    "description": "Description coming soon!"
+    "description": "A mysterious game simply titled '1'. Can you figure out what it's all about?"
   },
   {
     "title": "10 Minutes Till Dawn",
     "root": "10-minutes-till-dawn",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Survive 10 minutes against endless waves of monsters in this fast-paced top-down shooter. Upgrade your character and outlast the darkness."
   },
   {
     "title": "100 Player Pong",
     "root": "100ng",
     "file": "index.html",
-    "img": "100ng.jpg"
+    "img": "100ng.jpg",
+    "description": "Classic Pong chaos with up to 100 players at once. Compete against a massive crowd in this wild multiplayer twist on the retro arcade original."
   },
   {
     "title": "1v1.lol",
     "root": "1v1lol",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Build, edit, and battle in this fast-paced 1v1 shooter. Practice your building mechanics and outgun your opponent in intense close-range fights."
   },
   {
     "title": "1v1.space",
     "root": "1v1space",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Go head-to-head against another player in this minimalist 1v1 space combat game. Dodge bullets and outlast your opponent."
   },
   {
     "title": "2048",
     "root": "2048",
     "file": "index.html",
-    "img": "thumb.png"
+    "img": "thumb.png",
+    "description": "Slide numbered tiles on a grid and combine matching numbers to reach the elusive 2048 tile. A simple concept with surprisingly deep strategy."
   },
   {
     "title": "2048 Multitask",
     "root": "2048-multitask",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Play multiple 2048 boards at the same time. Test your ability to multitask as you try to hit 2048 on several grids simultaneously."
   },
   {
     "title": "9007199254740992",
     "root": "9007199254740992",
     "file": "index.html",
-    "img": "logo-4.png"
+    "img": "logo-4.png",
+    "description": "Can you reach the biggest number possible? A massive take on the 2048 concept pushing tiles to astronomical values."
   },
   {
     "title": "99balls",
     "root": "99balls",
     "file": "index.html",
-    "img": "99-balls-evo.jpg"
+    "img": "99-balls-evo.jpg",
+    "description": "Shoot balls to break numbered blocks before they reach the bottom. A satisfying brick-breaking game with addictive one-more-round gameplay."
   },
   {
     "title": "A Dance of Fire and Ice",
     "root": "a-dance-of-fire-and-ice",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Follow the rhythm and guide two orbiting planets through increasingly complex paths. A music-based precision game where one wrong move ends your run."
   },
   {
     "title": "A Dark Room",
     "root": "adarkroom",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Start with nothing but a cold room and a fire. This minimalist text-based RPG slowly unfolds into a surprisingly deep survival and exploration adventure."
   },
   {
     "title": "Achievement Unlocked",
     "root": "achievementunlocked",
     "file": "index.html",
-    "img": "achievementunlocked.png"
+    "img": "achievementunlocked.png",
+    "description": "A satirical platformer where the goal is to unlock every achievement possible, no matter how absurd. Poke fun at gaming culture while having a blast."
   },
   {
     "title": "Adrenaline Challenge",
     "root": "adrenalinechallenge",
     "file": "index.html",
-    "img": "adrenalinechallenge.jpg"
+    "img": "adrenalinechallenge.jpg",
+    "description": "Push your reflexes to the limit in this high-speed obstacle course game. React fast or get left behind."
   },
   {
     "title": "Adventure Drivers",
     "root": "adventure-drivers",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Hit the road in this top-down driving adventure. Navigate through various terrains and complete missions behind the wheel."
   },
   {
     "title": "Age of Conflict",
     "root": "ages-of-conflict",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Command armies and conquer territories in this strategic war game. Expand your empire and crush your enemies across multiple battlefields."
   },
   {
     "title": "Alien Hominid",
     "root": "alienhominid",
     "file": "index.html",
-    "img": "alienhominid.jpg"
+    "img": "alienhominid.jpg",
+    "description": "Play as a tiny alien stranded on Earth, fighting off waves of government agents in this fast-paced run-and-gun action game."
   },
   {
     "title": "Amazing rope police",
     "root": "amazing-rope-police",
     "file": "index.html",
-    "img": "splash.jpeg"
+    "img": "splash.jpeg",
+    "description": "Swing through the city using a grappling rope as a crime-fighting police officer. Chain together swings and take down criminals."
   },
   {
     "title": "Amidst the Clouds",
     "root": "amidst-the-clouds",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A serene and beautiful platformer set high above the world in the clouds. Jump and glide your way through peaceful aerial landscapes."
   },
   {
     "title": "Among Us",
     "root": "among-us",
     "file": "index.html",
-    "img": "red.png"
+    "img": "red.png",
+    "description": "Work together to crew your spaceship \u2014 or secretly sabotage it as an impostor. The classic social deduction game playable right in your browser."
   },
   {
     "title": "Angry Sharks",
     "root": "angry-sharks",
     "file": "index.html",
-    "img": "assets/favicon/icon-512x512.png"
+    "img": "assets/favicon/icon-512x512.png",
+    "description": "Survive the ocean as angry sharks close in from all sides. Dodge, weave, and fight back in this frantic aquatic survival game."
   },
   {
     "title": "Aquapark Slides",
     "root": "aquapark-slides",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Race down twisting water slides and knock opponents off the track. The first one to the bottom wins \u2014 by any means necessary."
   },
   {
     "title": "Astray",
     "root": "astray",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Navigate through a dark and eerie maze while avoiding deadly traps. A tense horror-lite puzzle experience that'll keep you on edge."
   },
   {
     "title": "Avalanche",
     "root": "avalanche",
     "file": "index.html",
-    "img": "avalanche.png"
+    "img": "avalanche.png",
+    "description": "Survive a relentless avalanche by dodging falling snow and debris. How long can you keep your character alive as the slope gets steeper?"
   },
   {
     "title": "Awesome Tanks 2",
     "root": "awesometanks2",
     "file": "index.html",
-    "img": "awesometanks2.jpg"
+    "img": "awesometanks2.jpg",
+    "description": "Drive your heavily armed tank through enemy territory, blasting everything in sight. Upgrade your weapons and armor to become the ultimate war machine."
   },
   {
     "title": "Backrooms",
     "root": "backrooms",
     "file": "index.html",
-    "img": "img/splash.jpg"
+    "img": "img/splash.jpg",
+    "description": "Explore the infamous Backrooms \u2014 endless yellow hallways with flickering lights and an unsettling sense that something is watching you."
   },
   {
     "title": "Bad Ice Cream",
     "root": "bad-ice-cream",
     "file": "index.html",
-    "img": "bad-ice-cream.png"
+    "img": "bad-ice-cream.png",
+    "description": "Control an ice cream character and freeze your enemies while collecting fruit. A fun two-player friendly puzzle-action game."
   },
   {
     "title": "Bad Ice Cream 2",
     "root": "bad-ice-cream-2",
     "file": "index.html",
-    "img": "bad-ice-cream-2.png"
+    "img": "bad-ice-cream-2.png",
+    "description": "More frozen fun in the sequel to Bad Ice Cream. New levels, new enemies, and more fruity chaos to enjoy solo or with a friend."
   },
   {
     "title": "Bad Ice Cream 3",
     "root": "bad-ice-cream-3",
     "file": "index.html",
-    "img": "bad-ice-cream-3.png"
+    "img": "bad-ice-cream-3.png",
+    "description": "The third installment of the beloved Bad Ice Cream series. More levels, more enemies, and even more icy mayhem than before."
   },
   {
     "title": "Baldi's Basics",
     "root": "baldis-basics",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Survive your school day while avoiding the terrifying Baldi. Collect notebooks scattered throughout the school before he catches you."
   },
   {
     "title": "Ballistic Chickens",
     "root": "ballistic-chickens",
     "file": "index.html",
-    "img": "logo.png"
+    "img": "logo.png",
+    "description": "Launch chickens at targets in this physics-based projectile game. Aim carefully and use the right power to hit every mark."
   },
   {
     "title": "Basket Random",
     "root": "basket-random",
     "file": "index.html",
-    "img": "splash.jpeg"
+    "img": "splash.jpeg",
+    "description": "Wacky basketball with ragdoll physics and random level changes every round. Compete against a friend or CPU in hilarious two-button gameplay."
   },
   {
     "title": "Basketball Stars",
     "root": "basketball-stars",
     "file": "index.html",
-    "img": "assets/images/basketball-stars.png"
+    "img": "assets/images/basketball-stars.png",
+    "description": "Show off your street basketball skills in this slick one-on-one basketball game. Dribble, fake out, and dunk your way to victory."
   },
   {
     "title": "Basketbros.io",
     "root": "basketbros-io",
     "file": "index.html",
-    "img": "thumb.jpg"
+    "img": "thumb.jpg",
+    "description": "Play intense 2v2 street basketball with exaggerated moves and super dunks. Team up with a friend or take on opponents online."
   },
   {
     "title": "Battle for Gondor",
     "root": "battleforgondor",
     "file": "index.html",
-    "img": "battleforgondor.JPG"
+    "img": "battleforgondor.JPG",
+    "description": "Defend the walls of Gondor from invading forces in this epic real-time strategy game inspired by classic fantasy battles."
   },
   {
     "title": "Big NEON Tower Tiny Square",
     "root": "bntts",
     "file": "index.html",
-    "img": "icons/icon-256.png"
+    "img": "icons/icon-256.png",
+    "description": "A glowing neon sequel to Big Tower Tiny Square. Climb an even taller tower packed with tricky platforming challenges."
   },
   {
     "title": "Big Red Button",
     "root": "bigredbutton",
     "file": "index.html",
-    "img": "bigredbutton.png"
+    "img": "bigredbutton.png",
+    "description": "There's a big red button. You probably shouldn't press it. But you will anyway \u2014 and things get weird from there."
   },
   {
     "title": "Big Tower Tiny Square",
     "root": "btts",
     "file": "index.html",
-    "img": "images.png"
+    "img": "images.png",
+    "description": "Guide a tiny square all the way to the top of an enormous tower. A brutally difficult platformer that will test every ounce of your patience."
   },
   {
     "title": "Bitlife",
     "root": "bitlife",
     "file": "index.html",
-    "img": "logo.png"
+    "img": "logo.png",
+    "description": "Live an entire simulated human life from birth to death. Make choices that shape your character's career, relationships, and legacy."
   },
   {
     "title": "Black Hole Square",
     "root": "blacholesquare",
     "file": "index.html",
-    "img": "icon.png"
+    "img": "icon.png",
+    "description": "Control a black hole square and absorb everything in your path to grow bigger. A satisfying physics-based absorption game."
   },
   {
     "title": "Black Knight",
     "root": "blackknight",
     "file": "index.html",
-    "img": "blackknight.png"
+    "img": "blackknight.png",
+    "description": "Wield your sword as the Black Knight and slash through waves of enemies. A dark action game with satisfying combat mechanics."
   },
   {
     "title": "Bloons TD",
     "root": "bloonstd",
     "file": "index.html",
-    "img": "bloonstd.jpg"
+    "img": "bloonstd.jpg",
+    "description": "The original Bloons Tower Defense. Place monkey towers along the path to pop waves of colorful balloons before they escape."
   },
   {
     "title": "Bloons TD 2",
     "root": "bloonstd2",
     "file": "index.html",
-    "img": "bloonstd2.png"
+    "img": "bloonstd2.png",
+    "description": "The second installment of the iconic tower defense series. More towers, more bloons, and more strategic depth than the original."
   },
   {
     "title": "Bloons TD 5",
     "root": "btd5",
     "file": "index.html",
-    "img": "BT5_Deluxe_logo.png"
+    "img": "BT5_Deluxe_logo.png",
+    "description": "One of the best tower defense games ever made. Place and upgrade an arsenal of monkey towers to stop thousands of bloons in their tracks."
   },
   {
     "title": "Bloxors",
     "root": "bloxors",
     "file": "index.html",
-    "img": "block.png"
+    "img": "block.png",
+    "description": "Roll a rectangular block across a suspended platform and drop it into the target hole. A clever spatial puzzle game that gets fiendishly tricky."
   },
   {
     "title": "Bob the Robber 2",
     "root": "bobtherobber2",
     "file": "index.html",
-    "img": "splash.jpeg"
+    "img": "splash.jpeg",
+    "description": "Sneak through security-heavy buildings as Bob the master thief. Avoid guards, hack cameras, and steal everything that isn't nailed down."
   },
   {
     "title": "Box Head",
     "root": "boxhead2play",
     "file": "index.html",
-    "img": "boxhead2play.jpg"
+    "img": "boxhead2play.jpg",
+    "description": "Survive endless zombie hordes in this top-down shooter. Collect weapons and barricades to hold out as long as possible."
   },
   {
     "title": "Boxing Random",
     "root": "boxing-random",
     "file": "index.html",
-    "img": "512x512.jpg"
+    "img": "512x512.jpg",
+    "description": "Two-button boxing madness with random stages and ragdoll fighters. Land punches and knock your opponent out in this hilariously chaotic game."
   },
   {
     "title": "Breaking the Bank",
     "root": "breakingthebank",
     "file": "index.html",
-    "img": "breakingthebank.png"
+    "img": "breakingthebank.png",
+    "description": "Plan and execute the perfect bank heist in this clever puzzle game. Avoid security and make off with the loot."
   },
   {
     "title": "Burger and Frights",
     "root": "burger-and-frights",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A strange and spooky driving game where you deliver burgers at night. Things get increasingly weird the longer you drive."
   },
   {
     "title": "CS:GO Clicker",
     "root": "csgo-clicker",
     "file": "index.html",
-    "img": "images/vanguard.png"
+    "img": "images/vanguard.png",
+    "description": "Click your way to Counter-Strike glory in this idle clicker tribute to CS:GO. Rack up frags and unlock upgrades."
   },
   {
     "title": "Cannon Basketball 4",
     "root": "cannon-basketball-4",
     "file": "index.html",
-    "img": "img/splash.png"
+    "img": "img/splash.png",
+    "description": "Launch basketballs from a cannon and bounce them into the hoop. Use physics and angles to score in increasingly tricky levels."
   },
   {
     "title": "Canyon Defense",
     "root": "canyondefense",
     "file": "index.html",
-    "img": "canyondefense.png"
+    "img": "canyondefense.png",
+    "description": "Set up towers and defenses along a canyon road to stop waves of enemies from getting through. A classic tower defense challenge."
   },
   {
     "title": "Cars Simulator",
     "root": "cars-simulator",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Get behind the wheel and experience realistic car physics in this open driving simulator. Explore the map and push your vehicle to its limits."
   },
   {
     "title": "Cell Machine",
     "root": "cell-machine",
     "file": "index.html",
-    "img": "img/te9nDu.png"
+    "img": "img/te9nDu.png",
+    "description": "Build machines out of cells that push, pull, and transform each other. A deeply creative puzzle game with near-infinite possibilities."
   },
   {
     "title": "Champion Archer",
     "root": "championarcher",
     "file": "index.html",
-    "img": "championarcher.png"
+    "img": "championarcher.png",
+    "description": "Draw back your bow and fire arrows at targets with precision. Master the physics of archery and hit every bullseye."
   },
   {
     "title": "Champion Island",
     "root": "champion-island",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Join the legendary Cat Yamato on a journey across Champion Island to compete in seven sports mini-games and claim the championship."
   },
   {
     "title": "Chill Radio",
     "root": "chill-radio",
     "file": "index.html",
-    "img": "img/icon.png"
+    "img": "img/icon.png",
+    "description": "Kick back and listen to a curated lo-fi chill radio stream. The perfect background music while you browse or study."
   },
   {
     "title": "Chrome Dino",
     "root": "chrome-dino",
     "file": "index.html",
-    "img": "icons/icon-256.png"
+    "img": "icons/icon-256.png",
+    "description": "The iconic offline Chrome dinosaur game, now playable anytime. Jump over cacti and dodge pterodactyls to set a new high score."
   },
   {
     "title": "Cluster Rush",
     "root": "cluster-rush",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Leap between trucks hurtling down a highway at insane speeds. Time your jumps perfectly or get left behind in this adrenaline-fueled runner."
   },
   {
     "title": "Connect 3",
     "root": "connect3",
     "file": "index.html",
-    "img": "connect3.png"
+    "img": "connect3.png",
+    "description": "Match three or more of the same colored pieces in this fast-paced puzzle game. Clear the board before the pieces pile up."
   },
   {
     "title": "Cookie Clicker",
     "root": "cookie-clicker",
     "file": "index.html",
-    "img": "cookie1.jpeg"
+    "img": "cookie1.jpeg",
+    "description": "Click cookies to bake more cookies and unlock an absurdly deep idle empire. The game that launched a thousand clicker games."
   },
   {
     "title": "Core Ball",
     "root": "core-ball",
     "file": "index.html",
-    "img": "pr_source.png"
+    "img": "pr_source.png",
+    "description": "Fire balls into a rotating core and fill it completely without overlapping. A minimalist precision game that's harder than it looks."
   },
   {
     "title": "CraftMine",
     "root": "craftmine",
     "file": "index.html",
-    "img": "images/craftmine.png"
+    "img": "images/craftmine.png",
+    "description": "Gather resources and craft items in this browser-based Minecraft-inspired survival game. Build shelters, mine ores, and survive the night."
   },
   {
     "title": "Creative Kill Chamber",
     "root": "creativekillchamber",
     "file": "index.html",
-    "img": "creativekillchamber.jpg"
+    "img": "creativekillchamber.jpg",
+    "description": "Use your environment creatively to eliminate enemies in this dark puzzle-action game. Every room has multiple ways to clear it."
   },
   {
     "title": "Crossy Road",
     "root": "crossyroad",
     "file": "index.html",
-    "img": "crossyroad.png"
+    "img": "crossyroad.png",
+    "description": "Hop across roads, rivers, and train tracks in this endless hopper inspired by Frogger. How far can you get without getting squashed?"
   },
   {
     "title": "Cupcake 2048",
     "root": "cupcake2048",
     "file": "index.html",
-    "img": "favicon.png"
+    "img": "favicon.png",
+    "description": "A sweeter take on the classic 2048 puzzle. Combine matching cupcakes to create ever-more-delicious baked treats."
   },
   {
     "title": "Cut the Rope",
     "root": "ctr",
     "file": "index.html",
-    "img": "logo.png"
+    "img": "logo.png",
+    "description": "Feed candy to the adorable Om Nom by cutting ropes at just the right moment. A charming physics puzzle with hundreds of levels."
   },
   {
     "title": "Cut the Rope Holiday",
     "root": "ctr-holiday",
     "file": "index.html",
-    "img": "Holiday_Gift.webp"
+    "img": "Holiday_Gift.webp",
+    "description": "A festive holiday edition of Cut the Rope. Help Om Nom get his candy with a Christmas twist on the classic rope-cutting puzzles."
   },
   {
     "title": "Cut the Rope Time Travel",
     "root": "ctr-tr",
     "file": "index.html",
-    "img": "logo.png"
+    "img": "logo.png",
+    "description": "Travel through time with Om Nom and his ancestors in this physics puzzle adventure. Cut ropes and collect stars across different eras."
   },
   {
     "title": "Dante",
     "root": "dante",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Navigate through a dark and challenging world inspired by the Divine Comedy. A platformer with atmospheric visuals and tough obstacles."
   },
   {
     "title": "Deal or No Deal",
     "root": "deal-or-no-deal",
     "file": "index.html",
-    "img": "index.jpg"
+    "img": "index.jpg",
+    "description": "Play the classic TV game show in your browser. Open briefcases and decide when to take the banker's offer in this high-stakes money game."
   },
   {
     "title": "Death Run 3D",
     "root": "death-run-3d",
     "file": "index.html",
-    "img": "img/death.png"
+    "img": "img/death.png",
+    "description": "Sprint through a deadly 3D tunnel filled with obstacles coming at you fast. React instantly or meet a swift end."
   },
   {
     "title": "Defend the Tank",
     "root": "defend-the-tank",
     "file": "index.html",
-    "img": "images/splash.jpg"
+    "img": "images/splash.jpg",
+    "description": "Protect your tank from waves of enemies using turrets and upgrades. A strategic defense game where positioning is everything."
   },
   {
     "title": "Doctor Acorn 2",
     "root": "doctor-acorn2",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Help Doctor Acorn reach his house by solving physics-based puzzles. Use ropes, platforms, and clever thinking to guide him safely."
   },
   {
     "title": "Doge 2048",
     "root": "doge2048",
     "file": "index.html",
-    "img": "meta/apple-touch-icon.png"
+    "img": "meta/apple-touch-icon.png",
+    "description": "Much number. Very combine. A Doge-themed version of the classic 2048 sliding tile puzzle. Wow."
   },
   {
     "title": "DogeMiner",
     "root": "DogeMiner",
     "file": "index.html",
-    "img": "img/dogeminer_300x300.png"
+    "img": "img/dogeminer_300x300.png",
+    "description": "Click to mine Dogecoins and build a rocket to the moon. An addictive idle clicker starring everyone's favorite Shiba Inu meme."
   },
   {
     "title": "DogeMiner 2",
     "root": "Dogeminer2",
     "file": "index.html",
-    "img": "thumb.jpg"
+    "img": "thumb.jpg",
+    "description": "The sequel to DogeMiner takes Doge further into space. Mine more Doge, upgrade your equipment, and explore the cosmos."
   },
   {
     "title": "Doodle Jump",
     "root": "doodle-jump",
     "file": "index.html",
-    "img": "doodle.png"
+    "img": "doodle.png",
+    "description": "Bounce your Doodler upward on an endless tower of platforms. Avoid monsters and use power-ups to climb as high as possible."
   },
   {
     "title": "Double Wires",
     "root": "doublewires",
     "file": "index.html",
-    "img": "doublewires.png"
+    "img": "doublewires.png",
+    "description": "Swing through the city using two grappling wires. Master the physics of momentum to fly through the air like a web-slinger."
   },
   {
     "title": "Dragons vs Bricks",
     "root": "dragon-vs-bricks",
     "file": "index.html",
-    "img": "icon.jpg"
+    "img": "icon.jpg",
+    "description": "Launch a dragon to smash through layers of numbered bricks. A satisfying brick-breaker with a fantasy twist."
   },
   {
     "title": "Draw the Hill",
     "root": "draw-the-hill",
     "file": "index.html",
-    "img": "icons/icon-512.png"
+    "img": "icons/icon-512.png",
+    "description": "Draw a road for your car to drive over in this physics drawing game. Create the perfect slope to get your vehicle to the finish line."
   },
   {
     "title": "Drift Hunters",
     "root": "drift-hunters",
     "file": "index.html",
-    "img": "drift-hunters.png"
+    "img": "drift-hunters.png",
+    "description": "Earn points by pulling off massive drifts across a variety of tracks. Tune and upgrade your car to become the ultimate drift champion."
   },
   {
     "title": "Drive Mad",
     "root": "drive-mad",
     "file": "index.html",
-    "img": "logo.jpg"
+    "img": "logo.jpg",
+    "description": "Navigate through insane obstacle courses in your vehicle without flipping over. A physics-based driving game that gets progressively more absurd."
   },
   {
     "title": "Duck Life",
     "root": "ducklife1",
     "file": "index.html",
-    "img": "ducklife.png"
+    "img": "ducklife.png",
+    "description": "Train your duck in speed, swimming, and flying to compete in the Duck World Championship. A beloved classic with charming pixel art."
   },
   {
     "title": "Duck Life 2",
     "root": "ducklife2",
     "file": "index.html",
-    "img": "ducklife2.png"
+    "img": "ducklife2.png",
+    "description": "More duck training and more championships. Level up your duck's skills and face tougher competition in this fun sequel."
   },
   {
     "title": "Duck Life 3",
     "root": "ducklife3",
     "file": "index.html",
-    "img": "duck.png"
+    "img": "duck.png",
+    "description": "Duck Life returns with evolution mechanics. Train your duck through different evolutionary stages to become the strongest competitor."
   },
   {
     "title": "Duck Life 4",
     "root": "ducklife4",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "The fourth chapter of the Duck Life saga. New mini-games, new skills, and a bigger world to explore with your champion duck."
   },
   {
     "title": "Eaglercraft 1.5",
     "root": "minecraft-15",
     "file": "index.html",
-    "img": "splash.jpeg"
+    "img": "splash.jpeg",
+    "description": "Play Minecraft 1.5 in your browser via the Eaglercraft client. No download needed \u2014 just jump in and start mining and crafting."
   },
   {
     "title": "Eaglercraft 1.8",
     "root": "minecraft-18",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Minecraft 1.8 running entirely in your browser through Eaglercraft. Classic Minecraft gameplay with all the blocks and crafting you know."
   },
   {
     "title": "Edge Let's surf",
     "root": "edge-surf",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "The hidden Easter egg surfing game from Microsoft Edge. Catch waves, jump over obstacles, and ride as far as you can."
   },
   {
     "title": "Edge Not Found",
     "root": "edgenotfound",
     "file": "index.html",
-    "img": "edge.png"
+    "img": "edge.png",
+    "description": "Microsoft's quirky 404 surfing game turned into a standalone experience. Ride the waves and beat your high score."
   },
   {
     "title": "Eel Slap",
     "root": "eel-slap",
     "file": "index.html",
-    "img": "eel-slap.png"
+    "img": "eel-slap.png",
+    "description": "A wonderfully absurd interactive experience where you slap someone with an eel. Move your mouse. That's the whole game."
   },
   {
     "title": "Elastic Man",
     "root": "elasticman",
     "file": "index.html",
-    "img": "elasticman.jpg"
+    "img": "elasticman.jpg",
+    "description": "Stretch and squish a cartoon face in every direction. A weirdly satisfying stress-relief toy with surprisingly realistic elastic physics."
   },
   {
     "title": "Endless War 3",
     "root": "endlesswar3",
     "file": "index.html",
-    "img": "endlesswar3.png"
+    "img": "endlesswar3.png",
+    "description": "Fight through an endless war as a soldier across multiple fronts and factions. A gritty side-scrolling action game with tons of weapons."
   },
   {
     "title": "Escaping The Prison",
     "root": "escapingtheprison",
     "file": "index.html",
-    "img": "escapingtheprison.jpg"
+    "img": "escapingtheprison.jpg",
+    "description": "Henry Stickmin needs to bust out of prison. Choose your escape methods and watch hilariously animated outcomes unfold."
   },
   {
     "title": "Evil Glitch",
     "root": "evil-glitch",
     "file": "index.html",
-    "img": "evil.png"
+    "img": "evil.png",
+    "description": "Navigate a world corrupted by digital glitches. A surreal platformer where reality itself seems to be breaking down."
   },
   {
     "title": "Evolution",
     "root": "evolution",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Start as a tiny cell and evolve into a dominant creature. Eat smaller organisms, grow, and climb the evolutionary ladder."
   },
   {
     "title": "Exo",
     "root": "exo",
     "file": "index.html",
-    "img": "img/small.jpg"
+    "img": "img/small.jpg",
+    "description": "A sleek and challenging platformer set in a futuristic world. Run, jump, and dash through levels with tight precision mechanics."
   },
   {
     "title": "Factory Balls Forever",
     "root": "factoryballs",
     "file": "index.html",
-    "img": "images/splash.png"
+    "img": "images/splash.png",
+    "description": "Decorate factory balls by dipping them in paint and applying masks in the right order. A satisfying puzzle game with hundreds of levels."
   },
   {
     "title": "Fair Squares",
     "root": "fairsquares",
     "file": "index.html",
-    "img": "index.apple-touch-icon.png"
+    "img": "index.apple-touch-icon.png",
+    "description": "A puzzle game about fairness and equal division. Split the grid into equal sections to satisfy the rules of each level."
   },
   {
     "title": "Fake Virus",
     "root": "fake-virus",
     "file": "index.html",
-    "img": "icon.png"
+    "img": "icon.png",
+    "description": "Prank your friends with a fake computer virus screen. Completely harmless \u2014 just the perfect screen to leave on someone's computer."
   },
   {
     "title": "Fancy Pants Adventures",
     "root": "fancypantsadventures",
     "file": "index.html",
-    "img": "fancypantsadventure.png"
+    "img": "fancypantsadventure.png",
+    "description": "Race and flip through hand-drawn worlds as the Fancy Pants Man. A smooth and stylish action platformer with fluid animation."
   },
   {
     "title": "Fireboy and Watergirl",
     "root": "fireboywatergirlforesttemple",
     "file": "index.html",
-    "img": "logo.jpeg"
+    "img": "logo.jpeg",
+    "description": "Guide Fireboy and Watergirl through elemental temples, each with unique puzzles. Play solo or with a friend in this cooperative classic."
   },
   {
     "title": "Five Nights at Winston's",
     "root": "fnaw",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A fan-made Five Nights at Freddy's style game. Survive the night by monitoring cameras and keeping the animatronics at bay."
   },
   {
     "title": "Flappy 2048",
     "root": "flappy-2048",
     "file": "index.html",
-    "img": "meta/apple-touch-icon.png"
+    "img": "meta/apple-touch-icon.png",
+    "description": "A mashup of Flappy Bird and 2048. Navigate through pipes while combining numbered tiles to score higher."
   },
   {
     "title": "Flappy Bird",
     "root": "flappy-bird",
     "file": "index.html",
-    "img": "assets/thumb.png"
+    "img": "assets/thumb.png",
+    "description": "The infamous one-button game that took the world by storm. Tap to keep your bird airborne and squeeze through the gaps."
   },
   {
     "title": "Flash Tetris",
     "root": "flashtetris",
     "file": "index.html",
-    "img": "flashtetris.png"
+    "img": "flashtetris.png",
+    "description": "Classic Tetris in your browser. Rotate and stack falling blocks to clear lines and keep the pile from reaching the top."
   },
   {
     "title": "Flippy Fish",
     "root": "flippy-fish",
     "file": "index.html",
-    "img": "2022_10_28_0jt_Kleki.png"
+    "img": "2022_10_28_0jt_Kleki.png",
+    "description": "Tap to flip your fish through an underwater obstacle course. A Flappy Bird-style game with an aquatic twist."
   },
   {
     "title": "Friday Night Funkin'",
     "root": "fridaynightfunkin",
     "file": "index.html",
-    "img": "fnf-icon.jpg"
+    "img": "fnf-icon.jpg",
+    "description": "Battle rivals in rhythm-based rap battles. Hit the arrows in time with the music to win the heart of your girlfriend's protective dad."
   },
   {
     "title": "Froggy's Battle",
     "root": "froggys-battle",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Help Froggy fight his way through enemy territory in this fun battle game. Use strategy and quick reflexes to win each encounter."
   },
   {
     "title": "Fruit Ninja",
     "root": "fruitninja",
     "file": "index.html",
-    "img": "FruitNinjaTeaser.jpg"
+    "img": "FruitNinjaTeaser.jpg",
+    "description": "Slash fruit flying through the air with your finger \u2014 but don't hit the bombs. The classic mobile fruit-slicing game now in your browser."
   },
   {
     "title": "Frying Nemo",
     "root": "frying-nemo",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A darkly comedic twist on a famous fish. Navigate through a frying pan in this absurd and funny browser game."
   },
   {
     "title": "GOODNIGHT",
     "root": "goodnight",
     "file": "index.html",
-    "img": "goodnight.jpg"
+    "img": "goodnight.jpg",
+    "description": "A haunting atmospheric experience designed to unsettle. Walk through a dark world and discover what lurks in the shadows."
   },
   {
     "title": "Game Inside a Game Inside a Game...",
     "root": "game-inside",
     "file": "index.html",
-    "img": "img/display.png"
+    "img": "img/display.png",
+    "description": "A mind-bending meta-game where each level is a game within a game within a game. How deep does the rabbit hole go?"
   },
   {
     "title": "Generic Fishing Game",
     "root": "generic-fishing-game",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Cast your line and catch fish in this relaxing browser fishing game. Simple controls, satisfying catches, and a great way to unwind."
   },
   {
     "title": "Geometry Dash (Scratch)",
     "root": "geodash",
     "file": "index.html",
-    "img": "geoscratchicon.png"
+    "img": "geoscratchicon.png",
+    "description": "A fan-made Scratch recreation of the beloved rhythm platformer Geometry Dash. Jump and fly through obstacles in sync with the beat."
   },
   {
     "title": "George and the Printer",
     "root": "georgeandtheprinter",
     "file": "index.html",
-    "img": "img/SnDTEn.png"
+    "img": "img/SnDTEn.png",
+    "description": "Help George deal with the most infuriating office enemy: a malfunctioning printer. A relatable rage-fueled comedy game."
   },
   {
     "title": "Getaway Shootout",
     "root": "getaway-shootout",
     "file": "index.html",
-    "img": "img/images.jpg"
+    "img": "img/images.jpg",
+    "description": "Race to the getaway vehicle while shooting other players. A chaotic two-player platformer shooter with hilarious ragdoll physics."
   },
   {
     "title": "Gimme the Airpod",
     "root": "gimme-the-airpod",
     "file": "index.html",
-    "img": "img/logo.png"
+    "img": "img/logo.png",
+    "description": "Reclaim your stolen AirPod in this funny action game. Chase down the thief and take back what's yours."
   },
   {
     "title": "Glass City",
     "root": "glass-city",
     "file": "index.html",
-    "img": "image.png"
+    "img": "image.png",
+    "description": "Build and explore a beautiful glass city in this creative sandbox experience. Design your own skyline from the ground up."
   },
   {
     "title": "Go Ball",
     "root": "go-ball",
     "file": "index.html",
-    "img": "game.jpg"
+    "img": "game.jpg",
+    "description": "Roll your ball through a series of tricky levels filled with gaps and obstacles. Precise control is the key to making it through."
   },
   {
     "title": "Google Feud",
     "root": "google-feud",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Guess the top search autocomplete suggestions for Google queries. It's funnier and harder than you think."
   },
   {
     "title": "Google Snake",
     "root": "google-snake",
     "file": "index.html",
-    "img": "img/snake.png"
+    "img": "img/snake.png",
+    "description": "The classic Snake game with a Google Doodle makeover. Eat apples, grow longer, and don't bite your own tail."
   },
   {
     "title": "Gravity Soccer",
     "root": "gravity-soccer",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Score goals while working against and with shifting gravity. A physics-heavy soccer puzzle with creative level design."
   },
   {
     "title": "Grey Box Testing",
     "root": "greybox",
     "file": "index.html",
-    "img": "ico.png"
+    "img": "ico.png",
+    "description": "A meta puzzle game that pokes fun at software testing. Push the boundaries of what the game allows to find the exit."
   },
   {
     "title": "Grind Craft",
     "root": "grindcraft",
     "file": "index.html",
-    "img": "img/splash.png"
+    "img": "img/splash.png",
+    "description": "An idle crafting game where you combine resources to create increasingly complex items. Automate your production and push toward the rarest crafts."
   },
   {
     "title": "Hacker Typer",
     "root": "hackertype",
     "file": "index.html",
-    "img": "logo192.png"
+    "img": "logo192.png",
+    "description": "Type anything and look like a Hollywood hacker. Watch the screen fill with convincing-looking code as you smash the keyboard."
   },
   {
     "title": "Handshakes",
     "root": "handshakes",
     "file": "index.html",
-    "img": "splaher.png"
+    "img": "splaher.png",
+    "description": "A strange experimental game all about handshakes. What does it mean? Play it and find out."
   },
   {
     "title": "Happy Hop",
     "root": "happy-hop",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Hop your way up an endless tower of platforms in this cheerful arcade game. How high can you bounce?"
   },
   {
     "title": "Helicopter",
     "root": "helicopter",
     "file": "index.html",
-    "img": "helicopter.png"
+    "img": "helicopter.png",
+    "description": "Pilot a helicopter through a cave using one button to control altitude. Dodge the ceiling, floor, and obstacles in this timeless Flash classic."
   },
   {
     "title": "Hex Empire",
     "root": "hexempire",
     "file": "index.html",
-    "img": "hexempire.jpg"
+    "img": "hexempire.jpg",
+    "description": "Conquer a hexagonal map in this turn-based strategy game. Expand your empire and eliminate all enemy capitals."
   },
   {
     "title": "HexGL",
     "root": "HexGL",
     "file": "index.html",
-    "img": "Hexgl-image-1.jpg"
+    "img": "Hexgl-image-1.jpg",
+    "description": "Race at blazing speeds on a futuristic hex track in this WebGL racing game. A stunning technical showcase with real gameplay depth."
   },
   {
     "title": "Hextris",
     "root": "hextris",
     "file": "index.html",
-    "img": "images/hextris-logo.png"
+    "img": "images/hextris-logo.png",
+    "description": "Tetris meets a spinning hexagon. Rotate the shape and stack colored blocks to clear lines before the hex fills up."
   },
   {
     "title": "Hill Climb Racing (Scratch)",
     "root": "hill-climb-racing",
     "file": "index.html",
-    "img": "splash.jpeg"
+    "img": "splash.jpeg",
+    "description": "A fan recreation of the beloved Hill Climb Racing game. Drive your vehicle over hilly terrain and collect coins without flipping over."
   },
   {
     "title": "Hover Bot Arena",
     "root": "hba",
     "file": "index.html",
-    "img": "hoverbotarena.JPG"
+    "img": "hoverbotarena.JPG",
+    "description": "Battle other hover bots in a top-down arena. Use your weapons and movement to outlast every enemy in the field."
   },
   {
     "title": "Hungry Lamu",
     "root": "hungry-lamu",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Feed the hungry Lamu character by solving puzzles and guiding food to its mouth. A cute and creative physics-based game."
   },
   {
     "title": "Ice Age Baby",
     "root": "iceagebaby",
     "file": "index.html",
-    "img": "thumb.png"
+    "img": "thumb.png",
+    "description": "A cursed meme brought to life as a browser game. Face the terrifying Ice Age Baby in this bizarre internet culture experience."
   },
   {
     "title": "Ice Age Baby 2",
     "root": "iceagebaby2",
     "file": "index.html",
-    "img": "pinky.jpg"
+    "img": "pinky.jpg",
+    "description": "The sequel nobody asked for but everyone needed. More chaotic Ice Age Baby mayhem in browser game form."
   },
   {
     "title": "Idle Breakout",
     "root": "idle-breakout",
     "file": "index.html",
-    "img": "img/thumbnail.png"
+    "img": "img/thumbnail.png",
+    "description": "An idle twist on the classic Breakout. Buy and upgrade different types of balls to automatically smash through millions of bricks."
   },
   {
     "title": "Idle Shark",
     "root": "idle-shark",
     "file": "index.html",
-    "img": "img/sharkgame.png"
+    "img": "img/sharkgame.png",
+    "description": "Grow your shark by eating fish and upgrades. An idle clicker where you build the ultimate ocean predator one bite at a time."
   },
   {
     "title": "Impossible Quiz",
     "root": "impossiblequiz",
     "file": "index.html",
-    "img": "impossiblequiz.png"
+    "img": "impossiblequiz.png",
+    "description": "A notoriously tricky quiz with trick questions, absurd logic, and unexpected answers. Think outside the box \u2014 way outside."
   },
   {
     "title": "Interactive Buddy",
     "root": "interactivebuddy",
     "file": "index.html",
-    "img": "interactivebuddy.jpg"
+    "img": "interactivebuddy.jpg",
+    "description": "A ragdoll character you can interact with however you want. Throw things at him, use gadgets, or just poke him \u2014 he can take it."
   },
   {
     "title": "Jetpack Joyride",
     "root": "jetpack-joyride",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Strap on a jetpack stolen from a secret lab and fly as far as possible. Dodge missiles, zappers, and scientists in this endless runner."
   },
   {
     "title": "Just One Boss",
     "root": "just-one-boss",
     "file": "index.html",
-    "img": "pv1Gr5.png"
+    "img": "pv1Gr5.png",
+    "description": "There is only one boss to fight. But it is an absolutely ridiculous, over-the-top boss battle that goes on far longer than expected."
   },
   {
     "title": "Kitchen gun game",
     "root": "kitchen-gun-game",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Settle disputes in the kitchen the only way that makes sense \u2014 with a gun. A satirical game based on the viral meme."
   },
   {
     "title": "Kitten Cannon",
     "root": "kittencannon",
     "file": "index.html",
-    "img": "kittencannon.png"
+    "img": "kittencannon.png",
+    "description": "Launch a kitten from a cannon and see how far it bounces. A classic Flash game that's as silly as it sounds."
   },
   {
     "title": "Knife Master",
     "root": "knife-master",
     "file": "index.html",
-    "img": "512x512.jpg"
+    "img": "512x512.jpg",
+    "description": "Throw knives at a spinning target without hitting the other knives already stuck in. A satisfying and addictive precision game."
   },
   {
     "title": "Krunker",
     "root": "krunker",
     "file": "index.html",
-    "img": "img/krunker-io.jpg"
+    "img": "img/krunker-io.jpg",
+    "description": "A fast-paced browser-based first-person shooter with pixelated graphics. Jump into quick matches and compete with players worldwide."
   },
   {
     "title": "Learn To Fly",
     "root": "learntofly",
     "file": "index.html",
-    "img": "learntofly.png"
+    "img": "learntofly.png",
+    "description": "Build a ramp and launch a penguin as far as possible. Upgrade your glider and boost to send the little guy soaring."
   },
   {
     "title": "Learn To Fly 3",
     "root": "ltf3",
     "file": "index.html",
-    "img": "logo.png"
+    "img": "logo.png",
+    "description": "The most advanced penguin launching experience yet. Choose your rocket components and blast off to reach space."
   },
   {
     "title": "Learn To Fly IDLE",
     "root": "ltf-idle",
     "file": "index.html",
-    "img": "thumbnail.jpg"
+    "img": "thumbnail.jpg",
+    "description": "An idle version of the Learn to Fly series. Upgrade your penguin's launch equipment passively and watch the distances grow."
   },
   {
     "title": "Learn to fly 2",
     "root": "learntofly2",
     "file": "index.html",
-    "img": "learn-to-fly-2.jpg"
+    "img": "learn-to-fly-2.jpg",
+    "description": "The sequel to the penguin launching classic. New gadgets, new challenges, and more ways to help your penguin take flight."
   },
   {
     "title": "Level 13",
     "root": "level13",
     "file": "index.html",
-    "img": "thumb.png"
+    "img": "thumb.png",
+    "description": "A puzzle escape game where you must find your way out of level 13. Examine your surroundings carefully \u2014 nothing is as it seems."
   },
   {
     "title": "Madalin Stunt Cars 2",
     "root": "madalin-stunt-cars-2",
     "file": "index.html",
-    "img": "img/logo.jpg"
+    "img": "img/logo.jpg",
+    "description": "Drive exotic supercars across massive open stunt arenas. Do flips, drifts, and jumps solo or with other players online."
   },
   {
     "title": "Madalin Stunt Cars 3",
     "root": "madalin-stunt-cars-3",
     "file": "index.html",
-    "img": "img/index.jpg"
+    "img": "img/index.jpg",
+    "description": "The latest in the Madalin stunt car series. More cars, bigger arenas, and even more insane stunts to pull off."
   },
   {
     "title": "Mario",
     "root": "mario",
     "file": "index.html",
-    "img": "Theme/Mario.gif"
+    "img": "Theme/Mario.gif",
+    "description": "The iconic plumber's classic adventure, playable in your browser. Run, jump, and stomp Goombas across the Mushroom Kingdom."
   },
   {
     "title": "Marvin Spectrum",
     "root": "marvinspectrum",
     "file": "index.html",
-    "img": "marvinspectrum.png"
+    "img": "marvinspectrum.png",
+    "description": "A colorful puzzle platformer where Marvin must match colors to progress. A clever mechanic wrapped in a vibrant world."
   },
   {
     "title": "Matrix Rampage",
     "root": "matrixrampage",
     "file": "index.html",
-    "img": "matrixrampage.jpg"
+    "img": "matrixrampage.jpg",
+    "description": "Fight Agent Smiths in a side-scrolling Matrix-themed brawler. Punch, kick, and use weapons to survive the simulation."
   },
   {
     "title": "Meme 2048",
     "root": "meme2048",
     "file": "index.html",
-    "img": "img/rickroll.gif"
+    "img": "img/rickroll.gif",
+    "description": "Slide popular internet memes together in this meme-filled version of 2048. Combine tiles to unlock the ultimate meme."
   },
   {
     "title": "Merge Round Racers",
     "root": "merge-round-racers",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Merge cars together to create faster and more powerful racers. An addictive idle merge game with a racing theme."
   },
   {
     "title": "Mine Blocks",
     "root": "mineblocks",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A 2D browser-based game inspired by Minecraft. Mine resources, craft tools, and build structures in this blocky survival world."
   },
   {
     "title": "Minecraft Classic",
     "root": "minecraft-classic",
     "file": "index.html",
-    "img": "pack.png"
+    "img": "pack.png",
+    "description": "The original 2009 version of Minecraft playable directly in your browser. Build anything you want with classic blocks in creative mode."
   },
   {
     "title": "Minecraft Classic Hacks",
     "root": "minecraftbeta",
     "file": "index.html",
-    "img": "bg_main.png"
+    "img": "bg_main.png",
+    "description": "Minecraft Classic with additional hacks and features enabled. More tools, more possibilities, and more creative freedom."
   },
   {
     "title": "Minesweeper",
     "root": "minesweeper",
     "file": "index.html",
-    "img": "img/minesweeper.png"
+    "img": "img/minesweeper.png",
+    "description": "The timeless Windows classic. Reveal tiles, use numbered clues to locate mines, and clear the board without triggering a single explosion."
   },
   {
     "title": "Mini-putt",
     "root": "miniputt",
     "file": "index.html",
-    "img": "miniputt.png"
+    "img": "miniputt.png",
+    "description": "Play a full round of mini golf right in your browser. Line up your shots and sink the ball in as few strokes as possible."
   },
   {
     "title": "Missiles",
     "root": "missiles",
     "file": "index.html",
-    "img": "miss.png"
+    "img": "miss.png",
+    "description": "Launch missiles and dodge incoming fire in this retro arcade-style shooter. Precision and timing are everything."
   },
   {
     "title": "Monster Tracks",
     "root": "monster-tracks",
     "file": "index.html",
-    "img": "thumb.jpg"
+    "img": "thumb.jpg",
+    "description": "Drive monster trucks over enormous obstacles and crushing terrain. Bigger wheels, bigger jumps, bigger fun."
   },
   {
     "title": "MotoX3M",
     "root": "motox3m",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Race a dirt bike through insane obstacle courses filled with explosives, spikes, and massive jumps. Fast, fun, and unforgiving."
   },
   {
     "title": "MotoX3M Pool",
     "root": "motox3m-pool",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Take your MotoX3M bike to a pool party-themed track. Splash through water hazards and launch off diving boards."
   },
   {
     "title": "MotoX3M Spooky",
     "root": "motox3m-spooky",
     "file": "index.html",
-    "img": "splash.jpeg"
+    "img": "splash.jpeg",
+    "description": "A Halloween-themed MotoX3M with ghostly obstacles and spooky scenery. Same great bike action, now with more frights."
   },
   {
     "title": "MotoX3M Winter",
     "root": "motox3m-winter",
     "file": "index.html",
-    "img": "download.jpeg"
+    "img": "download.jpeg",
+    "description": "A winter-themed MotoX3M with icy tracks and snowy jumps. Bundle up and race through the frostiest courses yet."
   },
   {
     "title": "My Rusty Submarine",
     "root": "my-rusty-submarine",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Pilot a rusty old submarine through treacherous underwater caves. Manage your depth carefully and avoid the jagged walls."
   },
   {
     "title": "NS-Shaft",
     "root": "ns-shaft",
     "file": "index.html",
-    "img": "favicon.png"
+    "img": "favicon.png",
+    "description": "Fall down an endless pit of platforms while avoiding spikes on the ceiling. A simple but brutally difficult one-button game."
   },
   {
     "title": "Neon Square Resurgence",
     "root": "nsresurgence",
     "file": "index.html",
-    "img": "neon.png"
+    "img": "neon.png",
+    "description": "A neon-drenched platformer where a glowing square fights to survive in a world of geometric enemies. Fast and visually striking."
   },
   {
     "title": "Ninja",
     "root": "ninja",
     "file": "index.html",
-    "img": "logo1.png"
+    "img": "logo1.png",
+    "description": "Slash through enemies with ninja precision in this fast-paced action game. Master your blade and take down waves of opponents."
   },
   {
     "title": "Ninja vs Evil Corp",
     "root": "ninjavsevilcorp",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A lone ninja takes on an evil corporation in this action platformer. Use stealth and combat to infiltrate and dismantle the enemy."
   },
   {
     "title": "Noob Steve Parkour",
     "root": "noob-steve-parkour",
     "file": "index.html",
-    "img": "512x512.jpg"
+    "img": "512x512.jpg",
+    "description": "Run and jump through parkour courses as a clumsy Minecraft-style Noob Steve. Can you make it to the end without falling?"
   },
   {
     "title": "Offline Paradise",
     "root": "OfflineParadise",
     "file": "index.html",
-    "img": "assets/icon.jpeg"
+    "img": "assets/icon.jpeg",
+    "description": "Explore a relaxing offline paradise world. A chill sandbox experience designed for when you just want to unwind."
   },
   {
     "title": "Om Nom Bounce",
     "root": "om-bounce",
     "file": "index.html",
-    "img": "assets/icon.jpeg"
+    "img": "assets/icon.jpeg",
+    "description": "Bounce Om Nom through levels to collect candy and stars. A fun physics-based spinoff from the Cut the Rope universe."
   },
   {
     "title": "OvO",
     "root": "ovo",
     "file": "index.html",
-    "img": "ovo.png"
+    "img": "ovo.png",
+    "description": "A sleek, fast-paced platformer with smooth movement mechanics. Wall jump, slide, and dive through stylish obstacle-filled levels."
   },
   {
     "title": "POPCAT CLASSIC",
     "root": "popcat-classic",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "The original Popcat clicking experience. Tap as fast as you can to make the cat pop in this iconic viral browser meme."
   },
   {
     "title": "Pandemic 2",
     "root": "pandemic2",
     "file": "index.html",
-    "img": "pandemic2.png"
+    "img": "pandemic2.png",
+    "description": "Evolve a disease and infect the entire world in this dark strategy simulation. Outsmart the global health response before a cure is found."
   },
   {
     "title": "Papa's Burgeria",
     "root": "papasburgeria",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Work the counter at Papa's burger joint. Take orders, grill patties, and build perfect burgers for an ever-growing crowd of customers."
   },
   {
     "title": "Papa's Pizzaria",
     "root": "papaspizzaria",
     "file": "index.html",
-    "img": "papaspizzaria.jpg"
+    "img": "papaspizzaria.jpg",
+    "description": "Run Papa's pizza restaurant and keep hungry customers happy. Stretch dough, add toppings, and bake pies to order."
   },
   {
     "title": "Paper.io 2",
     "root": "paperio2",
     "file": "index.html",
-    "img": "images/icon512.png"
+    "img": "images/icon512.png",
+    "description": "Expand your territory by drawing loops back to your zone. Eliminate opponents by cutting through their trail in this multiplayer territory game."
   },
   {
     "title": "Papery Planes",
     "root": "papery-planes",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Fold and fly paper airplanes through obstacle-filled skies. Adjust your design and find the perfect throw angle to go the distance."
   },
   {
     "title": "Particle Clicker",
     "root": "particle-clicker",
     "file": "index.html",
-    "img": "assets/mobile/original.png"
+    "img": "assets/mobile/original.png",
+    "description": "An idle clicker disguised as a particle physics simulator. Click to generate particles and upgrade your accelerator to discover new elements."
   },
   {
     "title": "Pixel Gun Survival",
     "root": "pixel-gun-survival",
     "file": "index.html",
-    "img": "512x512.png"
+    "img": "512x512.png",
+    "description": "Survive in a pixelated battle royale-style world. Gather weapons, eliminate enemies, and be the last pixel standing."
   },
   {
     "title": "Planet Life",
     "root": "planetlife",
     "file": "index.html",
-    "img": "images/super-planetlife.gif"
+    "img": "images/super-planetlife.gif",
+    "description": "Grow and manage an ecosystem on your own planet. Balance resources, species, and environment to create a thriving world."
   },
   {
     "title": "Plants VS Zombies",
     "root": "plants%20vs%20zombies%201",
     "file": "plants%20vs%20zombies.html",
-    "img": "image_proxy.png"
+    "img": "image_proxy.png",
+    "description": "Defend your home from zombie hordes by planting an arsenal of fighting flora. A beloved tower defense classic with tons of variety."
   },
   {
     "title": "PolyBranch",
     "root": "polybranch",
     "file": "index.html",
-    "img": "img/pic1.png"
+    "img": "img/pic1.png",
+    "description": "Navigate a branching 3D tunnel that splits and twists unpredictably. A hypnotic and calming visual experience with a meditative challenge."
   },
   {
     "title": "Portal (Flash)",
     "root": "portalflash",
     "file": "index.html",
-    "img": "portaltheflashversion.jpg"
+    "img": "portaltheflashversion.jpg",
+    "description": "The classic Valve puzzle game recreated in Flash. Place portals on surfaces to solve physics-based puzzles and escape test chambers."
   },
   {
     "title": "Precision Client (Eaglercraft)",
     "root": "precision-client",
     "file": "index.html",
-    "img": "logo.png"
+    "img": "logo.png",
+    "description": "A feature-enhanced Eaglercraft Minecraft client with precision mods. Play Minecraft in your browser with extra tools and improvements."
   },
   {
     "title": "Protektor",
     "root": "protektor",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Defend your base from incoming projectiles by placing shields and deflectors. A strategic protection game with escalating difficulty."
   },
   {
     "title": "Push The Square",
     "root": "push-the-square",
     "file": "index.html",
-    "img": "img/splash.png"
+    "img": "img/splash.png",
+    "description": "Guide a square to the goal by pushing it through a series of puzzles. Simple to learn, challenging to master."
   },
   {
     "title": "Push Your Luck",
     "root": "push-your-luck",
     "file": "index.html",
-    "img": "assets/img/push.png"
+    "img": "assets/img/push.png",
+    "description": "A risk-reward game where you decide how far to push your luck. Take more risks for bigger rewards \u2014 but don't go too far."
   },
   {
     "title": "Rabbit Samurai",
     "root": "rabbit-samurai",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A skilled rabbit samurai slices through enemies with razor-sharp precision. A stylish action game with smooth sword combat."
   },
   {
     "title": "Rabbit Samurai 2",
     "root": "rabbit-samurai2",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "The rabbit samurai returns with more enemies, more levels, and even sharper blades. A worthy sequel to the original."
   },
   {
     "title": "Resent Client (Eaglercraft)",
     "root": "resent-client",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Play Minecraft 1.8 in your browser with the Resent Eaglercraft client. Includes enhanced features and a clean modern interface."
   },
   {
     "title": "Retro Bowl",
     "root": "retro-bowl",
     "file": "index.html",
-    "img": "img/icon.jpg"
+    "img": "img/icon.jpg",
+    "description": "Call plays and lead your football team to championship glory in this retro-styled American football game. Simple controls, deep strategy."
   },
   {
     "title": "Riddle School 1",
     "root": "riddleschool",
     "file": "index.html",
-    "img": "riddleschool.png"
+    "img": "riddleschool.png",
+    "description": "Help Phil escape from school in this classic point-and-click adventure. Use items, talk to classmates, and outsmart the teachers."
   },
   {
     "title": "Riddle School 2",
     "root": "riddleschool2",
     "file": "index.html",
-    "img": "riddleschool2.png"
+    "img": "riddleschool2.png",
+    "description": "Phil's back and stuck in school again. More puzzles, more teachers to fool, and more creative escape routes to discover."
   },
   {
     "title": "Riddle School 3",
     "root": "riddleschool3",
     "file": "index.html",
-    "img": "riddleschool3.png"
+    "img": "riddleschool3.png",
+    "description": "The third Riddle School adventure sends Phil on an increasingly elaborate escape mission. The puzzles keep getting cleverer."
   },
   {
     "title": "Riddle School 4",
     "root": "riddleschool4",
     "file": "index.html",
-    "img": "riddleschool4.png"
+    "img": "riddleschool4.png",
+    "description": "Things get bigger and stranger in Riddle School 4. Phil's escape plan goes to new places \u2014 literally and figuratively."
   },
   {
     "title": "Riddle School 5",
     "root": "riddleschool5",
     "file": "index.html",
-    "img": "riddleschool5.png"
+    "img": "riddleschool5.png",
+    "description": "The epic final chapter of the Riddle School series. An adventure that goes far beyond the classroom walls."
   },
   {
     "title": "Riddle School Transfer 1",
     "root": "riddletransfer",
     "file": "index.html",
-    "img": "riddletransfer.png"
+    "img": "riddletransfer.png",
+    "description": "A spinoff of Riddle School following a transfer student. New school, new puzzles, same point-and-click escape fun."
   },
   {
     "title": "Riddle School Transfer 2",
     "root": "riddletransfer2",
     "file": "index.html",
-    "img": "riddletransfer2.png"
+    "img": "riddletransfer2.png",
+    "description": "The conclusion of the Riddle School Transfer story. Unravel the mystery and make your escape once and for all."
   },
   {
     "title": "Rocket Soccer",
     "root": "Rocket-League",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Combine rocket-powered cars with soccer in this browser version inspired by Rocket League. Score goals with physics-defying moves."
   },
   {
     "title": "Rolling Forests",
     "root": "rolling-forests",
     "file": "index.html",
-    "img": "icon.png"
+    "img": "icon.png",
+    "description": "Roll through lush forest environments in this smooth and satisfying ball-rolling game. Navigate the terrain and reach the end."
   },
   {
     "title": "Rolly Vortex",
     "root": "rolly-vortex",
     "file": "index.html",
-    "img": "icon-256.png"
+    "img": "icon-256.png",
+    "description": "Roll your ball down a spiraling vortex while dodging colorful obstacles. A hypnotic and fast-paced endless roller."
   },
   {
     "title": "Rooftop Snipers",
     "root": "rooftop-snipers",
     "file": "index.html",
-    "img": "img/preview.png"
+    "img": "img/preview.png",
+    "description": "Two-button sniper duels on precarious rooftops. Shoot your opponent and send them flying off the edge before they do it to you."
   },
   {
     "title": "Ruffle Emulator",
     "root": "ruffle",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Play classic Flash games using the Ruffle Flash emulator. Keeps legacy Flash content alive and running in modern browsers."
   },
   {
     "title": "SHUTTLEDECK",
     "root": "shuttledeck",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A card-based strategy game set in space. Use your deck wisely to outmaneuver opponents across the galaxy."
   },
   {
     "title": "Sandboxels",
     "root": "sandboxels",
     "file": "index.html",
-    "img": "sandboxels.jpg"
+    "img": "sandboxels.jpg",
+    "description": "A cellular automaton sandbox where you place elements that interact with each other in realistic ways. Sand, water, fire, and much more."
   },
   {
     "title": "Santy is Home",
     "root": "santy-is-home",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A cozy and unsettling game about coming home. Explore the house and piece together what's happened in this atmospheric narrative."
   },
   {
     "title": "Scrap Metal 3",
     "root": "scrapmetal",
     "file": "index.html",
-    "img": "img/splash.png"
+    "img": "img/splash.png",
+    "description": "Demolish cars and structures in this satisfying vehicle destruction sandbox. Smash everything with a variety of heavy machines."
   },
   {
     "title": "Scratcharia",
     "root": "scratcharia",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A Terraria-inspired mining and building game made in Scratch. Dig deep, gather materials, and build your underground empire."
   },
   {
     "title": "Shellshockers",
     "root": "shellshockers",
     "file": "index.html",
-    "img": "img/favicon.jpg"
+    "img": "img/favicon.jpg",
+    "description": "An egg-themed multiplayer first-person shooter. Crack opponents before they crack you in this fast and funny online game."
   },
   {
     "title": "Shot in the Dark",
     "root": "shotinthedark",
     "file": "index.html",
-    "img": "shot.png"
+    "img": "shot.png",
+    "description": "Navigate through pitch-black levels using only brief flashes of light. A tense stealth-puzzle game where darkness is your greatest challenge."
   },
   {
     "title": "Sky Car Stunt",
     "root": "sky-car-stunt",
     "file": "index.html",
-    "img": "512x512.jpg"
+    "img": "512x512.jpg",
+    "description": "Pull off insane stunts in the sky with your car. Launch off ramps and fly through the air in this wild stunt driving game."
   },
   {
     "title": "Sleeping Beauty",
     "root": "sleepingbeauty",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Guide Sleeping Beauty through a fairy tale puzzle adventure. Solve challenges and break the spell in this enchanting story."
   },
   {
     "title": "Slime Rush TD",
     "root": "slime-rush-td",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A slime-themed tower defense game. Place slime towers and upgrade them to stop waves of invaders from reaching your base."
   },
   {
     "title": "Slope",
     "root": "slope",
     "file": "index.html",
-    "img": "slope4.jpeg"
+    "img": "slope4.jpeg",
+    "description": "Guide a rolling ball down a neon slope at breakneck speed. Dodge obstacles and stay on the track as long as possible."
   },
   {
     "title": "Slope 2",
     "root": "slope-2",
     "file": "index.html",
-    "img": "slope-2-logo.png"
+    "img": "slope-2-logo.png",
+    "description": "The sequel to the beloved Slope game. More tracks, more speed, and even more neon obstacles to dodge."
   },
   {
     "title": "Slope Ball",
     "root": "slope-ball",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A variant of the Slope experience with new ball physics and track designs. High-speed, high-stakes neon running."
   },
   {
     "title": "Smash Carts",
     "root": "smashkarts",
     "file": "index.html",
-    "img": "images/icon-512.png"
+    "img": "images/icon-512.png",
+    "description": "Ram into other players in go-karts to knock them off the arena. The last cart spinning wins this chaotic multiplayer brawler."
   },
   {
     "title": "Smoking Barrels",
     "root": "smokingbarrels",
     "file": "index.html",
-    "img": "smokingbarrels.jpg"
+    "img": "smokingbarrels.jpg",
+    "description": "A Wild West shooter with a quick-draw twist. Fast fingers and sharp aim will see you through."
   },
   {
     "title": "Snowbattle",
     "root": "snowbattle",
     "file": "index.html",
-    "img": "img/logo.png"
+    "img": "img/logo.png",
+    "description": "Throw snowballs at your opponents in this chilly arena battle. Dodge incoming snow and be the last one standing."
   },
   {
     "title": "Soccer Skills Euro Cup",
     "root": "soccer-skills",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Show off your soccer skills in a European tournament. Dribble past defenders and score spectacular goals."
   },
   {
     "title": "Soilder Legend",
     "root": "soldier-legend",
     "file": "index.html",
-    "img": "images/splash.jpeg"
+    "img": "images/splash.jpeg",
+    "description": "Fight as a legendary soldier through waves of enemies. Use a variety of weapons and tactics to survive increasingly tough battles."
   },
   {
     "title": "Solitare",
     "root": "solitaire",
     "file": "index.html",
-    "img": "screen-shot.png"
+    "img": "screen-shot.png",
+    "description": "Classic Solitaire card game playable right in your browser. Stack suits and clear the board in this all-time favorite."
   },
   {
     "title": "Sort The Court",
     "root": "sort-the-court",
     "file": "index.html",
-    "img": "img/splash.png"
+    "img": "img/splash.png",
+    "description": "Rule a medieval kingdom by answering yes or no to subjects' requests. Balance gold, people, and happiness to grow your realm."
   },
   {
     "title": "Soundboard",
     "root": "soundboard",
     "file": "index.html",
-    "img": "img/mlg-favicon.png"
+    "img": "img/mlg-favicon.png",
+    "description": "A collection of fun and iconic sounds at your fingertips. Press buttons to trigger memes, effects, and audio clips."
   },
   {
     "title": "Space Company",
     "root": "space-company",
     "file": "index.html",
-    "img": "Icons/SpaceCompanyFavicon.png"
+    "img": "Icons/SpaceCompanyFavicon.png",
+    "description": "Build a space company from scratch in this idle tycoon game. Research technology, launch rockets, and conquer the solar system."
   },
   {
     "title": "Space Garden",
     "root": "spacegarden",
     "file": "index.html",
-    "img": "spl.png"
+    "img": "spl.png",
+    "description": "Tend to a garden floating in space. Plant and grow exotic alien flora across the cosmos in this relaxing space gardening game."
   },
   {
     "title": "Spelunky",
     "root": "spelunky",
     "file": "index.html",
-    "img": "assets/icon.png"
+    "img": "assets/icon.png",
+    "description": "Explore dangerous procedurally generated caves full of traps, treasures, and monsters. A roguelike classic with endless replayability."
   },
   {
     "title": "Stack",
     "root": "stack",
     "file": "index.html",
-    "img": "stack.png"
+    "img": "stack.png",
+    "description": "Drop platforms and stack them as precisely as possible to build the tallest tower you can. One mistimed tap and your tower shrinks."
   },
   {
     "title": "Stack Bump 3D",
     "root": "stack-bump-3d",
     "file": "index.html",
-    "img": "thumbnail.jpg"
+    "img": "thumbnail.jpg",
+    "description": "A 3D version of the stacking challenge. Drop layers to build your tower and compete for the highest stack."
   },
   {
     "title": "Starve.io",
     "root": "starve",
     "file": "index.html",
-    "img": "img/favicon.png"
+    "img": "img/favicon.png",
+    "description": "Survive in a harsh open world by gathering food, building shelter, and fighting off other players and predators. Hunger is the real enemy."
   },
   {
     "title": "Station 141",
     "root": "station-141",
     "file": "index.html",
-    "img": "75wxYs.png"
+    "img": "75wxYs.png",
+    "description": "A mysterious station with dark secrets. Explore and uncover what happened in this atmospheric point-and-click adventure."
   },
   {
     "title": "Stealing The Diamond",
     "root": "stealingthediamond",
     "file": "index.html",
-    "img": "stealingthediamond.jpg"
+    "img": "stealingthediamond.jpg",
+    "description": "Henry Stickmin attempts to steal a priceless diamond from a heavily guarded museum. Choose your approach and watch the chaos unfold."
   },
   {
     "title": "Stick Archers",
     "root": "stick-archers",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Two stick figure archers face off in a battle of precision. Pull back your bow at just the right angle to strike your opponent."
   },
   {
     "title": "Stick Duel Battle",
     "root": "stick-duel-battle",
     "file": "index.html",
-    "img": "512x512.jpg"
+    "img": "512x512.jpg",
+    "description": "Stick figures battle it out with weapons and ragdoll physics. A chaotic and hilarious two-player stick fighting game."
   },
   {
     "title": "Stick Merge",
     "root": "stick-merge",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Merge stick figures and weapons to create ever-stronger warriors. An idle merge game with stick figure battles."
   },
   {
     "title": "Stick War",
     "root": "stickwar",
     "file": "index.html",
-    "img": "stickwar.jpg"
+    "img": "stickwar.jpg",
+    "description": "Command an army of stick figures in real-time strategy battles. Mine resources, train units, and crush the enemy statue."
   },
   {
     "title": "Stickman Boost",
     "root": "stickman-boost",
     "file": "index.html",
-    "img": "base/img1.jpg"
+    "img": "base/img1.jpg",
+    "description": "Run, jump, and boost your stickman through a series of increasingly difficult obstacle courses. Wall-jumping and precision are key."
   },
   {
     "title": "Stickman Golf",
     "root": "stickman-golf",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Play golf with a stickman character across creative and tricky courses. Line up your shot and putt your way to victory."
   },
   {
     "title": "Stickman Survival",
     "root": "Stickman-Survival",
     "file": "index.html",
-    "img": "Icon.png"
+    "img": "Icon.png",
+    "description": "Help your stickman survive dangerous situations using quick decisions and clever item use. Every choice counts."
   },
   {
     "title": "Storm The House 2",
     "root": "stormthehouse2",
     "file": "index.html",
-    "img": "stormthehouse2.jpg"
+    "img": "stormthehouse2.jpg",
+    "description": "Defend your house from waves of stick figure attackers. Build walls, hire soldiers, and upgrade your weapons to hold the line."
   },
   {
     "title": "Subway Surfers",
     "root": "subway-surfers",
     "file": "index.html",
-    "img": "img/splash.jpg"
+    "img": "img/splash.jpg",
+    "description": "Dash through a subway system, dodge trains, and collect coins in this endless runner. A browser port of the beloved mobile classic."
   },
   {
     "title": "Subway Surfers New York",
     "root": "subway-surfers-ny",
     "file": "index.html",
-    "img": "NewYorkIcon.png"
+    "img": "NewYorkIcon.png",
+    "description": "The New York edition of Subway Surfers. Race through the Big Apple's subway tunnels with new characters and obstacles."
   },
   {
     "title": "Super Fowlist",
     "root": "superfowlist",
     "file": "index.html",
-    "img": "fowlist.png"
+    "img": "fowlist.png",
+    "description": "A quirky platformer starring a chicken on a mission. Jump through levels, defeat enemies, and reach the end as the Super Fowlist."
   },
   {
     "title": "Super Mario 64",
     "root": "sm64",
     "file": "index.html",
-    "img": "logo.png"
+    "img": "logo.png",
+    "description": "The legendary Nintendo 64 platformer running in your browser. Collect Power Stars, explore Bob-omb Battlefield, and save Princess Peach."
   },
   {
     "title": "Super Mario Constuct",
     "root": "supermarioconstruct",
     "file": "index.html",
-    "img": "media/icons/icon-128.png"
+    "img": "media/icons/icon-128.png",
+    "description": "Build and play your own Super Mario levels using a browser-based Mario game construction kit. Share your creations and play others."
   },
   {
     "title": "Superhot",
     "root": "superhot",
     "file": "index.html",
-    "img": "hot.jpg"
+    "img": "hot.jpg",
+    "description": "Time moves only when you move in this mind-bending shooter. Plan your attacks in slow motion and execute perfectly."
   },
   {
     "title": "Surviv.io",
     "root": "surviv",
     "file": "index.html",
-    "img": "img/favicon.png"
+    "img": "img/favicon.png",
+    "description": "A top-down 2D battle royale. Scavenge weapons, survive the shrinking zone, and be the last player alive."
   },
   {
     "title": "Sushi unROLL",
     "root": "sushi-unroll",
     "file": "index.html",
-    "img": "favicon.png"
+    "img": "favicon.png",
+    "description": "Unroll sushi in this satisfying puzzle game. Figure out how to perfectly unroll each piece without tearing it apart."
   },
   {
     "title": "Swerve",
     "root": "swerve",
     "file": "index.html",
-    "img": "img/favicon.jpg"
+    "img": "img/favicon.jpg",
+    "description": "Swerve your car along a winding road without crashing. A smooth one-button driving game with endless procedural tracks."
   },
   {
     "title": "Synesthesia",
     "root": "synesthesia",
     "file": "index.html",
-    "img": "index.splash.png"
+    "img": "index.splash.png",
+    "description": "A music-driven visual experience where sound and color merge. An artistic interactive project that plays with your senses."
   },
   {
     "title": "TV Static",
     "root": "tv-static",
     "file": "index.html",
-    "img": "static.png"
+    "img": "static.png",
+    "description": "Watch TV static \u2014 but something might be hidden in the noise. A chill ambient experience with a hint of mystery."
   },
   {
     "title": "Table Tennis Ultimate",
     "root": "cnpingpong",
     "file": "index.html",
-    "img": "tabletennisultimate.png"
+    "img": "tabletennisultimate.png",
+    "description": "Play table tennis (ping pong) against an AI opponent or a friend. Fast rallies and satisfying ping pong physics."
   },
   {
     "title": "Tactical Assassin 2",
     "root": "tacticalassasin2",
     "file": "index.html",
-    "img": "tacticalassassin2.png"
+    "img": "tacticalassassin2.png",
+    "description": "Take on sniper assassination contracts in this stealth game. One shot, one kill \u2014 read the mission briefing carefully before pulling the trigger."
   },
   {
     "title": "Tactical Weapon Pack 2",
     "root": "tactical-weapon-pack-2",
     "file": "index.html",
-    "img": "splash.jpg"
+    "img": "splash.jpg",
+    "description": "Pick from a massive arsenal of tactical weapons and try them out in a shooting range. A fun weapons sandbox experience."
   },
   {
     "title": "Tank Trouble 2",
     "root": "tank-trouble-2",
     "file": "index.html",
-    "img": "tank.jpeg"
+    "img": "tank.jpeg",
+    "description": "Drive tanks through maze-like arenas and blast your opponents before they blast you. A two-player classic full of ricochets."
   },
   {
     "title": "Tanuki Sunset",
     "root": "tanuki-sunset",
     "file": "index.html",
-    "img": "img/cover.png"
+    "img": "img/cover.png",
+    "description": "Ride a longboard down winding roads as a raccoon at sunset. A chill, aesthetic endless surfer with synthwave vibes."
   },
   {
     "title": "Temple Run 2",
     "root": "temple-run-2",
     "file": "index.html",
-    "img": "img/og-icon.png"
+    "img": "img/og-icon.png",
+    "description": "Sprint through ancient temple ruins, swipe to turn, and slide under obstacles. The endless runner sequel with better graphics and more variety."
   },
   {
     "title": "The Battle",
     "root": "thebattle",
     "file": "index.html",
-    "img": "thebattle.png"
+    "img": "thebattle.png",
+    "description": "Clash armies in epic turn-based or real-time battles. Command your troops strategically and overwhelm the enemy forces."
   },
   {
     "title": "The Final Earth",
     "root": "the-final-earth",
     "file": "index.html",
-    "img": "images.png"
+    "img": "images.png",
+    "description": "Build a colony on a distant planet in this city-builder. Manage resources, expand your settlement, and care for your citizens."
   },
   {
     "title": "The Final Earth 2",
     "root": "the-final-earth-2",
     "file": "index.html",
-    "img": "thumb.png"
+    "img": "thumb.png",
+    "description": "An expanded sequel to The Final Earth. A deeper colony-building experience with more buildings, citizens, and story."
   },
   {
     "title": "The Heist",
     "root": "theheist",
     "file": "index.html",
-    "img": "theheist.jpg"
+    "img": "theheist.jpg",
+    "description": "Plan and execute an elaborate heist in this clever puzzle game. Every obstacle has a solution \u2014 figure out the right sequence."
   },
   {
     "title": "The Hotel",
     "root": "the-hotel",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Check into a mysterious hotel full of secrets. Explore rooms, solve puzzles, and uncover the dark story lurking within."
   },
   {
     "title": "There Is No Game",
     "root": "there-is-no-game",
     "file": "index.html",
-    "img": "logo.png"
+    "img": "logo.png",
+    "description": "A game that insists there is no game \u2014 yet clearly is one. An award-winning meta comedy that keeps surprising you."
   },
   {
     "title": "This Is The Only Level",
     "root": "thisistheonlylevel",
     "file": "index.html",
-    "img": "thisistheonlylevel.png"
+    "img": "thisistheonlylevel.png",
+    "description": "An elephant must pass the same level over and over \u2014 but each time, the rules change. A clever and funny puzzle platformer."
   },
   {
     "title": "Throw Rocks at Shit",
     "root": "throwrocks",
     "file": "index.html",
-    "img": "card.png"
+    "img": "card.png",
+    "description": "Exactly what it sounds like. A cathartic physics toy where you throw rocks at various objects and watch them react."
   },
   {
     "title": "Tiny Fishing",
     "root": "tiny-fishing",
     "file": "index.html",
-    "img": "thumb.png"
+    "img": "thumb.png",
+    "description": "Cast your line and catch fish to earn coins. Upgrade your rod to reach deeper waters and reel in rarer catches."
   },
   {
     "title": "Tiny Islands",
     "root": "tiny-islands",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A relaxing tile-placement puzzle game where you build tiny island archipelagos. Place cards on the grid to maximize your score."
   },
   {
     "title": "Toss The Turtle",
     "root": "tosstheturtle",
     "file": "index.html",
-    "img": "tosstheturtle.png"
+    "img": "tosstheturtle.png",
+    "description": "Launch a turtle from a cannon and bounce it as far as possible. Upgrade your gear and see just how far that shell can travel."
   },
   {
     "title": "Townscaper",
     "root": "townscaper",
     "file": "index.html",
-    "img": "img/cover.jpg"
+    "img": "img/cover.jpg",
+    "description": "Click to place colorful buildings on a grid and watch a charming seaside town emerge. A peaceful creative toy with no lose conditions."
   },
   {
     "title": "Trimps",
     "root": "Trimps",
     "file": "index.html",
-    "img": "trimp.jpg"
+    "img": "trimp.jpg",
+    "description": "A deep idle RPG where you train an army of imps to fight monsters and gather resources. One of the most polished idle games ever made."
   },
   {
     "title": "Tube Jumpers",
     "root": "tube-jumpers",
     "file": "index.html",
-    "img": "img/shark.jpg"
+    "img": "img/shark.jpg",
+    "description": "Jump between tubes floating in the sky and knock off your opponents. A chaotic four-player party game with simple controls."
   },
   {
     "title": "Tunnel Rush",
     "root": "tunnel-rush",
     "file": "index.html",
-    "img": "img/tunnel.jpg"
+    "img": "img/tunnel.jpg",
+    "description": "Blast through a colorful 3D tunnel at insane speed. Dodge walls and obstacles as the tunnel twists faster and faster."
   },
   {
     "title": "Twitch Tetris",
     "root": "twitch-tetris",
     "file": "index.html",
-    "img": "logo.png"
+    "img": "logo.png",
+    "description": "Classic Tetris with a Twitch chat integration twist. Watch chat control the game or play it yourself in this streaming-inspired version."
   },
   {
     "title": "Unfair Mario",
     "root": "unfairmario",
     "file": "index.html",
-    "img": "sus.jpg"
+    "img": "sus.jpg",
+    "description": "Mario with hidden traps everywhere. The level looks normal \u2014 but the ground collapses, invisible blocks appear, and the game cheats constantly."
   },
   {
     "title": "VELOCE",
     "root": "veloce",
     "file": "index.html",
-    "img": "qN6zkD.png"
+    "img": "qN6zkD.png",
+    "description": "Race at extreme velocities in this speed-focused game. Precision driving and lightning-fast reactions are the only way to win."
   },
   {
     "title": "Vex 3",
     "root": "vex3",
     "file": "index.html",
-    "img": "vex3.png"
+    "img": "vex3.png",
+    "description": "Navigate a deadly obstacle course as a stick figure. Wall slide, dodge spikes, and chain moves together in this fluid platformer."
   },
   {
     "title": "Vex 4",
     "root": "vex4",
     "file": "index.html",
-    "img": "vex4.png"
+    "img": "vex4.png",
+    "description": "The fourth Vex challenge with new acts, new mechanics, and the same precise stick figure platforming fans love."
   },
   {
     "title": "Vex 5",
     "root": "vex5",
     "file": "index.html",
-    "img": "vex.jpeg"
+    "img": "vex.jpeg",
+    "description": "Vex keeps getting harder. New trap types, tighter timing windows, and the satisfying flow of a perfectly executed run."
   },
   {
     "title": "Vex 6",
     "root": "vex6",
     "file": "index.html",
-    "img": "assets/icon.jpeg"
+    "img": "assets/icon.jpeg",
+    "description": "The sixth installment of the Vex series. More creative obstacles and smoother controls in the most polished Vex yet."
   },
   {
     "title": "Vex 7",
     "root": "vex7",
     "file": "index.html",
-    "img": "assets/icon.jpeg"
+    "img": "assets/icon.jpeg",
+    "description": "The latest Vex adventure. New levels, new hazards, and the same addictive stick figure platforming that defines the series."
   },
   {
     "title": "Wall Smash",
     "root": "wallsmash",
     "file": "index.html",
-    "img": "thumb.png"
+    "img": "thumb.png",
+    "description": "Smash through walls with satisfying destruction physics. Break everything in your path and rack up the highest score."
   },
   {
     "title": "Waterworks!",
     "root": "waterworks",
     "file": "index.html",
-    "img": "square.png"
+    "img": "square.png",
+    "description": "Manage a network of pipes and valves to get water flowing from source to destination. A satisfying flow-based puzzle game."
   },
   {
     "title": "Weave Silk",
     "root": "weavesilk",
     "file": "index.html",
-    "img": "thumb.png"
+    "img": "thumb.png",
+    "description": "Create beautiful symmetrical silk-like patterns by moving your mouse. A meditative generative art toy with stunning results."
   },
   {
     "title": "WebGL Fluid Sim",
     "root": "webgl-fluid-simulation",
     "file": "index.html",
-    "img": "logo.png"
+    "img": "logo.png",
+    "description": "A stunning real-time fluid simulation running in your browser. Swirl colors together and watch mesmerizing fluid dynamics unfold."
   },
   {
     "title": "Win the Whitehouse",
     "root": "win-the-whitehouse",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A political strategy game where you campaign across states to win the presidential election. Balance your message and resources wisely."
   },
   {
     "title": "Wolfenstein 3D",
     "root": "wolf3d",
     "file": "index.html",
-    "img": "art/wolf3d.png"
+    "img": "art/wolf3d.png",
+    "description": "The grandfather of first-person shooters. Blast your way through Nazi bunkers in the game that started the FPS genre."
   },
   {
     "title": "Wordle",
     "root": "wordle",
     "file": "index.html",
-    "img": "img/logo_512x512.png"
+    "img": "img/logo_512x512.png",
+    "description": "Guess the five-letter word in six tries. Each guess reveals which letters are correct and in the right position. The viral word game."
   },
   {
     "title": "World's Hardest Game",
     "root": "worlds-hardest-game",
     "file": "index.html",
-    "img": "images/splash.jpg"
+    "img": "images/splash.jpg",
+    "description": "Dodge red circles and collect yellow coins in what might genuinely be one of the hardest games ever made. Prepare to fail \u2014 a lot."
   },
   {
     "title": "World's Hardest Game 2",
     "root": "worlds-hardest-game-2",
     "file": "index.html",
-    "img": "the-worlds-hardest-game-2.jpg"
+    "img": "the-worlds-hardest-game-2.jpg",
+    "description": "More brutally difficult levels to make you question your gaming ability. The sequel is just as merciless as the original."
   },
   {
     "title": "X Trial Racing",
     "root": "x-trial-racing",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "Race a motorbike through extreme trial courses. Balance, throttle, and brake your way over impossible terrain."
   },
   {
     "title": "Yoshi's Fabrication Station",
     "root": "yoshifabrication",
     "file": "index.html",
-    "img": "icons/icon-512.png"
+    "img": "icons/icon-512.png",
+    "description": "Build and customize Yoshi characters in this creative Nintendo-inspired toy. Mix and match parts to design your perfect Yoshi."
   },
   {
     "title": "You Are Jeff Bezos",
     "root": "you-are-bezos",
     "file": "index.html",
-    "img": "img/banner.png"
+    "img": "img/banner.png",
+    "description": "You wake up as Jeff Bezos with $156 billion. Try to spend it all in a single day in this absurd idle spending game."
   },
   {
     "title": "Zombs Royale",
     "root": "zombs-royale",
     "file": "index.html",
-    "img": "zomb.png"
+    "img": "zomb.png",
+    "description": "A top-down 2D battle royale with building mechanics. Gather weapons, build forts, and outlast 99 other players."
   },
   {
     "title": "circlO",
     "root": "circlo",
     "file": "index.html",
-    "img": "img/download.png"
+    "img": "img/download.png",
+    "description": "A minimalist puzzle game about circles. Guide the circle through simple but deceptively tricky geometric challenges."
   },
   {
     "title": "n-gon",
     "root": "n-gon",
     "file": "index.html",
-    "img": "bot.png"
+    "img": "bot.png",
+    "description": "A precise geometry-based platformer. Navigate polygonal platforms and avoid falling off the edges of abstract shapes."
   },
   {
     "title": "xx142-b2exe",
     "root": "xx142-b2exe",
     "file": "index.html",
-    "img": "splash.png"
+    "img": "splash.png",
+    "description": "A strange and glitchy meta-experience. What looks like a broken file turns into something unexpectedly deep."
   }
 ]
