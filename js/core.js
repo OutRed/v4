@@ -86,9 +86,7 @@ function buildNavbar() {
         <span class="out">Out</span><span class="red">Red</span>
       </a>
       <div class="nav-links" role="menubar">
-        <a href="/games.html" class="${active('/games.html')}" role="menuitem">${Icons.games} Games</a>
-        <a href="/apps.html"  class="${active('/apps.html')}"  role="menuitem">Apps</a>
-        <a href="/chatroom.html" class="${active('/chatroom.html')}" role="menuitem">Chat</a>
+        <a href="/games.html" class="${active('/games.html')}" role="menuitem" style="display:inline-flex;align-items:center;gap:6px;">${Icons.games} Games</a>
       </div>
       <div class="nav-search" role="search">
         <span class="s-icon" aria-hidden="true">${Icons.search}</span>
@@ -113,8 +111,6 @@ function buildNavbar() {
       backdrop-filter:blur(20px); padding:16px 28px 20px;
     ">
       <a href="/games.html" style="display:block;padding:10px 0;border-bottom:1px solid var(--border);font-weight:500;">Games</a>
-      <a href="/apps.html"  style="display:block;padding:10px 0;border-bottom:1px solid var(--border);font-weight:500;">Apps</a>
-      <a href="/chatroom.html" style="display:block;padding:10px 0;border-bottom:1px solid var(--border);font-weight:500;">Chat</a>
       <a href="/settings/" style="display:block;padding:10px 0;font-weight:500;">Settings</a>
       <div style="margin-top:14px;position:relative;">
         <span style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-dim);">${Icons.search}</span>
@@ -168,15 +164,13 @@ function buildFooter() {
           <a href="/" class="nav-logo"><span class="out">Out</span><span class="red">Red</span></a>
           <p>Hundreds of free browser games, zero downloads. Play instantly on any device.</p>
           <div class="footer-social">
-            <a href="https://discord.gg/FB6NtPkfwY" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Discord">${Icons.discord}</a>
+            <a href="https://discord.gg/MUqwxXUHS7" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Discord">${Icons.discord}</a>
             <a href="https://github.com/OutRed/v4" target="_blank" rel="noopener" class="footer-social-btn" aria-label="GitHub">${Icons.github}</a>
           </div>
         </div>
         <div class="footer-col">
           <h4>Play</h4>
           <a href="/games.html">All Games</a>
-          <a href="/apps.html">Apps &amp; Sites</a>
-          <a href="/chatroom.html">Chatroom</a>
         </div>
         <div class="footer-col">
           <h4>Settings</h4>
