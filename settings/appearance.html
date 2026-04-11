@@ -12,7 +12,7 @@
   <script src="/js/tabcloak.js"></script>
   <style>
     .theme-btn {
-      width: 100%; padding: 16px;
+      width: 100%; padding: 14px 16px;
       background: var(--surface-2); border: 2px solid var(--border);
       border-radius: var(--radius); cursor: pointer;
       transition: all var(--ease); display: flex; align-items: center; gap: 12px;
@@ -21,8 +21,15 @@
     .theme-btn:hover { border-color: var(--border-hover); color: var(--text); }
     .theme-btn.active { border-color: var(--accent); color: var(--text); background: var(--accent-dim); }
     .theme-swatch {
-      width: 32px; height: 32px; border-radius: 8px; flex-shrink: 0;
+      width: 28px; height: 28px; border-radius: 8px; flex-shrink: 0;
     }
+    .theme-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+    }
+    @media (max-width: 500px) { .theme-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body data-settings-page="appearance">
@@ -51,25 +58,60 @@
             <div class="settings-row" style="flex-direction:column; align-items:flex-start; gap:16px;">
               <div class="settings-row-info">
                 <h3>Theme</h3>
-                <p>Choose your preferred color theme. (Dark is recommended for gaming.)</p>
+                <p>Choose your preferred color theme. Your selection is saved and applied across every page.</p>
               </div>
-              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; width:100%; max-width:480px;">
-                <button class="theme-btn active" data-theme-btn="dark">
+              <div class="theme-grid">
+
+                <button class="theme-btn" data-theme-btn="dark">
                   <span class="theme-swatch" style="background:linear-gradient(135deg,#0b0b12,#181824);border:1px solid rgba(255,255,255,0.1);"></span>
-                  Dark (Default)
+                  Dark
                 </button>
-                <button class="theme-btn" data-theme-btn="midnight">
-                  <span class="theme-swatch" style="background:linear-gradient(135deg,#050510,#0d0d24);border:1px solid rgba(100,100,255,0.2);"></span>
-                  Midnight Blue
-                </button>
-                <button class="theme-btn" data-theme-btn="dim">
-                  <span class="theme-swatch" style="background:linear-gradient(135deg,#1a1a2e,#252540);border:1px solid rgba(255,255,255,0.08);"></span>
-                  Dim
-                </button>
+
                 <button class="theme-btn" data-theme-btn="amoled">
-                  <span class="theme-swatch" style="background:#000;border:1px solid rgba(255,255,255,0.05);"></span>
+                  <span class="theme-swatch" style="background:#000;border:1px solid rgba(255,255,255,0.08);"></span>
                   AMOLED Black
                 </button>
+
+                <button class="theme-btn" data-theme-btn="midnight">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#04040e,#0f0f28);border:1px solid rgba(100,100,255,0.2);"></span>
+                  Midnight
+                </button>
+
+                <button class="theme-btn" data-theme-btn="dim">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#1c1c2e,#2c2c50);border:1px solid rgba(255,255,255,0.08);"></span>
+                  Dim
+                </button>
+
+                <button class="theme-btn" data-theme-btn="light">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#f0f0f8,#e8e8f2);border:1px solid rgba(0,0,0,0.12);"></span>
+                  Light
+                </button>
+
+                <button class="theme-btn" data-theme-btn="ocean">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#020d1c,#0a2040);border:1px solid rgba(59,158,255,0.3);"></span>
+                  Ocean
+                </button>
+
+                <button class="theme-btn" data-theme-btn="forest">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#020e08,#0a2010);border:1px solid rgba(34,197,94,0.3);"></span>
+                  Forest
+                </button>
+
+                <button class="theme-btn" data-theme-btn="purple">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#07040f,#180f30);border:1px solid rgba(168,85,247,0.3);"></span>
+                  Purple
+                </button>
+
+                <button class="theme-btn" data-theme-btn="sunset">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#0f0600,#261400);border:1px solid rgba(249,115,22,0.3);"></span>
+                  Sunset
+                </button>
+
+                <button class="theme-btn" data-theme-btn="rose">
+                  <span class="theme-swatch" style="background:linear-gradient(135deg,#0f0208,#260818);border:1px solid rgba(244,63,142,0.3);"></span>
+                  Rose
+                </button>
+
               </div>
             </div>
 
@@ -77,7 +119,7 @@
             <div class="settings-row">
               <div class="settings-row-info">
                 <h3>Snow Effect</h3>
-                <p>Show animated snowflakes on the homepage.</p>
+                <p>Animated snowflakes float across every page.</p>
               </div>
               <label class="toggle">
                 <input type="checkbox" id="snow-toggle" />
@@ -89,7 +131,7 @@
         </div>
 
         <p style="font-size:0.8rem; color:var(--text-dim); margin-top:14px;">
-          Additional theme options coming soon. Suggest themes in our <a href="https://discord.gg/FB6NtPkfwY" target="_blank" style="color:var(--accent);">Discord</a>.
+          Have a theme idea? Suggest it in our <a href="https://discord.gg/MUqwxXUHS7" target="_blank" style="color:var(--accent);">Discord</a>.
         </p>
       </div>
 

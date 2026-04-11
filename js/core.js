@@ -197,10 +197,53 @@ function buildFooter() {
   document.body.appendChild(footer);
 }
 
+/* ── Snow Effect ─────────────────────────────────────────────── */
+function startSnow() {
+  if (document.getElementById('snow-container')) return; // already running
+  const container = document.createElement('div');
+  container.id = 'snow-container';
+  container.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9997;overflow:hidden;';
+  const count = 60;
+  for (let i = 0; i < count; i++) {
+    const flake = document.createElement('div');
+    flake.className = 'flake';
+    const size = (Math.random() * 4 + 2).toFixed(1);
+    const left = (Math.random() * 100).toFixed(2);
+    const delay = (Math.random() * 12).toFixed(2);
+    const duration = (Math.random() * 8 + 7).toFixed(2);
+    const drift = ((Math.random() - 0.5) * 60).toFixed(1);
+    flake.style.cssText = `
+      width:${size}px;height:${size}px;
+      left:${left}%;top:-10px;
+      opacity:${(Math.random() * 0.5 + 0.3).toFixed(2)};
+      animation:snowfall ${duration}s ${delay}s linear infinite;
+      --drift:${drift}px;
+    `;
+    container.appendChild(flake);
+  }
+  document.body.appendChild(container);
+}
+
+function stopSnow() {
+  const el = document.getElementById('snow-container');
+  if (el) el.remove();
+}
+
+// Expose so settings.js can call them live
+window.OR_startSnow = startSnow;
+window.OR_stopSnow  = stopSnow;
+
 /* ── Init ────────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   buildNavbar();
   if (!document.body.classList.contains('no-footer')) buildFooter();
+
+  // Apply saved theme
+  const savedTheme = OR.get('theme', 'dark');
+  document.documentElement.setAttribute('data-theme', savedTheme);
+
+  // Start snow if enabled
+  if (OR.get('snow', false)) startSnow();
 
   // Register service worker
   if ('serviceWorker' in navigator) {

@@ -66,6 +66,100 @@
   --surface-4: #222222;
 }
 
+[data-theme="light"] {
+  --bg:           #f0f0f8;
+  --surface:      #ffffff;
+  --surface-2:    #e8e8f2;
+  --surface-3:    #d8d8ea;
+  --surface-4:    #c8c8dc;
+  --text:         #0d0d1a;
+  --text-muted:   #55556a;
+  --text-dim:     #aaaabc;
+  --border:       rgba(0,0,0,0.09);
+  --border-hover: rgba(0,0,0,0.18);
+  --shadow:       0 4px 20px rgba(0,0,0,0.12);
+  --shadow-lg:    0 8px 48px rgba(0,0,0,0.18);
+}
+
+[data-theme="ocean"] {
+  --bg:           #020d1c;
+  --surface:      #051525;
+  --surface-2:    #0a2040;
+  --surface-3:    #102b55;
+  --surface-4:    #18386a;
+  --accent:       #3b9eff;
+  --accent-hover: #5bb0ff;
+  --accent-dim:   rgba(59,158,255,0.12);
+  --accent-glow:  rgba(59,158,255,0.35);
+  --accent-border:rgba(59,158,255,0.35);
+}
+
+[data-theme="forest"] {
+  --bg:           #020e08;
+  --surface:      #051508;
+  --surface-2:    #0a2010;
+  --surface-3:    #102b18;
+  --surface-4:    #183820;
+  --accent:       #22c55e;
+  --accent-hover: #4ade80;
+  --accent-dim:   rgba(34,197,94,0.12);
+  --accent-glow:  rgba(34,197,94,0.35);
+  --accent-border:rgba(34,197,94,0.35);
+}
+
+[data-theme="purple"] {
+  --bg:           #07040f;
+  --surface:      #0f0820;
+  --surface-2:    #180f30;
+  --surface-3:    #221840;
+  --surface-4:    #2e2050;
+  --accent:       #a855f7;
+  --accent-hover: #c084fc;
+  --accent-dim:   rgba(168,85,247,0.12);
+  --accent-glow:  rgba(168,85,247,0.35);
+  --accent-border:rgba(168,85,247,0.35);
+}
+
+[data-theme="sunset"] {
+  --bg:           #0f0600;
+  --surface:      #1a0c00;
+  --surface-2:    #261400;
+  --surface-3:    #331c00;
+  --surface-4:    #402400;
+  --accent:       #f97316;
+  --accent-hover: #fb923c;
+  --accent-dim:   rgba(249,115,22,0.12);
+  --accent-glow:  rgba(249,115,22,0.35);
+  --accent-border:rgba(249,115,22,0.35);
+}
+
+[data-theme="rose"] {
+  --bg:           #0f0208;
+  --surface:      #1a0510;
+  --surface-2:    #260818;
+  --surface-3:    #330c22;
+  --surface-4:    #40102c;
+  --accent:       #f43f8e;
+  --accent-hover: #f472b6;
+  --accent-dim:   rgba(244,63,142,0.12);
+  --accent-glow:  rgba(244,63,142,0.35);
+  --accent-border:rgba(244,63,142,0.35);
+}
+
+/* ── Snow Effect ─────────────────────────────────────────────── */
+@keyframes snowfall {
+  0%   { transform: translateY(-10px) translateX(0px); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 0.7; }
+  100% { transform: translateY(105vh) translateX(var(--drift, 30px)); opacity: 0; }
+}
+#snow-container .flake {
+  position: absolute;
+  background: rgba(255,255,255,0.88);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
 /* ── Reset ───────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }

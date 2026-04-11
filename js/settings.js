@@ -86,8 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Snow toggle
+    // Snow toggle — start/stop live on this page and persist for all pages
     bindToggle('snow-toggle', 'snow', (val) => {
+      if (val) {
+        if (typeof window.OR_startSnow === 'function') window.OR_startSnow();
+      } else {
+        if (typeof window.OR_stopSnow === 'function') window.OR_stopSnow();
+      }
       toast(val ? 'Snow enabled!' : 'Snow disabled.', 'success');
     });
   }
