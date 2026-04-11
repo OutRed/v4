@@ -22,21 +22,10 @@ window.OR = {
   }
 };
 
-/* ── Tab Cloak (runs immediately, before DOM ready) ──────────── */
-(function applyTabCloak() {
-  const title   = OR.get('cloak_title');
-  const favicon = OR.get('cloak_favicon');
-  if (title) document.title = title;
-  if (favicon) {
-    let el = document.getElementById('favicon');
-    if (!el) {
-      el = document.createElement('link');
-      el.rel = 'shortcut icon';
-      el.id  = 'favicon';
-      document.head.appendChild(el);
-    }
-    el.href = favicon;
-  }
+/* ── Apply Theme immediately (plain string key, no JSON) ─────── */
+(function applyTheme() {
+  const t = localStorage.getItem('outred_theme');
+  if (t) document.documentElement.setAttribute('data-theme', t);
 })();
 
 /* ── Panic Key ───────────────────────────────────────────────── */
@@ -238,8 +227,8 @@ document.addEventListener('DOMContentLoaded', () => {
   buildNavbar();
   if (!document.body.classList.contains('no-footer')) buildFooter();
 
-  // Apply saved theme
-  const savedTheme = OR.get('theme', 'dark');
+  // Re-apply theme (belt and suspenders — tabcloak.js already did this in <head>)
+  const savedTheme = localStorage.getItem('outred_theme') || 'dark';
   document.documentElement.setAttribute('data-theme', savedTheme);
 
   // Start snow if enabled

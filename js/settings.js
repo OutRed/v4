@@ -69,16 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Appearance ──────────────────────────────────────────── */
   if (page === 'appearance') {
-    // Theme selector
+    // Theme selector — stored as plain string (no JSON) so every page can read it simply
+    const currentTheme = localStorage.getItem('outred_theme') || 'dark';
     const themeButtons = document.querySelectorAll('[data-theme-btn]');
     themeButtons.forEach(btn => {
-      if (btn.dataset.themeBtn === (OR.get('theme', 'dark'))) {
-        btn.classList.add('active');
-      }
+      if (btn.dataset.themeBtn === currentTheme) btn.classList.add('active');
       btn.addEventListener('click', () => {
         const t = btn.dataset.themeBtn;
-        OR.set('theme', t);
-        // Apply immediately — no reload needed
+        localStorage.setItem('outred_theme', t);        // plain string — no JSON
         document.documentElement.setAttribute('data-theme', t);
         themeButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
@@ -102,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const REAL_FAVICON = '/assets/favicon.png';
 
     // Live-update the favicon element in the DOM immediately
+    // Cache-busting param forces browser to actually swap the icon
     function setFavicon(url) {
       let el = document.getElementById('favicon') || document.querySelector("link[rel*='icon']");
       if (!el) {
@@ -110,7 +109,11 @@ document.addEventListener('DOMContentLoaded', () => {
         el.id = 'favicon';
         document.head.appendChild(el);
       }
-      el.href = url;
+      // Remove and re-add to force browser favicon refresh
+      const parent = el.parentNode;
+      parent.removeChild(el);
+      el.href = url + (url.includes('?') ? '&' : '?') + 'v=' + Date.now();
+      parent.appendChild(el);
     }
 
     // Live-update the tab title immediately

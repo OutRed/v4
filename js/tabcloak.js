@@ -5,33 +5,38 @@
 ═══════════════════════════════════════════════════════════════ */
 (function () {
   try {
-    // ── Theme (prevents flash of wrong theme) ──────────────────
-    var theme = localStorage.getItem('or_theme');
+    // ── Theme — plain string, no JSON encoding ─────────────────
+    // Stored as: localStorage.setItem('outred_theme', 'midnight')
+    var theme = localStorage.getItem('outred_theme');
     if (theme) {
-      try { document.documentElement.setAttribute('data-theme', JSON.parse(theme)); } catch (e) {}
+      document.documentElement.setAttribute('data-theme', theme);
     }
 
-    // ── Tab cloak title (set before tab title renders) ─────────
-    var title = localStorage.getItem('or_cloak_title');
-    if (title) {
-      try { document.title = JSON.parse(title); } catch (e) {}
+    // ── Tab cloak title ────────────────────────────────────────
+    var rawTitle = localStorage.getItem('or_cloak_title');
+    if (rawTitle) {
+      var title = rawTitle;
+      try { title = JSON.parse(rawTitle); } catch (e) {}
+      if (title) document.title = title;
     }
 
-    // ── Tab cloak favicon (after DOM so link element exists) ───
-    var fav = localStorage.getItem('or_cloak_favicon');
-    if (fav) {
-      var favUrl;
-      try { favUrl = JSON.parse(fav); } catch (e) {}
-      if (favUrl) {
+    // ── Tab cloak favicon ──────────────────────────────────────
+    var rawFav = localStorage.getItem('or_cloak_favicon');
+    if (rawFav) {
+      var fav = rawFav;
+      try { fav = JSON.parse(rawFav); } catch (e) {}
+      if (fav) {
         document.addEventListener('DOMContentLoaded', function () {
           var el = document.getElementById('favicon') ||
                    document.querySelector("link[rel*='icon']");
           if (!el) {
             el = document.createElement('link');
             el.rel = 'shortcut icon';
+            el.id  = 'favicon';
             document.head.appendChild(el);
           }
-          el.href = favUrl;
+          // Cache-bust so browser actually loads the new favicon
+          el.href = fav + '?v=' + Date.now();
         });
       }
     }
