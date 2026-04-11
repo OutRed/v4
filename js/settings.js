@@ -94,6 +94,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Tab Cloak ───────────────────────────────────────────── */
   if (page === 'tabcloak') {
+    const REAL_FAVICON = '/assets/favicon.png';
+
+    // Live-update the favicon element in the DOM immediately
+    function setFavicon(url) {
+      let el = document.getElementById('favicon') || document.querySelector("link[rel*='icon']");
+      if (!el) {
+        el = document.createElement('link');
+        el.rel = 'shortcut icon';
+        el.id = 'favicon';
+        document.head.appendChild(el);
+      }
+      el.href = url;
+    }
+
+    // Live-update the tab title immediately
+    function setTitle(title) {
+      document.title = title || 'OutRed';
+    }
+
     const presets = [
       { label: 'Google Classroom', title: 'Classroom', favicon: 'https://ssl.gstatic.com/classroom/favicon.png' },
       { label: 'Google Docs',      title: 'Untitled document - Google Docs', favicon: 'https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico' },
@@ -117,24 +136,47 @@ document.addEventListener('DOMContentLoaded', () => {
           const fi = document.getElementById('cloak-favicon');
           if (ti) ti.value = p.title;
           if (fi) fi.value = p.favicon;
+          // Apply immediately to live tab
+          setFavicon(p.favicon);
+          setTitle(p.title);
           toast(`Cloaked as ${p.label}!`, 'success');
         });
         presetGrid.appendChild(btn);
       });
     }
 
-    bindInput('cloak-title',   'cloak_title');
-    bindInput('cloak-favicon', 'cloak_favicon');
+    // Manual title input — apply live as user types
+    const titleInput = document.getElementById('cloak-title');
+    if (titleInput) {
+      titleInput.value = OR.get('cloak_title', '');
+      titleInput.addEventListener('input', () => {
+        const val = titleInput.value.trim();
+        OR.set('cloak_title', val || null);
+        setTitle(val || 'OutRed');
+      });
+    }
+
+    // Manual favicon input — apply live on change
+    const faviconInput = document.getElementById('cloak-favicon');
+    if (faviconInput) {
+      faviconInput.value = OR.get('cloak_favicon', '');
+      faviconInput.addEventListener('input', () => {
+        const val = faviconInput.value.trim();
+        OR.set('cloak_favicon', val || null);
+        setFavicon(val || REAL_FAVICON);
+      });
+    }
 
     const clearBtn = document.getElementById('cloak-clear');
     if (clearBtn) {
       clearBtn.addEventListener('click', () => {
         OR.del('cloak_title');
         OR.del('cloak_favicon');
-        const ti = document.getElementById('cloak-title');
-        const fi = document.getElementById('cloak-favicon');
-        if (ti) ti.value = '';
-        if (fi) fi.value = '';
+        if (titleInput)   titleInput.value = '';
+        if (faviconInput) faviconInput.value = '';
+        // Revert live tab back to real OutRed favicon and title
+        setFavicon(REAL_FAVICON);
+        setTitle('OutRed — Unblocked Games for School 2026');
         toast('Tab cloak cleared.', 'info');
       });
     }
